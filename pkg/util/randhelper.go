@@ -23,6 +23,19 @@ func RandomHashAlg() tpm2.TPMIAlgHash {
 	return hashes[idx]
 }
 
+var curves = []tpm2.TPMIECCCurve{
+	// tpm2.TPMECCNistP192,
+	// tpm2.TPMECCNistP224,
+	tpm2.TPMECCNistP256,
+	tpm2.TPMECCNistP384,
+	tpm2.TPMECCNistP521,
+}
+
+func RandomCurve() tpm2.TPMIECCCurve {
+	idx := rand.Intn(len(curves))
+	return curves[idx]
+}
+
 var encapsLabels = []string{
 	"DUPLICATE",
 	"IDENTITY",

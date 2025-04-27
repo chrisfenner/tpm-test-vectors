@@ -11,6 +11,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/chrisfenner/tpm-test-vectors/pkg/ecckem"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/kdfa"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/kdfe"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/rsakem"
@@ -37,6 +38,7 @@ func printUsage() {
 	fmt.Fprintf(&usage, "    * kdfa\n")
 	fmt.Fprintf(&usage, "    * kdfe\n")
 	fmt.Fprintf(&usage, "    * rsa_labeled_encaps\n")
+	fmt.Fprintf(&usage, "    * ecc_labeled_encaps\n")
 	fmt.Fprintf(&usage, "  and <PORT> the cmd/plat port for a running TPM simulator\n")
 
 	fmt.Printf("%v\n", usage.String())
@@ -121,6 +123,11 @@ func generateTestVectors(tpm transport.TPM, kind string, count int) ([]testVecto
 			}
 		case "rsa_labeled_encaps":
 			testVector, err = rsakem.GenerateTestVector(tpm)
+			if err != nil {
+				return nil, err
+			}
+		case "ecc_labeled_encaps":
+			testVector, err = ecckem.GenerateTestVector(tpm)
 			if err != nil {
 				return nil, err
 			}

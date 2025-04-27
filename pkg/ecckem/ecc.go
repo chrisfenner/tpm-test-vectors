@@ -1,11 +1,10 @@
-// Package rsakem generates test vectors for the labeled encapsulation ("Secret Sharing") function from TPM 2.0.
-package rsakem
+// Package ecckem generates test vectors for the labeled encapsulation ("Secret Sharing") function from TPM 2.0.
+package ecckem
 
 import (
-	"bytes"
-	"crypto/rsa"
+	"crypto/ecdh"
+	cryptorand "crypto/rand"
 	"fmt"
-	"math/rand"
 	"strings"
 
 	"github.com/chrisfenner/tpm-test-vectors/pkg/util"
@@ -13,25 +12,14 @@ import (
 	"github.com/google/go-tpm/tpm2/transport"
 )
 
-var rsaBits = []tpm2.TPMIRSAKeyBits{
-	2048,
-	3072,
-	4096,
-}
-
-func randomRSABits() tpm2.TPMIRSAKeyBits {
-	idx := rand.Intn(len(rsaBits))
-	return rsaBits[idx]
-}
-
 type TestVector struct {
-	Name       string
-	Validated  *string `json:",omitempty"`
-	Label      string
-	OAEPSalt   util.HexBytes
-	Secret     util.HexBytes
-	PublicKey  util.HexBytes
-	Ciphertext util.HexBytes
+	Name             string
+	Validated        *string `json:",omitempty"`
+	Label            string
+	EphemeralPrivate util.HexBytes
+	Secret           util.HexBytes
+	PublicKey        util.HexBytes
+	Ciphertext       util.HexBytes
 }
 
 func (v *TestVector) VectorName() string {
@@ -46,8 +34,8 @@ func (v *TestVector) SetName(name string) {
 func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	var testName strings.Builder
 
-	rsaSize := randomRSABits()
-	fmt.Fprintf(&testName, "%d_", rsaSize)
+	curve := util.RandomCurve()
+	fmt.Fprintf(&testName, "%s_", util.PrettyCurveName(curve))
 
 	nameAlg := util.RandomHashAlg()
 	fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(nameAlg))
@@ -71,7 +59,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 			tpm2.TPMAlgCFB,
 		),
 	}
-	scheme := tpm2.TPMTRSAScheme{
+	scheme := tpm2.TPMTECCScheme{
 		Scheme: tpm2.TPMAlgNull,
 	}
 	if !restricted {
@@ -81,9 +69,9 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		symmetric = tpm2.TPMTSymDefObject{
 			Algorithm: tpm2.TPMAlgNull,
 		}
-		scheme = tpm2.TPMTRSAScheme{
-			Scheme: tpm2.TPMAlgOAEP,
-			Details: tpm2.NewTPMUAsymScheme(tpm2.TPMAlgOAEP, &tpm2.TPMSEncSchemeOAEP{
+		scheme = tpm2.TPMTECCScheme{
+			Scheme: tpm2.TPMAlgECDH,
+			Details: tpm2.NewTPMUAsymScheme(tpm2.TPMAlgECDH, &tpm2.TPMSKeySchemeECDH{
 				HashAlg: hashAlg,
 			}),
 		}
@@ -100,7 +88,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	cp, err := tpm2.CreatePrimary{
 		PrimaryHandle: tpm2.TPMRHOwner,
 		InPublic: tpm2.New2B(tpm2.TPMTPublic{
-			Type:    tpm2.TPMAlgRSA,
+			Type:    tpm2.TPMAlgECC,
 			NameAlg: nameAlg,
 			ObjectAttributes: tpm2.TPMAObject{
 				SensitiveDataOrigin: true,
@@ -110,10 +98,10 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 				Decrypt:             true,
 				Restricted:          restricted,
 			},
-			Parameters: tpm2.NewTPMUPublicParms(tpm2.TPMAlgRSA, &tpm2.TPMSRSAParms{
+			Parameters: tpm2.NewTPMUPublicParms(tpm2.TPMAlgECC, &tpm2.TPMSECCParms{
+				CurveID:   curve,
 				Symmetric: symmetric,
 				Scheme:    scheme,
-				KeyBits:   rsaSize,
 			}),
 		}),
 	}.Execute(tpm)
@@ -127,28 +115,43 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	if err != nil {
 		return nil, err
 	}
-	rsaParms, err := pub.Parameters.RSADetail()
+	eccParms, err := pub.Parameters.ECCDetail()
 	if err != nil {
 		return nil, err
 	}
-	rsaUnique, err := pub.Unique.RSA()
+	eccUnique, err := pub.Unique.ECC()
 	if err != nil {
 		return nil, err
 	}
-	rsaPub, err := tpm2.RSAPub(rsaParms, rsaUnique)
+	eccPub, err := tpm2.ECDHPub(eccParms, eccUnique)
 	if err != nil {
 		return nil, err
 	}
 
-	// Generate a random OAEP salt and secret value.
-	// The size of both values depends on the hash alg used for OAEP (which is always nameAlg in the case of Restricted keys).
-	salt := util.RandomBytes(hashAlgHash.Size())
-	secret := util.RandomBytes(hashAlgHash.Size())
-	label := util.RandomEncapsulationLabel()
-	ciphertext, err := rsa.EncryptOAEP(hashAlgHash.New(), bytes.NewReader(salt), rsaPub, secret, util.FormatLabel(label))
+	// Generate a random key on the same curve.
+	ephemeralPriv, err := eccPub.Curve().GenerateKey(cryptorand.Reader)
 	if err != nil {
 		return nil, err
 	}
+	ephX, ephY := getXY(ephemeralPriv.PublicKey())
+	ciphertext := tpm2.Marshal(tpm2.TPMSECCPoint{
+		X: tpm2.TPM2BECCParameter{
+			Buffer: ephX,
+		},
+		Y: tpm2.TPM2BECCParameter{
+			Buffer: ephY,
+		},
+	})
+
+	pubX, _ := getXY(eccPub)
+
+	z, err := ephemeralPriv.ECDH(eccPub)
+	if err != nil {
+		return nil, err
+	}
+
+	label := util.RandomEncapsulationLabel()
+	secret := tpm2.KDFe(hashAlgHash, z, label, ephX, pubX, hashAlgHash.Size()*8)
 
 	if restricted {
 		testName.WriteString("restricted")
@@ -157,12 +160,12 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	}
 
 	result := TestVector{
-		Name:       testName.String(),
-		Label:      label,
-		OAEPSalt:   salt,
-		Secret:     secret,
-		PublicKey:  cp.OutPublic.Bytes(),
-		Ciphertext: ciphertext,
+		Name:             testName.String(),
+		Label:            label,
+		EphemeralPrivate: ephemeralPriv.Bytes(),
+		Secret:           secret,
+		PublicKey:        cp.OutPublic.Bytes(),
+		Ciphertext:       ciphertext,
 	}
 
 	result.Validated, err = util.ValidateLabeledKEMTestVector(tpm, tpm2.NamedHandle{
@@ -174,4 +177,10 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	}
 
 	return &result, nil
+}
+
+// getXY gets the big-endian X/Y coordinates as full-length buffers.
+func getXY(pub *ecdh.PublicKey) ([]byte, []byte) {
+	rawPub := pub.Bytes()[1:]
+	return rawPub[:len(rawPub)/2], rawPub[len(rawPub)/2:]
 }

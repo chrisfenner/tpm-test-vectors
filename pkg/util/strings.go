@@ -129,3 +129,37 @@ func PrettyAlgName(alg tpm2.TPMAlgID) string {
 	}
 	return fmt.Sprintf("%04x", uint16(alg))
 }
+
+func PrettyCurveName(curve tpm2.TPMECCCurve) string {
+	switch curve {
+	case tpm2.TPMECCNone:
+		return "None"
+	case tpm2.TPMECCNistP192:
+		return "P192"
+	case tpm2.TPMECCNistP224:
+		return "P224"
+	case tpm2.TPMECCNistP256:
+		return "P256"
+	case tpm2.TPMECCNistP384:
+		return "P384"
+	case tpm2.TPMECCNistP521:
+		return "P521"
+	case tpm2.TPMECCBNP256:
+		return "BNP256"
+	case tpm2.TPMECCBNP638:
+		return "BNP638"
+	case tpm2.TPMECCSM2P256:
+		return "SM2P256"
+	case tpm2.TPMECCBrainpoolP256R1:
+		return "BrainpoolP256R1"
+	case tpm2.TPMECCBrainpoolP384R1:
+		return "BrainpoolP384R1"
+	case tpm2.TPMECCBrainpoolP512R1:
+		return "BrainpoolP512R1"
+	case tpm2.TPMECCCurve25519:
+		return "Curve25519"
+	case tpm2.TPMECCCurve448:
+		return "Curve448"
+	}
+	return fmt.Sprintf("%04x", uint16(curve))
+}
