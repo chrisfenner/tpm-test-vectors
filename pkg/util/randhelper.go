@@ -34,6 +34,23 @@ func RandomEncapsulationLabel() string {
 	return encapsLabels[idx]
 }
 
+var allLabels = []string{
+	"DUPLICATE",
+	"IDENTITY",
+	"SECRET",
+	"STORAGE",
+	"INTEGRITY",
+	"CFB",
+	"XOR",
+	"ATH",
+	"OBFUSCATE",
+}
+
+func RandomLabel() string {
+	idx := rand.Intn(len(allLabels))
+	return allLabels[idx]
+}
+
 var keyBits = []tpm2.TPMKeyBits{
 	128,
 	256,
@@ -48,17 +65,23 @@ func RandomBytes(length int) []byte {
 	result := make([]byte, length)
 	cryptorand.Read(result[:])
 	// Force the first/last byte to some values for edge-case probing.
-	switch rand.Intn(5) {
-	case 0:
-		// Do nothing
-	case 1:
-		result[0] = 0
-	case 2:
-		result[0] = 0xff
-	case 3:
-		result[length-1] = 0
-	case 4:
-		result[length-1] = 0xff
+	if len(result) > 0 {
+		switch rand.Intn(5) {
+		case 0:
+			// Do nothing
+		case 1:
+			result[0] = 0
+		case 2:
+			result[0] = 0xff
+		case 3:
+			result[length-1] = 0
+		case 4:
+			result[length-1] = 0xff
+		}
 	}
 	return result
+}
+
+func RandomBytesRandomLength(maxLength int) []byte {
+	return RandomBytes(rand.Intn(maxLength + 1))
 }

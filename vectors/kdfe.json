@@ -1,0 +1,1002 @@
+[
+    {
+        "Name": "00_SHA1_111",
+        "HashAlg": 4,
+        "Z": "beefefba63c91e8eb318785c374600",
+        "Use": "ATH",
+        "PartyUInfo": "ff8318b65e46b3",
+        "PartyVInfo": "32aa861b336c991a52b15c0c72889895e8cad4ff",
+        "Bits": 111,
+        "Result": "123decb8050fca8d6585f61946e2"
+    },
+    {
+        "Name": "01_SHA1_191",
+        "HashAlg": 4,
+        "Z": "915ffecb01b046a4b030e7f6fd21",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "6ba2faa90bb3ee519c",
+        "PartyVInfo": "000747490a53807ca3cc8ba3",
+        "Bits": 191,
+        "Result": "707cf9a3deb55485a2eee2629b1d4178adef616f9fb66d79"
+    },
+    {
+        "Name": "02_SHA1_252",
+        "HashAlg": 4,
+        "Z": "6a139d0b0d0f",
+        "Use": "STORAGE",
+        "PartyUInfo": "ffa447ad80e0e47020a60c19d20533bdf4",
+        "PartyVInfo": "00996ffa45a47c067c87183c7711f486d785",
+        "Bits": 252,
+        "Result": "0c51610804d2cf7c9ef588a96ae69b1a6e82bc10a67c829b219e37f65f18007b"
+    },
+    {
+        "Name": "03_SHA1_252",
+        "HashAlg": 4,
+        "Z": "5ad5a26a9b1603a2a5c0ba2773832bab00",
+        "Use": "SECRET",
+        "PartyUInfo": "ff",
+        "PartyVInfo": "109a7afb6d433333b0ce9ca0c49a1915ae8bff",
+        "Bits": 252,
+        "Result": "077324249b232d7a3b43a963a19cbac4179cc5850df7f4df462c8f8774ea84f7"
+    },
+    {
+        "Name": "04_SHA1_253",
+        "HashAlg": 4,
+        "Z": "",
+        "Use": "STORAGE",
+        "PartyUInfo": "",
+        "PartyVInfo": "c0227aff",
+        "Bits": 253,
+        "Result": "0f10d821af67e1ec776b390f3b4572bb433efd2b94fa7842d879d24d825ed2f9"
+    },
+    {
+        "Name": "05_SHA1_290",
+        "HashAlg": 4,
+        "Z": "005eb5adc9e172",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "00ddf5",
+        "PartyVInfo": "196e34a884b0ce3b12c736c3e3b97e72e3",
+        "Bits": 290,
+        "Result": "02265ecdf07e063236abaa9443ac1d92e80619771adc13c27489eae7e6295bac7b3dd02524"
+    },
+    {
+        "Name": "06_SHA1_32",
+        "HashAlg": 4,
+        "Z": "9b050039c8e5ca60deeb978f2faf573c94af61",
+        "Use": "IDENTITY",
+        "PartyUInfo": "ff1a1852db7b60a5c963f17eb306f3a905d100ae",
+        "PartyVInfo": "0047ee45771a256d58b091b6d6",
+        "Bits": 32,
+        "Result": "94c3c160"
+    },
+    {
+        "Name": "07_SHA1_329",
+        "HashAlg": 4,
+        "Z": "00",
+        "Use": "STORAGE",
+        "PartyUInfo": "502651f0419dc60c34baa9ff",
+        "PartyVInfo": "1c6664075140ddd94f5d00448100",
+        "Bits": 329,
+        "Result": "013a862af32bb4012c91baebf0e503be030cfd76ccb346d7ae2e6ce9f4cf7cd6e6cb66d1d4f9beac1aea"
+    },
+    {
+        "Name": "08_SHA1_332",
+        "HashAlg": 4,
+        "Z": "006fd6ac63a258ab0cd14d8a656e3e3d4327",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "c8386e19974e8b00",
+        "PartyVInfo": "038e575470ffc02fa81ddcadc9874c",
+        "Bits": 332,
+        "Result": "0591f908ac0c04a6bdf993385a64c17bf4e5db56d7037ff3a7ac47a65a098d6b4bbbba9d37ba33e2b105"
+    },
+    {
+        "Name": "09_SHA1_410",
+        "HashAlg": 4,
+        "Z": "b1facea1ed6c647f172371aa83e685",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "ffee686e77c6",
+        "PartyVInfo": "ffdb27f11b549f2a",
+        "Bits": 410,
+        "Result": "03599a56a3ee277b8f15fadbc38b26be52a64d8bbd18abb0acda80e01b5437df3a2ed0ba2a7f1399e066ccdfdf7df1db49c6b908"
+    },
+    {
+        "Name": "10_SHA1_426",
+        "HashAlg": 4,
+        "Z": "a8",
+        "Use": "XOR",
+        "PartyUInfo": "985b4c3618f1d403",
+        "PartyVInfo": "ffb65eb177a7b7d942e2a18fdc2864ee7f",
+        "Bits": 426,
+        "Result": "003042f0029149a98b0d08092ecb066a44b7ad850c5653f57302e3fae7265da60a823010fe32c7eeebe3cdc1290c61c440d340c21f7e"
+    },
+    {
+        "Name": "11_SHA1_488",
+        "HashAlg": 4,
+        "Z": "ff91ed7a50947619ba87",
+        "Use": "SECRET",
+        "PartyUInfo": "dfdf401d4eeaab4e0105bc159d483600",
+        "PartyVInfo": "ff6edce14a",
+        "Bits": 488,
+        "Result": "3a235d45be65331fddbf6d60807df8f65e66f73775528d77b40bcf409f114ffa9f1447db1743aeabcc61602d1e710fd6b1f0a0c901d850d30b2e6938e8"
+    },
+    {
+        "Name": "12_SHA1_501",
+        "HashAlg": 4,
+        "Z": "45",
+        "Use": "ATH",
+        "PartyUInfo": "b4b665c523590d00",
+        "PartyVInfo": "001d",
+        "Bits": 501,
+        "Result": "1cbf7f6cdf3800a4df1b702f458765942ab5e1c40f000d2a60c1640b8e783dc5ebcef7e967ab617dd597e6cafc1f135a9c8b2f2285ffc773e204e02d3dfa92"
+    },
+    {
+        "Name": "13_SHA1_558",
+        "HashAlg": 4,
+        "Z": "5aff",
+        "Use": "STORAGE",
+        "PartyUInfo": "ffcbb62e",
+        "PartyVInfo": "00c8fdb3c554dd1f",
+        "Bits": 558,
+        "Result": "174745394c12aa2877b6c6884a9678a0a106c0492b3c701e3b9d7af8c24711d898ee293352811c41ed10fa1d3c1652d5090d37a9196374dab666bca111de68103c9cae32a300"
+    },
+    {
+        "Name": "14_SHA1_569",
+        "HashAlg": 4,
+        "Z": "323ebc578af676",
+        "Use": "STORAGE",
+        "PartyUInfo": "005e061f53455b",
+        "PartyVInfo": "fc61748716e2c5e3487dd2a805a63e6b09",
+        "Bits": 569,
+        "Result": "017e68a0eaff71f56663f1ed3d10ea70a2140548fc69cc357eef798a4f0fcc4841e69283d0cf6ff8030173f07ae890f84631677adfa2d1c6a6ba95557b95e4d97e650449c98e78ee"
+    },
+    {
+        "Name": "15_SHA1_578",
+        "HashAlg": 4,
+        "Z": "2c3d8acc669861eb70c5",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "8478140cb4fb7aff",
+        "PartyVInfo": "ffc1eeb4",
+        "Bits": 578,
+        "Result": "02af6a73624e07f1b756027bb6727e6c2b51d86ce36fbfd2d96ebd13a5a365d0c0f5b09ead66a7c6aaec1aba977dff2476eb34196c32f466723e6b48fe4f487cc39c01c3e79dca07ee"
+    },
+    {
+        "Name": "16_SHA1_616",
+        "HashAlg": 4,
+        "Z": "eaf978b52c123a29d82b8c6a0f5f4783ff",
+        "Use": "IDENTITY",
+        "PartyUInfo": "002c88285c18d86f93332dbbcdad7f",
+        "PartyVInfo": "b05366c189b8b0c0604d00",
+        "Bits": 616,
+        "Result": "e44394c6e1b0717abcb2d1bfe3e09e91cc464f69c402ee299fc9fe378b2724339e7681d75e72558d0840a0f7c7171f969e314d7fe7ecf09ec77f80f8a5d3e902eaa39da40968a495430857e511"
+    },
+    {
+        "Name": "17_SHA1_62",
+        "HashAlg": 4,
+        "Z": "00b49ee94da958aeb765f0",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "ffbde4bbc524527bed9ccaf19fa6f2908c2d",
+        "PartyVInfo": "42d63166e4399ca80e66d93ac2d0ffcaff",
+        "Bits": 62,
+        "Result": "036c38c45e7d8c9e"
+    },
+    {
+        "Name": "18_SHA1_647",
+        "HashAlg": 4,
+        "Z": "ffc088622ddf27",
+        "Use": "IDENTITY",
+        "PartyUInfo": "d579ef999ee1823a40d24ce4e933",
+        "PartyVInfo": "ff7b067ca05aa0d82e2df0391f6dae066d",
+        "Bits": 647,
+        "Result": "558c444e9978e85ee87ef55c6cde3170fc5d7112166907d9777a5cda5ec356f66a6957db5aed2a10aeb434b72d90767c05aa5d85413d624c17c9d1de03a50feb74c1c5edeaf3e878e0bb8ce1a19d8927e8"
+    },
+    {
+        "Name": "19_SHA1_648",
+        "HashAlg": 4,
+        "Z": "9009102b2625d65be30dc3bf",
+        "Use": "STORAGE",
+        "PartyUInfo": "0039ab599ed7dc937d",
+        "PartyVInfo": "f594aaefce859668b1fd9ae9b5ff",
+        "Bits": 648,
+        "Result": "80fcc2c943464b3bfaedc6f7f7f0e41a92bb4fa3556a166737aa1d98d2cd3e45dad521b9a0d1ecab2e7bd6e6ac1dc04a9c7b8b45ff19a849bd167293dae136affadd7691c165ed8ddc2ac039a96944b315"
+    },
+    {
+        "Name": "20_SHA1_664",
+        "HashAlg": 4,
+        "Z": "0026ea710dd5ba2b",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "",
+        "PartyVInfo": "498d6e90dbc8236f00",
+        "Bits": 664,
+        "Result": "ed43de4834f26df43e9a5aac8a427cc9f7d405947934c0818752951be44ac70dede6db951bea88b92a937836013bcd27fff2c63e6d09be3917d9d23556fb357490d01952f4f835a511d5f7aef2862aacbb90c9"
+    },
+    {
+        "Name": "21_SHA1_686",
+        "HashAlg": 4,
+        "Z": "4b84516ed0b44d00",
+        "Use": "IDENTITY",
+        "PartyUInfo": "7920a6305ac3b15293953fb38071b9dd65ff",
+        "PartyVInfo": "d4cd0122aae5951426b5c03769ff",
+        "Bits": 686,
+        "Result": "02e335f109c92443ed4759ecb7df4442bc49ed47b9904e3a1b0cb00c9c8ef06cb80abca65077940063cea54751cdc6a92bbd192d8b28b0d7bb2d3ceda0b201989bd85feb54deebcfe2140b251c166483d12349772e6e"
+    },
+    {
+        "Name": "22_SHA1_7",
+        "HashAlg": 4,
+        "Z": "356f9d00d61b54cf010580b1755d1975905c00",
+        "Use": "CFB",
+        "PartyUInfo": "006c5c2bcdd650f6c836dba98c4734",
+        "PartyVInfo": "8849bd3d05d69f",
+        "Bits": 7,
+        "Result": "58"
+    },
+    {
+        "Name": "23_SHA1_700",
+        "HashAlg": 4,
+        "Z": "f718bebf8d4df38a4b00",
+        "Use": "IDENTITY",
+        "PartyUInfo": "c9414004eac9aacaa500",
+        "PartyVInfo": "e59a868fc51b2313eebe7056d532aebf23cd",
+        "Bits": 700,
+        "Result": "0b8dbfafb77b91bf8e90c65887c99cca9e60b216647685bf2bb592dac6b82728894ae958333104498bdfb5e2cec10488e44bcb1581f54348f339a25e262b32fc3fcb00d036613a614211781bad7705e02dc7d2a3ee1c382d"
+    },
+    {
+        "Name": "24_SHA1_835",
+        "HashAlg": 4,
+        "Z": "0051899074f68fd188aa99",
+        "Use": "STORAGE",
+        "PartyUInfo": "1439c41b84afe8f90d1a798a51d13c458d00",
+        "PartyVInfo": "ce72571c663f728454ff",
+        "Bits": 835,
+        "Result": "06c6f142bfb35b3fce28705d99987affead8ae54faed3572e6dd32cbf18f265d9748d7ecf71f5b10e870befea313d71d8bd09e955fd8b3eac3c1a90fb9cf5cf370eb7ee68bb2e804c2c86792c34e4c7908b052446cca64947871da22dfd935ffa0bae6af5f47ed442f"
+    },
+    {
+        "Name": "25_SHA1_847",
+        "HashAlg": 4,
+        "Z": "a098e1eaacfed8041059d9cf6849ee",
+        "Use": "SECRET",
+        "PartyUInfo": "ccc399aa32e46ef04ba7286de3",
+        "PartyVInfo": "fd855476e422865519d97f724c39a4f1",
+        "Bits": 847,
+        "Result": "4e3e7410e9fa4ad8e243b8b84df9dd9b8631bfce76be9d25c959332b819d1ad4cf0a13b2e11d9e56194dcfa683458fc6affa8387edb214b696e4de51e7b88ca9f11e3966b3dfd0fdf65343f02b93817c5795e3317e95681ca3a0768d441a8077fd7de866f11d8b7f90cb"
+    },
+    {
+        "Name": "26_SHA1_881",
+        "HashAlg": 4,
+        "Z": "06baa3ef8127c0c11623c21c",
+        "Use": "STORAGE",
+        "PartyUInfo": "9204acf8955bc053bfe2b4c9deff",
+        "PartyVInfo": "98812df0d790ac63bbfe",
+        "Bits": 881,
+        "Result": "00314fb6b298695644b2be59bf6e7c86442f3d7566cace0c7f73d83cd8103e7530d00b65430af0d5190b5425cadb526ca4b43704de508c081a34d0981f2fd3138f74fd5204e749870b1283ac255213aa7b2120a8a1dd3f8b658ae9a120e7e1660ebb4f021aae2d149dcb3bd5642fb1"
+    },
+    {
+        "Name": "27_SHA1_890",
+        "HashAlg": 4,
+        "Z": "ffc16323b2559df847",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "006a334e685e599e88",
+        "PartyVInfo": "56cf79a5076ff919ec0e0f00",
+        "Bits": 890,
+        "Result": "03e2f825a89770ad18c9762ebccb5a7ea460bd7ba20b77fc249fdf2ff0971c74e94bb6cf7ae1d4631590eb4423aec2e36aa57665a6e9406fdc7fb576b4f692cef7d20d01f53b0c83595984743f27f08fa36ae4026bfc4c4dad8f227e6f48b6279e002ef1a7d5fde36fd327c5bba48dbb"
+    },
+    {
+        "Name": "28_SHA1_95",
+        "HashAlg": 4,
+        "Z": "c14f00",
+        "Use": "ATH",
+        "PartyUInfo": "ff70d5daeb78eaca4229",
+        "PartyVInfo": "ff4c5a899787e72c49",
+        "Bits": 95,
+        "Result": "09cdc497cae9ee6d02a97b3c"
+    },
+    {
+        "Name": "29_SHA1_963",
+        "HashAlg": 4,
+        "Z": "0057f99a22ce7b1e82",
+        "Use": "ATH",
+        "PartyUInfo": "00bec3368edda88dab101eda1f30f5c0",
+        "PartyVInfo": "ff4083",
+        "Bits": 963,
+        "Result": "0041406aa9b660ec346cabba7eacb4477ed4061f2e782177bb1054106778af244e1ced07dc2503316b01b91825a423a79b7c09d7282cd900c639d0ea0b44c66f16ebf89cdccb7b1fd6efa36872bd747baaea8552adadd53c7e7418ce3033cd905c3302462066c85c4b1e1f06965ff5dfe76a421f7151c486b3"
+    },
+    {
+        "Name": "30_SHA256_109",
+        "HashAlg": 11,
+        "Z": "c3e3c34e82ccfa82d8999bf2635bb7cd01f3d65f03ff",
+        "Use": "CFB",
+        "PartyUInfo": "55576a51c0e45b86557535e9ea50d5e7f4a80bb426e7ff",
+        "PartyVInfo": "dffdece923181dc335c1e936ff",
+        "Bits": 109,
+        "Result": "1106264c89948737c140d2f5b40e"
+    },
+    {
+        "Name": "31_SHA256_13",
+        "HashAlg": 11,
+        "Z": "739245447ead0deea5f834f06e043159c6ff",
+        "Use": "IDENTITY",
+        "PartyUInfo": "ad503e36c2314ec9afa2f4047bf19ce7fbc6fe2def32c58459c0fc828c00",
+        "PartyVInfo": "ba6dd80b788034161743c95e8ef7a9486fbd69d3ff",
+        "Bits": 13,
+        "Result": "0956"
+    },
+    {
+        "Name": "32_SHA256_148",
+        "HashAlg": 11,
+        "Z": "6f081bdc0fc2f5a89ff06078cd0f94bd",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "00ec23bb38062261bbcf3a90df3a6109446365c6bd7173ca3e0b",
+        "PartyVInfo": "9d9f3c8f9e45ff",
+        "Bits": 148,
+        "Result": "0232d9229b799058cf0c1348498fbae25ca3f0"
+    },
+    {
+        "Name": "33_SHA256_215",
+        "HashAlg": 11,
+        "Z": "ffcead5817fa51",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "3a25c7420a6ea094aff570c12fd40d2b8eff",
+        "PartyVInfo": "8505ad0684d7196c4153860ece58c62c20fa07f18fff",
+        "Bits": 215,
+        "Result": "7e20d953e93f3760753b0aeba83c1114c440493bd8101f12665868"
+    },
+    {
+        "Name": "34_SHA256_287",
+        "HashAlg": 11,
+        "Z": "63a627a8765dbcdbe1f80d7adcba7a00",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "00b8a02abf4ea57726d968b7e90d000ca516f0a14a",
+        "PartyVInfo": "007f10dd75",
+        "Bits": 287,
+        "Result": "7b7997865a106d43cc8322919544c225e857a85f7871a80a22e834b7b5ce7be29e3245cd"
+    },
+    {
+        "Name": "35_SHA256_336",
+        "HashAlg": 11,
+        "Z": "8995a6318a0217c7c7bf543f50da29016c4ff2a1ea5daf54ebcb00",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "8852f14d8e9b68",
+        "PartyVInfo": "74ff",
+        "Bits": 336,
+        "Result": "92343ef558feb95fd14838f9ca39c8618598a7eeb31af7fc276030b8c3ff326d4870f190e54abbec9da4"
+    },
+    {
+        "Name": "36_SHA256_359",
+        "HashAlg": 11,
+        "Z": "ff16189cb377c3dbf0488b66ada0",
+        "Use": "STORAGE",
+        "PartyUInfo": "b16cf6dcfb71cc1615c35ed617deb0f6c925eb8828827a675c190c2b0f40",
+        "PartyVInfo": "ff9d00b4",
+        "Bits": 359,
+        "Result": "5529ebfa7d4dbdaf0923f36a8f0ac0e2842c1def72e0735d50eb0783494afa5163891c4f08287869a0a5b5fc4c"
+    },
+    {
+        "Name": "37_SHA256_431",
+        "HashAlg": 11,
+        "Z": "e89fc5304cf46c1cf7d1f5de5d3d1ec7eddc80b0386700",
+        "Use": "SECRET",
+        "PartyUInfo": "e602bc959fd97af0405649e0c80e02e9dd64e9d79e698292b043c79dfa9f9261",
+        "PartyVInfo": "",
+        "Bits": 431,
+        "Result": "3a8e893b8b76cdddbf87845b2567fa7152577829f6a55b73cb82d4a1f0342a051d6e50e20ec2f96bc4de38d7d0d79a9caf99e1d574b9"
+    },
+    {
+        "Name": "38_SHA256_496",
+        "HashAlg": 11,
+        "Z": "00",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "ebcb3cd4a002941ed496ef1d32a70b0b7f6f05b8a51803d5a9ff9b",
+        "PartyVInfo": "a1f79a7ee2beee21e2bfaee67769874687bfe21b2468fc8e721b6e967e12ff",
+        "Bits": 496,
+        "Result": "dcd14d72e0d5d8ec15b5ea15ae060e02f0e042f3af7efbd73650bb4457d73b060ef8f78bdf8cea099fe98fad6359bcfe92c1c6be8a157c1064c85ada3ad2"
+    },
+    {
+        "Name": "39_SHA256_539",
+        "HashAlg": 11,
+        "Z": "01a2ded798aa9281906d5b35875ce3066edb31357f89e1904800",
+        "Use": "STORAGE",
+        "PartyUInfo": "81bdc76cbbfc",
+        "PartyVInfo": "ff4b312521aec6adb74171f2aec0c548e614d973a09d7f78",
+        "Bits": 539,
+        "Result": "035e8f6e57db5cae71509c452fea2ab80340706c9dc4e033333d3830fcc7be68a3e4ef4a7655aca0bbe08cde87239775366a5fc7d81b151d448825f02cd10b966340f77f"
+    },
+    {
+        "Name": "40_SHA256_565",
+        "HashAlg": 11,
+        "Z": "d5f900",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "561c956a00",
+        "PartyVInfo": "00d3030de70056dfcf31c973a5e8577733476569365ff8",
+        "Bits": 565,
+        "Result": "0b8358e7188c63ecdc2d4328f45a9ec0b753a49e841c445f95b7d911958f05fddecc453cb3d399eae911ff473e67fc364291a2b00cb9901cac52af53b4f5a31e65a93726155891"
+    },
+    {
+        "Name": "41_SHA256_582",
+        "HashAlg": 11,
+        "Z": "fff929ce81cac1ce65df484f355e486640307e770814b14e7f978a08ae35",
+        "Use": "IDENTITY",
+        "PartyUInfo": "1f98f1d5b27b3d6d95ff",
+        "PartyVInfo": "3cff",
+        "Bits": 582,
+        "Result": "17373e4304a69cb8fc49cac9d514e4d9b7264983fdea3a6be974aada5471cfcc773dc2831663eb1f31881e36964f34a49aaeac567ab16fa220d65bc229785d936e5e1ed42a8c43c2d8"
+    },
+    {
+        "Name": "42_SHA256_588",
+        "HashAlg": 11,
+        "Z": "6aa048560d36a780a10c59e63cec06defe1ea9e679d7d4e21c910b4f383b0aff",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "f1de98cd",
+        "PartyVInfo": "0011c253bf930b0e",
+        "Bits": 588,
+        "Result": "070125ec4815ab14ca58e71db6348b869649779de3f4d2620e13c6f9b44b5922804d5e34e8a5dd3d07a8427afb8241a01e92a30afa943cc05eaaff6ce1ca91b8632dca8330efcc8c514f"
+    },
+    {
+        "Name": "43_SHA256_59",
+        "HashAlg": 11,
+        "Z": "ff",
+        "Use": "CFB",
+        "PartyUInfo": "06579b559c31d03d5b180c1c66de6ae998f2",
+        "PartyVInfo": "19c9c896a8a4c3976fda215f2f1b408a5cbee066d115e5a009ff",
+        "Bits": 59,
+        "Result": "073c247e3fcb57b9"
+    },
+    {
+        "Name": "44_SHA256_659",
+        "HashAlg": 11,
+        "Z": "ffe8361b9fdfe01398db23a1b2a1bc35ffe737",
+        "Use": "IDENTITY",
+        "PartyUInfo": "",
+        "PartyVInfo": "ff26e2f76cb6fbf1",
+        "Bits": 659,
+        "Result": "007d2cb3d906980fbce09d1bfe42b8d3c827c2d9fed082e0344e40c80f08c0a9eb629068d66164fbf03b3e18124f8ae3400647cf06f6c43be3740a49ec96c25f9115cff6625822878a451c601fa6bf749d2321"
+    },
+    {
+        "Name": "45_SHA256_665",
+        "HashAlg": 11,
+        "Z": "00de6a",
+        "Use": "XOR",
+        "PartyUInfo": "f28855b94d8cb71d765c5c653eca7b5a517d8951284602fd1759f800",
+        "PartyVInfo": "dd2c0bc63db2300300",
+        "Bits": 665,
+        "Result": "00ac064c73532cd0cc8e74375d1056f8bf2f870403a33825c60b8457c36fb94751fe8e9da9fbba84ccbb2b1b672a0cac503d1d7fcecdb8587f54fda9768b3f346322324c09cdcd12b5ed748cfbb9a7dd137afdc2"
+    },
+    {
+        "Name": "46_SHA256_700",
+        "HashAlg": 11,
+        "Z": "7502fa2947b7465289fa84499ab162f3780a656d946d319cd207ce00",
+        "Use": "STORAGE",
+        "PartyUInfo": "7fb7c3642f93d3acd2dee33a",
+        "PartyVInfo": "003811fc37a4b03d96df521cfeb1d6deb87e332832",
+        "Bits": 700,
+        "Result": "05cb0dd4a8fda707f4585a6e416d81cf94445d66a02a9ddb460cedbd176325290aee05b10db7670fd82d40e997080ec680d52773160e01f79cd3b16f357ffc7853ab0f9aa56b5da0c4b94f13d32face69b45eae73754fef0"
+    },
+    {
+        "Name": "47_SHA256_724",
+        "HashAlg": 11,
+        "Z": "cbff",
+        "Use": "XOR",
+        "PartyUInfo": "a5865a12021f95580f8ca14352bf5187b164ba8fae6c9b42cb3e7100",
+        "PartyVInfo": "b2893ddd0237864b5c2ddef43fc44211ad09ff",
+        "Bits": 724,
+        "Result": "084b7158e69aa2b2de4cea03ee503b08d528065f908354ecc29c723622968159c4a2edeaee5b4410adf69364298871d378de21b82c713e2f0df6b735d6e2ac6ed911e4c832da00ba75def7cee429de069c8d265d5621a49d49d148"
+    },
+    {
+        "Name": "48_SHA256_744",
+        "HashAlg": 11,
+        "Z": "fd4f9daba331a0a50a4e4c5fdf55034267",
+        "Use": "CFB",
+        "PartyUInfo": "93bc3d509a00",
+        "PartyVInfo": "beb773b718a4642d40ac3f80d34f2361b7c5f47cf7f69bb397a45b00",
+        "Bits": 744,
+        "Result": "cf21b4a548a004a64acf5e5a5a199cfa3407fe691f0eb73a7ec664a973bb22c9fd79155cd0972e0f2b1c135e61749723833e7cfc9e82df2e74e46ab0c3a9a25d64016c1de347bb48d134d9c92e37043497839c57aec585b0f434c79ff5"
+    },
+    {
+        "Name": "49_SHA256_820",
+        "HashAlg": 11,
+        "Z": "bc2c38c7c6ead2392b8a34aa9aa547ede686891065196a1f00ff",
+        "Use": "XOR",
+        "PartyUInfo": "d01ed1262bda5207dca547e10359e7e5a257dd673f0362",
+        "PartyVInfo": "0b4b19e9218976a1b698",
+        "Bits": 820,
+        "Result": "0af9f5ef07221eead7b94ff9455be5abec6f5a81f5f9b2f924c173648a3bc5fe927244411bd0bc87fc429d1ae0f654901e936c4374878933f24808d42e5d8a9fdf45cdababb35a0bc5867cacf4cafe7dbae491f5fcfe88646a04ccdb4031b0d141cfc44a787827"
+    },
+    {
+        "Name": "50_SHA256_820",
+        "HashAlg": 11,
+        "Z": "000cefc61917e4324be343ff282bce865a7e",
+        "Use": "ATH",
+        "PartyUInfo": "ff3b1c2360cb8ab2",
+        "PartyVInfo": "2c9eac22a748c425063b09fedb4d22600c",
+        "Bits": 820,
+        "Result": "09691ec22d60a8c3f08ed273502d6d312d30a3f09d250994bdb753ac13dacde89ce8f05aefd81beb09fa6114a06c0a07fe76cd3f84c392e722a1253af2d3bdf4e4231a47990a8c68ec55cdae87e0e1281e5aef12dfb1a88e208687dfa20360199be470df50d7e6"
+    },
+    {
+        "Name": "51_SHA256_821",
+        "HashAlg": 11,
+        "Z": "ffe2801708622d3fe0d77426d559aea4cdddf3eace762d8f447c",
+        "Use": "STORAGE",
+        "PartyUInfo": "00566c2fe34062a3a46f12843aae83",
+        "PartyVInfo": "00175ee60ca72d8fd87bbe81a5315a2d9dfa",
+        "Bits": 821,
+        "Result": "1c20f5d7cf108dca41956bd7108539a9901e7a552fcee91df716d3a06c7c6624c894db3772795e1d49692ea450df1ffc96626a509b4e84010353894ff962921baa354644fb4a7842c22fd71131be739ac83ace4776b8f93fc822ee53258cf2261362cb319699b4"
+    },
+    {
+        "Name": "52_SHA256_889",
+        "HashAlg": 11,
+        "Z": "ff942a05d605eabb1691",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "65e918279aef49e1065d9972baac6137cf224cff",
+        "PartyVInfo": "399a4c7783f01081371988fb835200",
+        "Bits": 889,
+        "Result": "013c39834ad74fb7f20b34546c081585582660e8eae78fc9a87ecea5ede6c2a5171aa23216e6d53c043f12eacd61ab646d71f04998e5cd14be163f1689751ea50b9e1c73241aa0d63b84521bd614adc26bff85f372eda5341651f9a18b7842c33961b7920ab21770a6411323563289ea"
+    },
+    {
+        "Name": "53_SHA384_1",
+        "HashAlg": 12,
+        "Z": "ffffa7ff65fe5f1357df95d3a7ec5a6c5519963b8a6086c89f289b80c039e8eaabf136",
+        "Use": "ATH",
+        "PartyUInfo": "b3c402f9bf969dae90efefb297f4852f7edb",
+        "PartyVInfo": "ffca1be2402405eab6741da32ec8d6348934c64c3bbeed44b4",
+        "Bits": 1,
+        "Result": "00"
+    },
+    {
+        "Name": "54_SHA384_12",
+        "HashAlg": 12,
+        "Z": "d3752788fb54bf2c0c91e2698117157b3e4507c64c337746177cb3dded582edd62c2151ff91a5ade73f877cb315fff",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "0062b7bc996f0ac1c9836ba8bd31d1d5a5608cea46f9080a179f309b4adf94a8ebef4fecf67f",
+        "PartyVInfo": "ffc03109c3f0d4c78b82d2562442071d3d90bb",
+        "Bits": 12,
+        "Result": "0d2c"
+    },
+    {
+        "Name": "55_SHA384_133",
+        "HashAlg": 12,
+        "Z": "b53dfac9155409c1479600",
+        "Use": "STORAGE",
+        "PartyUInfo": "00456e4f18d91cf140fb5aa3c93553aae61e5424e945a94cb77b1747f34d",
+        "PartyVInfo": "00384c4d9f30a334abea3230fcb16c5460819c57fd7c",
+        "Bits": 133,
+        "Result": "0935e9f44383ba2d6a7b5cb5782b5b6dbf"
+    },
+    {
+        "Name": "56_SHA384_151",
+        "HashAlg": 12,
+        "Z": "4372f030061ef94f819b135e437d5b67fc46ff408e89d98b442d52709c8d924666f0c09949ff",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "ff",
+        "PartyVInfo": "ffc3a2c5728b72eed978f99acab22a8c1b5cfc914f56b4f67e925cbb3b4705522c",
+        "Bits": 151,
+        "Result": "6c9953526a680c7f7baae81ea2bad26d9c0317"
+    },
+    {
+        "Name": "57_SHA384_173",
+        "HashAlg": 12,
+        "Z": "ab2fa08a718ee46ae9a0b037cde7a14a112e66af74443d86acc5dfaff9",
+        "Use": "STORAGE",
+        "PartyUInfo": "7f2adb75117a8991c717440768d8c69f",
+        "PartyVInfo": "00d634b3e23244dc46795f55e3c19a32098dc3a0cb5579",
+        "Bits": 173,
+        "Result": "0560dd96bfb3211078abc36f33953e2448a3b656889e"
+    },
+    {
+        "Name": "58_SHA384_232",
+        "HashAlg": 12,
+        "Z": "ff1f419e5f1dbb2077d6a82e82a928a56bedf5c8c223a10c6646ca5f0db99f91f0",
+        "Use": "XOR",
+        "PartyUInfo": "6dcf4b9a62a0438b83c7e27d18ecd75075341ae7bd1d3a2615ff09885363abcef324eb1396816c3bb196",
+        "PartyVInfo": "004352c8abc6f41bc955e09f9eeab29e83b3451f",
+        "Bits": 232,
+        "Result": "af807b1ff3cf665c976579e765cb93d6c1f35159364fb8e5b6f1742015"
+    },
+    {
+        "Name": "59_SHA384_242",
+        "HashAlg": 12,
+        "Z": "50571aa539a2176d9df76ecab38ae1a24b2cc1a4f557ff",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "ff635ad310f27b3600455658ad215bdb15512f5c3a5d19731120d72bad247b140c18a6f00d",
+        "PartyVInfo": "a5c7c29ab33d942a675baf1bf8efe910173ec61dad00f9d7776cea67de94e33e03681c3910ef312e44ac15c3ce417aff",
+        "Bits": 242,
+        "Result": "0129f1add4e07ba8ef9b90b2d2a51a67de50c70b81929f2e1486448da59c9f"
+    },
+    {
+        "Name": "60_SHA384_277",
+        "HashAlg": 12,
+        "Z": "ff579d6435f18a86383d9cb1dd06ca2ff965573938d14c",
+        "Use": "STORAGE",
+        "PartyUInfo": "9379d63712039945f4d468f909ef",
+        "PartyVInfo": "690bf9eac27256312e21e27d26f9df46",
+        "Bits": 277,
+        "Result": "18ced4710410a646d3e577ba4353078ba0bbfa8ef2c3df28faa70abc135378de904023"
+    },
+    {
+        "Name": "61_SHA384_324",
+        "HashAlg": 12,
+        "Z": "2ea7a04a1a7a84c12b97591e1086bac891200865119445849e203eeddbbad54b0bff",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "ffcc3226530afa73d6bf6a608ee5c326c5d9386f3ea83d364a6f2a5284891c5feeb36d5a2b378e3d21e7b2a2f65b1d73",
+        "PartyVInfo": "2a1091787920f6c55788dd6d0444a32254eff500",
+        "Bits": 324,
+        "Result": "0ce517d30185ba35a29508141ec07fcb1642a3def9ee95c165ca3a8b9de8e5799c90baca6454a72444"
+    },
+    {
+        "Name": "62_SHA384_393",
+        "HashAlg": 12,
+        "Z": "5a6afc6bcbe95e238853beda67c545d5bdddff",
+        "Use": "XOR",
+        "PartyUInfo": "25a1e3bbea874cf4ff",
+        "PartyVInfo": "ff00ca97ed367d19a00a5144a676b71f82cee1a4711c89aad00d584ce2a060473375a66440be4662e98449b9a0040d",
+        "Bits": 393,
+        "Result": "01df521677d99a8bc066e0d044e2052e241e63baf96cdd743a3b6e983314c9d6777ff0c5dce1fe735868100b0036c6f2729a"
+    },
+    {
+        "Name": "63_SHA384_513",
+        "HashAlg": 12,
+        "Z": "aa9efd800a5922f69da9f48851b0a0e74f0d07bd1b4e11682b46e076fec3ff",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "589aff59ac66ec88acd3f3b96348c39946d2a9ff",
+        "PartyVInfo": "ff902de1b4b60fb8f4437da2641ef8549fed0f3b813c4cd7bd825648",
+        "Bits": 513,
+        "Result": "006157ddba92b33404534c9f01d722519cd2acaba143ac9f66ed8daa7c527cf4f5531fd9eca105c01005eee21e950222579d9be519095e652a563e44bfeedf8d16"
+    },
+    {
+        "Name": "64_SHA384_523",
+        "HashAlg": 12,
+        "Z": "9fa5e4cd91a4846ad63b7556b42ca7aa0a77f0a342c6ed4efdf044203766d3d3818a72e2a5c6aef698ee1eff",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "7c4ffaee50423bcfbb18caffb808d47bd7b8d640f461122776afc5b22d711d18900bd2949279ff",
+        "PartyVInfo": "174ebafebcafff",
+        "Bits": 523,
+        "Result": "005a9ca5f857adc62083b14fab9c7aaa47d808aa16104d532654fa568398d393db39b02d470051f017df731b08ee4662bd662870472569fdedda31a91678c80d31e3"
+    },
+    {
+        "Name": "65_SHA384_564",
+        "HashAlg": 12,
+        "Z": "cd259443e6a6398cd8bedc212f0f6f21ccedb120821f87",
+        "Use": "STORAGE",
+        "PartyUInfo": "ff7be3db480d6fc888",
+        "PartyVInfo": "c992c485c86149ca6100",
+        "Bits": 564,
+        "Result": "04b18e80cac091e6bb19df8fd906810bbd330978f154f0a5cb3818cb2dd3b70a31f54f3e2116cfb18eb224309c7266ce51297e5e8a0a9c6bb8d5c225fcfecb302c9090070e233d"
+    },
+    {
+        "Name": "66_SHA384_586",
+        "HashAlg": 12,
+        "Z": "7e98e2248c38b6faa0d8ca7db414cd4ef34515e9fe28bece2e7265d3d0d9a0f9e300",
+        "Use": "STORAGE",
+        "PartyUInfo": "ffae80459c44f3bd078fd0b84caebe655f4a53d8ced7396a4bd0400f0577ff",
+        "PartyVInfo": "00bd17cbe617ac724629adfad4aef9c1e42083bb1a5a9dae67a0c957",
+        "Bits": 586,
+        "Result": "0031702f2b832f8f38ccda4638c77abcdd5704f61d845620d1291b4f8a9a20bf9653603f08e1106960fb3788b6dc8a0e910da074d7da4bafa3f01d91cdcc0297eb6a879e85979a1cda74"
+    },
+    {
+        "Name": "67_SHA384_618",
+        "HashAlg": 12,
+        "Z": "ec0b0c5fbd6623481b09e746e04121f1d00f3dda11be4ad0e3093dcfdce433c9b442763e6c45304cff",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "0a41def0fb21073e7706e5969a3e12a41aeecf632f9a0502ea2c1a02386e7025fe372f093b49d1aab2",
+        "PartyVInfo": "00666027f996b75921a76a5748f4aa9c8305b8e6e5fc756a36",
+        "Bits": 618,
+        "Result": "02d436e9933f7c61587ada218f9511e37cbec40410cfdfd2d60be6ef8cd276968480ad255afaaed03b1b0fd783d0fbd48a58e83d3d932fd8995b6dee4a014872d0cde89a98e443b3b6c15efb75a9"
+    },
+    {
+        "Name": "68_SHA384_619",
+        "HashAlg": 12,
+        "Z": "00e28091677a8867b33267fde3096a78c64b559090d911743e038cc2699c2e98e198",
+        "Use": "STORAGE",
+        "PartyUInfo": "eb521682d3eba518f57b6ea997c8a1e526300f556ce3b5fc7ce0",
+        "PartyVInfo": "4341baab6e6cd8bb58c9f69fea25420e33e0dfdc3a359ea9deac14fd4d915922b4a1",
+        "Bits": 619,
+        "Result": "06e332069dd9f2cedb366f2358cf0d61627e6f218f96835cdc4942c3ade8e89b07eae5234f3f734b516e4ebea08c2fb382de72bf785f5e4a5152a993484b860d819e3a1dc43765c5a92c4ed86fb4"
+    },
+    {
+        "Name": "69_SHA384_667",
+        "HashAlg": 12,
+        "Z": "a8c7cfe2627d652a632f4a57966c1f471a00",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "5e2bca7612b72e7b00",
+        "PartyVInfo": "ff74d3e8e56cf3b4f3262c",
+        "Bits": 667,
+        "Result": "03cc5d1e7d073c0fe2d66309fbabef415f935f521adde8e904ecb41191b9a8f287615279e55784a849390b25a302de80c74e0e35fdfd5acc251e115d564fe51f578745ae1c74f92383f2e9d0dd48d036fb8495c9"
+    },
+    {
+        "Name": "70_SHA384_675",
+        "HashAlg": 12,
+        "Z": "f35c5045fa68f7a0bbe2445109a7a8737f63d7b918e586a50d583b666452d22dff",
+        "Use": "XOR",
+        "PartyUInfo": "a795344cff",
+        "PartyVInfo": "",
+        "Bits": 675,
+        "Result": "033580e2217398267903d18be2e79d513dc50c461124aa310ea4483e4edef6f6e3de4706d4ea48e81a6f72efc1cc1c17a47daa990a39fb7f1b198c2f4ed9140b5ce7a6cc88a075af2a6656caa4c32ba4886dde5a45"
+    },
+    {
+        "Name": "71_SHA384_761",
+        "HashAlg": 12,
+        "Z": "0b538d24fb99fad28d7324da2fd9b9a9808a00",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "8523a77518cae3ff",
+        "PartyVInfo": "4f0ea9b26fb9636a301b1848b9592a0f234f3b61af290478967a95352c4be90ee01b49b1e0360b868800",
+        "Bits": 761,
+        "Result": "018259b26e1681766093aa4caf35040b3cf9d7062691b13df65a8c307b3046944bd48b92867f5b8f1aff09a85f01d22c29884b81d1f230747bdf6589e9e47f0578244eb4e2d1de6d5b9e93ef24bb866a712e7e520a98874820dcecc3afb15635"
+    },
+    {
+        "Name": "72_SHA384_79",
+        "HashAlg": 12,
+        "Z": "67d2210f344df271e1c960d595814c4aeb9706c24aa42d2d97914d1bd1452b54ec69a42d07",
+        "Use": "STORAGE",
+        "PartyUInfo": "d3e7df7d31ef352ce0214cc940f4703488621339fa87eb2cb872093cbc00",
+        "PartyVInfo": "5ea33fdb57e2e9649e5be68cf9643c58d6da596c9f",
+        "Bits": 79,
+        "Result": "32c262b6c9fec57cf217"
+    },
+    {
+        "Name": "73_SHA384_90",
+        "HashAlg": 12,
+        "Z": "00b6b88b4b8a198920e5dba65f080bce6e4498c61afe52b8b4701d",
+        "Use": "SECRET",
+        "PartyUInfo": "ffd3d1f7c9bf3a886e0c97cb2f7781",
+        "PartyVInfo": "18a672937491cad05fb293ea2532a31813130c300ea1561979f921ad094821a636b037bbae677a5560c6d683aa00",
+        "Bits": 90,
+        "Result": "0170661d4d1afa37f4dff3ce"
+    },
+    {
+        "Name": "74_SHA384_913",
+        "HashAlg": 12,
+        "Z": "f66dd56505f3b037b2711e08fb4061668eca2fb64a8264e7c5675300",
+        "Use": "SECRET",
+        "PartyUInfo": "4deed4fe4d0248451227064cf0c187c400",
+        "PartyVInfo": "004f3c3db722ec252c",
+        "Bits": 913,
+        "Result": "00e68a61ddb9c6bdd41d77a2c1df547f3070debda34da3f26f3c3de98b9d4109171124c2684ec83724cad0d7b0bf294a1690c169ecac40de115c3446c2a5061fae198bd43c79a7fc4d46835754be491d07432b61d09b3eb3fb921c5d09b55f05f85cb464e19999f51ea37ba32f038555f229ae"
+    },
+    {
+        "Name": "75_SHA384_998",
+        "HashAlg": 12,
+        "Z": "6e431375824d33f116a99e00",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "0049a27b377ea099ed57f2efb096bd4788aaf8f3b0eb07",
+        "PartyVInfo": "95f78b131202d39be5eb513c5316368a35f5cd4fa3f2c39deabcef1ea6fd264d07a384284a73c462ad568e00",
+        "Bits": 998,
+        "Result": "3533e9c5baf8ebcd38a7d2bf6aaf6f052734fc94ff4c9678eb586de515eb65a41f679e7bafc9c90460bf4ad389ee0ea0a10c77998f7cf8c2a61295df4803170cec04d94c88d29b02e362b0933b8ecf78912913e48202c6fdfcdc8a190f2b0eabbe937920c5ebf935cb84714761942717dbb57328f9ef1dd4a4b2e4c63c"
+    },
+    {
+        "Name": "76_SHA512_139",
+        "HashAlg": 13,
+        "Z": "ffa87ac767fe53d3dfdaf68ae9dc018e652d88dca4c2fd7b7b69dec31950ea0264da88f288c4f147480d",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "caadf5337ac555d99f6a282b2c3053",
+        "PartyVInfo": "00494103857b3527292b07a7d3025852c211a569b8ae8634ccc8287da78ddb3dfc87c565ae7f0fc9c3ee2d25ab9b3c08a11bfb4b19",
+        "Bits": 139,
+        "Result": "021f8e9cc28d88d8f57bbb032c3892c1fc2e"
+    },
+    {
+        "Name": "77_SHA512_164",
+        "HashAlg": 13,
+        "Z": "5264994c2ffa799af73fb580aebf00",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "a188c928a3352a26ef03342b20e15acb863000",
+        "PartyVInfo": "9741d7966c9b9872cc6d1d5cf1e718152702003d785f00",
+        "Bits": 164,
+        "Result": "09df02bdb58f85d92dba1d647184677a935c91c61e"
+    },
+    {
+        "Name": "78_SHA512_223",
+        "HashAlg": 13,
+        "Z": "2b20bc2779cf00",
+        "Use": "SECRET",
+        "PartyUInfo": "97bbd104c17b928ed215ed866cf7e65a54f6cf08e961459987d842130bab64417e52",
+        "PartyVInfo": "ffd4d69e38b514dbefa957cfc4dbe014a71c598a7c97d30065eaec461ea5182460eaac6f0e7e35fc",
+        "Bits": 223,
+        "Result": "0905989543e08fe657d3ebcdda32f5686a0f3657fe10c0a73465a49b"
+    },
+    {
+        "Name": "79_SHA512_255",
+        "HashAlg": 13,
+        "Z": "002024653ef084",
+        "Use": "ATH",
+        "PartyUInfo": "25e4ff",
+        "PartyVInfo": "ff1c8addecb73b1fce8b03e6ffb0b149455a",
+        "Bits": 255,
+        "Result": "408051eb79531af1d85d5bc85953cf05a6b5e9a695afdca513c4275fb8e4b35f"
+    },
+    {
+        "Name": "80_SHA512_295",
+        "HashAlg": 13,
+        "Z": "1530cf341a566c87db2d0dfc6e7c879d9628ae54209dbb0a4832c6b98b00",
+        "Use": "CFB",
+        "PartyUInfo": "ff928cda968e3388a89aa721d5577b2c3e45f56b7b81df913b5a12b3b4b947c3a652caeb6199288039be314a5daa292f3860e942be",
+        "PartyVInfo": "92730e18da6441ed1e4f56a292c32e92a9f3a80eb216f2e478cbac3442a7cbe081ff",
+        "Bits": 295,
+        "Result": "2e4b5a18685a8b20f86fc9a3d30276fc0797447197d54cb33ee2ebd215df8b5d90b0e633d9"
+    },
+    {
+        "Name": "81_SHA512_327",
+        "HashAlg": 13,
+        "Z": "2c8c63e543b5a1f5ad972c0fe1fffe8500",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "ffe2a032a33772b493b5c2b1a5256c3060fdf12ef90c9e78e5afa3183c271e5b70",
+        "PartyVInfo": "1d8d13b02aa9d74f72cfae6722b1c94f82b6d24f3b6f57a5954134022a5ed6309a0593121651e13ae16dff",
+        "Bits": 327,
+        "Result": "0df9b106bf3d150d6ce152cd5c13c89b7212288a265aa569c77614b6e7d348da5158fb62703ea27623"
+    },
+    {
+        "Name": "82_SHA512_362",
+        "HashAlg": 13,
+        "Z": "1e96a2a831f31911fe66cc6bb1ee75ff",
+        "Use": "IDENTITY",
+        "PartyUInfo": "d9c8bc5935890f3a1b87400b2fbe74e00f86f510f76c5cb81a882100d08aae8d633631ad39bc4cf8762c01ea15",
+        "PartyVInfo": "ffd57df8b2b81776a91500da46767c",
+        "Bits": 362,
+        "Result": "0293d05682dfa66e5f6244c66336a5f52f707e897bfa5663ca0c0b306086d58df95613da2b1508da362e2a05ce73"
+    },
+    {
+        "Name": "83_SHA512_414",
+        "HashAlg": 13,
+        "Z": "005e1ee1f30ff606c2f09c618baab12c4136ea75a1a2736cc62ee88ae9ceb79be3211f24eb9b",
+        "Use": "SECRET",
+        "PartyUInfo": "ff7cd9a36324dba70d3101036f25787897e97a36782009c7a8c4288ae2f208b8683ad7bd392e7ddeeefbdc01f30fd81eda7a",
+        "PartyVInfo": "d3daa83c84e9fdba0cf3f8193dab593368a337425f717b049eac5c5cf3c5201bc13cffe0fa9f",
+        "Bits": 414,
+        "Result": "3c0caf8cf507e2f5e1c6d6f17c0a26892e303b919fff924f96283dd0389eb6b1b5401062b422f96153d408d9ac45332a430ddfce"
+    },
+    {
+        "Name": "84_SHA512_424",
+        "HashAlg": 13,
+        "Z": "6d0db9b812ff",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "ff4572454c405877540ad76dc5faa29570b298f12ae38d725da8c2516494c33515532b21916cf9769c715bfc854cb178acff",
+        "PartyVInfo": "ffed339b3bfd9183b3ba1b111ed56de45f4c1204dee3460cc3a7fceb61e92318ee4175c121337f50",
+        "Bits": 424,
+        "Result": "2525e06bd1a7cf20746526dda84dd8fd6f79784fafc1a9f4bed70b6bccf09e4b69026f665398798433a6ccdc06c24764dc758aa4c4"
+    },
+    {
+        "Name": "85_SHA512_437",
+        "HashAlg": 13,
+        "Z": "00",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "77d03ece345acd3be9ebee549c1c0cd544ccccca5d7e53fa4bdc24a0dad9d75005078415b7176823338190d269041dd17cc82abd1f03db7bcf08d2868301",
+        "PartyVInfo": "0051d9d4251e90e123d277126f55ded2f4c3c8645ad903c74c7b89eb98fc53089abd0b28bf188e453bf1b214530041ce707d6b2cc6362a0212fbf400a416af",
+        "Bits": 437,
+        "Result": "1f5c6ba72f22538dd6ab5663b1f0ced312ff9c992a0aa0b301bc1503549b90a5abfe57b5160a63f2c24d9a6de5248e4b2579557dd9e63f"
+    },
+    {
+        "Name": "86_SHA512_448",
+        "HashAlg": 13,
+        "Z": "0048",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "ffd90bea6538b482",
+        "PartyVInfo": "16081c5d5baebb66c438df9589183bff",
+        "Bits": 448,
+        "Result": "d352ed321afa378d1c313eaa8ee136eb09e960d01a09bebcecfe448a43b83bbeaf1c0fe35a862f6ea8fc7376c1076d464be54dd89e6c2168"
+    },
+    {
+        "Name": "87_SHA512_561",
+        "HashAlg": 13,
+        "Z": "14dd74dc4cb80a6b23c2673b64ae67c454aefb62d1f32064a03c9adfdf953726c8a41827b7c604a78e044f5a36173cce4b00ff",
+        "Use": "STORAGE",
+        "PartyUInfo": "00d6a0db7400edd2d426b61cc0f3014ece0a539eb5799711f70e056dd2738180fd6b1ac580ab",
+        "PartyVInfo": "ff42801815f27e8ee568",
+        "Bits": 561,
+        "Result": "00623f67640869c1ead10b253fd485ca9395e0ef7ed2bc73f1604d8b2be3b6c69b09a52d3b124af57e09a18e2b7c4c3c476690020aeabe1068a8e5d6a033d1260916ba3dc67123"
+    },
+    {
+        "Name": "88_SHA512_563",
+        "HashAlg": 13,
+        "Z": "e1f511edb5cff42cc907b062614c",
+        "Use": "IDENTITY",
+        "PartyUInfo": "003b23956bbd27b863693aff4a70",
+        "PartyVInfo": "ff3c35a6053acb7b2233b6f7f3ee3b1e4a6935bf4929506c264881a1f2f9e808626204f2505ca4bf26222b",
+        "Bits": 563,
+        "Result": "006d47cc126a6eb23a6e5b626f17abdb6332a7fdadd715dfb86d21a51394856dc411a4b037bc776814a8818bd1627af41916d95626ad1a8604c4216fc189b0008906b85431dd3e"
+    },
+    {
+        "Name": "89_SHA512_590",
+        "HashAlg": 13,
+        "Z": "e1d2e700",
+        "Use": "SECRET",
+        "PartyUInfo": "",
+        "PartyVInfo": "fffcf34e848b9cfe54a0be31766d7044b467cab4829e49bcfe38",
+        "Bits": 590,
+        "Result": "2c0d227eb22e8b002dbe8f27a8eea0d71bde6c87d6749ec0441324b3a0eb11aba611d6b4e8e0ea569512031df5d806be60f77295d13790c6fa647477be047d72cc84e697c29b5f235251"
+    },
+    {
+        "Name": "90_SHA512_639",
+        "HashAlg": 13,
+        "Z": "94d56d3456ef929f272ec540c4b4adbdb59eab0162f8e23682f5213c01e113da66d62a312b20be4775ff",
+        "Use": "XOR",
+        "PartyUInfo": "001def2fe2683ed4a94b6f3d7d748e80c4e76175368445b0efd740426f3658ac2ee19b43e93a350df407e6",
+        "PartyVInfo": "00643e6cd3d41d5ae27047",
+        "Bits": 639,
+        "Result": "1e84e3c796a781c3f2ff5558c33f0de8b8080ac5eea60dc4a0cc063e604714e394831977dc8d281d7c87ca72fbb1cdb66ad4533d5242c9cfbf510a2882a8ceae20180a21c03e75200d9996c657c4b743"
+    },
+    {
+        "Name": "91_SHA512_670",
+        "HashAlg": 13,
+        "Z": "655fd478a21dc73ea1bf174f93b502044807667d00757d9c9f",
+        "Use": "INTEGRITY",
+        "PartyUInfo": "008427fea0",
+        "PartyVInfo": "fd111253833dff80292d16a70659a9486bbdb5008526a304416e234cc5c68e1494260b2869d3488c09a14c15a9c359",
+        "Bits": 670,
+        "Result": "3f2d2f9ff5db2539cc1e7fe2c6b0d38fff88a2ea050127835c2fdd98dfd7ab281c5eb5edcb1d7d3d3117023b3acd73ce4906db5af600ebf84ca589d06a1cfedd0eefd2b2bf619649c0125b966347ff32f110c744"
+    },
+    {
+        "Name": "92_SHA512_700",
+        "HashAlg": 13,
+        "Z": "bc2933274f08d4d5805db681ec340db7fe6493d6d654ae3623a34fab54101e7ec068eb1a62dc5361ca00",
+        "Use": "ATH",
+        "PartyUInfo": "ff4dba7eb8e9158ed530963558862ac5db8d03c73ebb285f20cac756d2568a16e75d329ec89916f03435763e3e3a700970f9e89f149c840cbbbd197322",
+        "PartyVInfo": "",
+        "Bits": 700,
+        "Result": "05e155ad44556f38c7159157d17c7649e2cc3a36f1813a30b6fc46e74f269ac0dacba4d8dc06c5e55cc632ad7147f73cfbbcb61185d5c22b82e82f2d03748f2dec713b1e8a89cdf4968a1dd1a61061edb799df0f4c719857"
+    },
+    {
+        "Name": "93_SHA512_701",
+        "HashAlg": 13,
+        "Z": "ff351c9fed27657901d048cd66b79af6111c1d36c97aa3ec49128a1b3f8cb6e8cf3aa11922d9e579",
+        "Use": "STORAGE",
+        "PartyUInfo": "ff1ca7c587",
+        "PartyVInfo": "496799ecd2ff",
+        "Bits": 701,
+        "Result": "15e20b25eb30b8024e59b84ea01b830ebe8e4891165ce9a1518cb697632cab01717977ed3386daa78d7b9a9735af4351d619210fc8ac004116e652c2008784f8054e34a92b8fadb8bd9b10c39083afc3d92618bb907cd1fd"
+    },
+    {
+        "Name": "94_SHA512_740",
+        "HashAlg": 13,
+        "Z": "9081c1f5376a5e9b0d55445cd8044d21a1d213e704253ff33a481b4a991dcfabba7194d32ba49df75cdbf732c3397d814fd1c1476c0ebf1cff",
+        "Use": "OBFUSCATE",
+        "PartyUInfo": "ff19c090",
+        "PartyVInfo": "ff077e30a09a4b752bd55a948b502656db7b5906c890bb6155db3abc402f8fdc51ebc49a1e705439770d824d56611757231a0d9a",
+        "Bits": 740,
+        "Result": "04c065115b50c6fcff19f440215a9f98e81306898538448e03773873331f5bf0977ad30a90ac25c19e3ca6419e7adcc5f50611711e4e06bc21c43d4abf16127435f7c5e48cda202c95656230568237449787780eac36b55f6b98cd096d"
+    },
+    {
+        "Name": "95_SHA512_752",
+        "HashAlg": 13,
+        "Z": "490389b89f061ea040d81f2033e598ff",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "00c8ac6c55da23f2fad45066229d4c8d04d5fe555caa12e7e214176ebaf3c2811a1d980f480883c4",
+        "PartyVInfo": "95daaa5fc168f9686da15f9449c1ec2e962ed635291683c6c61de9952ec71e1b24bf651a59d01400",
+        "Bits": 752,
+        "Result": "88499b63ab8873199dc343ff791f576d3f2dbb8d024cc7a858b2238269306bc3f1fcf95619e9f2a338da48d42c1aad2149b5814e6bd1684a92bc9bff500c128d5246c5abc05a98160ffae9e4f530e0fa89d57e21610754b2b0b20f966b66"
+    },
+    {
+        "Name": "96_SHA512_805",
+        "HashAlg": 13,
+        "Z": "ccff",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "a842fb4c99b76ee98f4bea6a821ee07492a1e47214ff",
+        "PartyVInfo": "9bba97809c965f9e9299c7ce2d4ea0527d6921f900",
+        "Bits": 805,
+        "Result": "168afbf521fa378d89321949e415f8ec3bdc6fd697556eac757cb3229d1f4b3110453f22b005ccd4fe3b075b62e7f4678621b09740013380392b084fee68c8508b382c2004e7b3dbab5ee84623e03adfb85a44a5acb1249a6928d5ed5355722bf31342e7d8"
+    },
+    {
+        "Name": "97_SHA512_860",
+        "HashAlg": 13,
+        "Z": "967b0f51dbc9f2fe595c2f0b8e199f77fee87c10e68fffc53d334c9cb786cfa7bc9856095978dbdb1c5d06d6f6017f043486417a",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "6041c6ef70f181b0551300",
+        "PartyVInfo": "480f4c1ba457afee56a946f5adb86efb7c41f9f705b4a69e5aa322967bbdff629f0c790011b39c9e937274a9ddf868c54ea2aaebff",
+        "Bits": 860,
+        "Result": "0745874dbe0986c71bb2ddf0aacb16db3453b04c41c372f9d28c929c25670da8093615ff78397cc71feb7042912608fe5ecb4e3cd6274330b014a9cc8f2b7266b09fe125d92cfb8627a4c70c87fd3004eb00837969ca8953ddee22e8357153c40956e6fe9dcad02a66d9b975"
+    },
+    {
+        "Name": "98_SHA512_9",
+        "HashAlg": 13,
+        "Z": "00ecf5d16ff4c47b2a43fdafa4d449646a50abe155650a5ff0ecf89ca9768d2bed7ca0f17f113065c51190cccd4203b7",
+        "Use": "ATH",
+        "PartyUInfo": "9c7fbe7d36257e6faa9f773d00",
+        "PartyVInfo": "fc8ff54133fdd43b485e483ce2c75bf0728c0b75a0acc28cf1d63276d420b14262130a12f6449100",
+        "Bits": 9,
+        "Result": "00aa"
+    },
+    {
+        "Name": "99_SHA512_936",
+        "HashAlg": 13,
+        "Z": "7a848b70d25cdeeb107750ad7e6c6b0a0c86418184b14397c1c775f5df01ebf30a0dc37b737ae9c9de69fcb78fe7e956c3732d00",
+        "Use": "DUPLICATE",
+        "PartyUInfo": "ffba657370a6d6",
+        "PartyVInfo": "003e925cd7bd852c001a85eb2a65827e5c8a974c45",
+        "Bits": 936,
+        "Result": "c2b5b6fb6f9f1ed192f0a281da871ba63b4f4154d6925b2bf9192e96e4df2e0e000660e4225830a02d33a6cbaa6808dcaed338a85677b590835e7cdc3236ee6583bce9e05aa458b0fece695765b9a8c3b8303c15a759c611df2df1e1eca4c6c5907b7edd45c0510a95a898d8c311a408f62cffd5b4"
+    }
+]
