@@ -2,62 +2,32 @@
 package kdfa
 
 import (
+	"fmt"
 	"math/rand"
+	"strings"
 
+	"github.com/chrisfenner/tpm-test-vectors/pkg/util"
 	"github.com/google/go-tpm/tpm2"
 	"github.com/google/go-tpm/tpm2/transport"
 )
 
 type TestVector struct {
+	Name     string
 	HashAlg  uint16
-	Key      []byte
+	Key      util.HexBytes
 	Label    string
-	ContextU []byte
-	ContextV []byte
+	ContextU util.HexBytes
+	ContextV util.HexBytes
 	Bits     int
-	Result   []byte
+	Result   util.HexBytes
 }
 
 func (v *TestVector) VectorName() string {
-	return "TODO"
+	return v.Name
 }
 
 func (v *TestVector) SetName(name string) {
-}
-
-var hashes = []tpm2.TPMIAlgHash{
-	tpm2.TPMAlgSHA1,
-	tpm2.TPMAlgSHA256,
-	tpm2.TPMAlgSHA384,
-	tpm2.TPMAlgSHA512,
-}
-
-func randomHashAlg() tpm2.TPMIAlgHash {
-	idx := rand.Intn(len(hashes))
-	return hashes[idx]
-}
-
-func randomBytes(minLen, maxLen int) []byte {
-	len := rand.Intn(maxLen - minLen)
-	result := make([]byte, len)
-	rand.Read(result[:])
-	return result
-}
-
-var labels = []string{
-	"ATH",
-	"CFB",
-	"DUPLICATE",
-	"IDENTITY",
-	"INTEGRITY",
-	"OBFUSCATE",
-	"SECRET",
-	"STORAGE",
-}
-
-func randomLabel() string {
-	idx := rand.Intn(len(labels))
-	return labels[idx]
+	v.Name = name
 }
 
 // GenerateTestVector generates a KDFa test vector.
@@ -66,18 +36,25 @@ func randomLabel() string {
 // auth session in the TPM and checks that we got the session key right.
 // For now, we trust the implementation of go-tpm's KDFa.
 func GenerateTestVector(_ transport.TPM) (*TestVector, error) {
-	algID := randomHashAlg()
+	var testName strings.Builder
+
+	algID := util.RandomHashAlg()
 	hash, err := algID.Hash()
 	if err != nil {
 		return nil, err
 	}
-	key := randomBytes(0, hash.Size())
-	label := randomLabel()
-	contextU := randomBytes(0, hash.Size())
-	contextV := randomBytes(0, hash.Size())
-	bits := rand.Intn(600)
+	fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(algID))
+
+	key := util.RandomBytesRandomLength(hash.Size())
+	label := util.RandomLabel()
+	contextU := util.RandomBytesRandomLength(hash.Size())
+	contextV := util.RandomBytesRandomLength(hash.Size())
+	bits := rand.Intn(1000)
+	fmt.Fprintf(&testName, "%d", bits)
+
 	result := tpm2.KDFa(hash, key, label, contextU, contextV, bits)
 	return &TestVector{
+		Name:     testName.String(),
 		HashAlg:  uint16(algID),
 		Key:      key,
 		Label:    label,
