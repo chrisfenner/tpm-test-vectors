@@ -6,7 +6,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"math"
 	"os"
+	"sort"
 	"strings"
 
 	"github.com/chrisfenner/tpm-test-vectors/pkg/kdfa"
@@ -95,34 +97,49 @@ func getTPM(tpmCmd int, tpmPlat int) (transport.TPMCloser, error) {
 	return tpm, nil
 }
 
+type testVector interface {
+	VectorName() string
+	SetName(name string)
+}
+
 // generateTestVectors generates the requested test vectors, validating them using the TPM first if possible.
-func generateTestVectors(tpm transport.TPM, kind string, count int) ([]any, error) {
-	result := make([]any, count)
+func generateTestVectors(tpm transport.TPM, kind string, count int) ([]testVector, error) {
+	result := make([]testVector, count)
+	var err error
 	for i := range result {
-		var testVector any
+		var testVector testVector
 		switch strings.ToLower(kind) {
 		case "kdfa":
-			kdfaTest, err := kdfa.GenerateTestVector(tpm)
+			testVector, err = kdfa.GenerateTestVector(tpm)
 			if err != nil {
 				return nil, err
 			}
-			testVector = *kdfaTest
 		case "kdfe":
-			kdfeTest, err := kdfe.GenerateTestVector(tpm)
+			testVector, err = kdfe.GenerateTestVector(tpm)
 			if err != nil {
 				return nil, err
 			}
-			testVector = *kdfeTest
 		case "rsa_labeled_encaps":
-			labeledEncaps, err := rsakem.GenerateTestVector(tpm)
+			testVector, err = rsakem.GenerateTestVector(tpm)
 			if err != nil {
 				return nil, err
 			}
-			testVector = *labeledEncaps
 		default:
 			return nil, fmt.Errorf("unrecognized --kind value, expected one of {kdfa, kdfe, labeled_encaps}, was %q", kind)
 		}
 		result[i] = testVector
 	}
+
+	sort.Slice(result, func(a, b int) bool {
+		return strings.Compare(result[a].VectorName(), result[b].VectorName()) < 0
+	})
+
+	formatDigits := int(math.Ceil(math.Log10(float64(count))))
+	formatString := fmt.Sprintf("%%0%dd_%%s", formatDigits)
+
+	for i := range result {
+		result[i].SetName(fmt.Sprintf(formatString, i, result[i].VectorName()))
+	}
+
 	return result, nil
 }

@@ -18,6 +18,13 @@ type TestVector struct {
 	Result   []byte
 }
 
+func (v *TestVector) VectorName() string {
+	return "TODO"
+}
+
+func (v *TestVector) SetName(name string) {
+}
+
 var hashes = []tpm2.TPMIAlgHash{
 	tpm2.TPMAlgSHA1,
 	tpm2.TPMAlgSHA256,
