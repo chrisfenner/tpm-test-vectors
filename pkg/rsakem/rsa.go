@@ -25,13 +25,14 @@ func randomRSABits() tpm2.TPMIRSAKeyBits {
 }
 
 type TestVector struct {
-	Name       string
-	Validated  *string `json:",omitempty"`
-	Label      string
-	OAEPSalt   util.HexBytes
-	PublicKey  util.HexBytes
-	Secret     util.HexBytes
-	Ciphertext util.HexBytes
+	Name        string
+	Description string
+	Validated   *string `json:",omitempty"`
+	Label       string
+	OAEPSalt    util.HexBytes
+	PublicKey   util.HexBytes
+	Secret      util.HexBytes
+	Ciphertext  util.HexBytes
 }
 
 func (v *TestVector) VectorName() string {
@@ -45,16 +46,25 @@ func (v *TestVector) SetName(name string) {
 // GenerateTestVector generates an RSA Labeled Encapsulation test vector.
 func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	var testName strings.Builder
-
-	rsaSize := randomRSABits()
-	fmt.Fprintf(&testName, "%d_", rsaSize)
-
-	nameAlg := util.RandomHashAlg()
-	fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(nameAlg))
-	hashAlg := nameAlg
+	var testDescription strings.Builder
 
 	// Randomly decide whether to generate this key as Restricted.
 	restricted := util.RandomBool()
+	if restricted {
+		testName.WriteString("R")
+		testDescription.WriteString("restricted")
+	} else {
+		testName.WriteString("U")
+		testDescription.WriteString("unrestricted")
+	}
+	rsaSize := randomRSABits()
+	fmt.Fprintf(&testName, "_%d", rsaSize)
+	fmt.Fprintf(&testDescription, " RSA-%d key", rsaSize)
+
+	nameAlg := util.RandomHashAlg()
+	fmt.Fprintf(&testName, "_%s", util.PrettyAlgName(nameAlg))
+	fmt.Fprintf(&testDescription, " using name alg %s,", util.PrettyAlgName(nameAlg))
+	hashAlg := nameAlg
 
 	// Symmetric and Scheme depend on whether we chose Restricted.
 	// Only a Restricted Decryption key can have Symmetric set.
@@ -77,7 +87,8 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	schemeAlg := tpm2.TPMAlgNull
 	if !restricted {
 		hashAlg = util.RandomHashAlg()
-		fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(hashAlg))
+		fmt.Fprintf(&testName, "_%s", util.PrettyAlgName(hashAlg))
+		fmt.Fprintf(&testDescription, " with %s for OAEP", util.PrettyAlgName(hashAlg))
 
 		symmetric = tpm2.TPMTSymDefObject{
 			Algorithm: tpm2.TPMAlgNull,
@@ -90,7 +101,8 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		}
 		schemeAlg = hashAlg
 	} else {
-		fmt.Fprintf(&testName, "%d_", keyBits)
+		fmt.Fprintf(&testName, "_%d", keyBits)
+		fmt.Fprintf(&testDescription, " with symmetric scheme AES-CFB-%d", keyBits)
 	}
 
 	hashAlgHash, err := hashAlg.Hash()
@@ -153,19 +165,14 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		return nil, err
 	}
 
-	if restricted {
-		testName.WriteString("restricted")
-	} else {
-		testName.WriteString("unrestricted")
-	}
-
 	result := TestVector{
-		Name:       testName.String(),
-		Label:      label,
-		OAEPSalt:   salt,
-		PublicKey:  cp.OutPublic.Bytes(),
-		Secret:     secret,
-		Ciphertext: ciphertext,
+		Name:        testName.String(),
+		Description: testDescription.String(),
+		Label:       label,
+		OAEPSalt:    salt,
+		PublicKey:   cp.OutPublic.Bytes(),
+		Secret:      secret,
+		Ciphertext:  ciphertext,
 	}
 
 	result.Validated, err = util.ValidateLabeledKEMTestVector(tpm, tpm2.NamedHandle{

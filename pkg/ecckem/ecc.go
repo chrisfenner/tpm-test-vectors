@@ -14,6 +14,7 @@ import (
 
 type TestVector struct {
 	Name             string
+	Description      string
 	Validated        *string `json:",omitempty"`
 	Label            string
 	EphemeralPrivate util.HexBytes
@@ -33,16 +34,26 @@ func (v *TestVector) SetName(name string) {
 // GenerateTestVector generates an RSA Labeled Encapsulation test vector.
 func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	var testName strings.Builder
-
-	curve := util.RandomCurve()
-	fmt.Fprintf(&testName, "%s_", util.PrettyCurveName(curve))
-
-	nameAlg := util.RandomHashAlg()
-	fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(nameAlg))
-	hashAlg := nameAlg
+	var testDescription strings.Builder
 
 	// Randomly decide whether to generate this key as Restricted.
 	restricted := util.RandomBool()
+	if restricted {
+		testName.WriteString("R")
+		testDescription.WriteString("restricted")
+	} else {
+		testName.WriteString("U")
+		testDescription.WriteString("unrestricted")
+	}
+
+	curve := util.RandomCurve()
+	fmt.Fprintf(&testName, "_%s", util.PrettyCurveName(curve))
+	fmt.Fprintf(&testDescription, " ECC-%s key", util.PrettyCurveName(curve))
+
+	nameAlg := util.RandomHashAlg()
+	fmt.Fprintf(&testName, "_%s", util.PrettyAlgName(nameAlg))
+	fmt.Fprintf(&testDescription, " using name alg %s,", util.PrettyAlgName(nameAlg))
+	hashAlg := nameAlg
 
 	// Symmetric and Scheme depend on whether we chose Restricted.
 	// Only a Restricted Decryption key can have Symmetric set.
@@ -87,9 +98,11 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 			}
 		}
 		schemeAlg = hashAlg
-		fmt.Fprintf(&testName, "%s_%s_", util.PrettyAlgName(scheme.Scheme), util.PrettyAlgName(schemeAlg))
+		fmt.Fprintf(&testName, "_%s_%s", util.PrettyAlgName(scheme.Scheme), util.PrettyAlgName(schemeAlg))
+		fmt.Fprintf(&testDescription, " with ECC scheme %s using hash alg %s", util.PrettyAlgName(scheme.Scheme), util.PrettyAlgName(schemeAlg))
 	} else {
-		fmt.Fprintf(&testName, "%d_", keyBits)
+		fmt.Fprintf(&testName, "_%d", keyBits)
+		fmt.Fprintf(&testDescription, " with symmetric scheme AES-CFB-%d", keyBits)
 	}
 
 	nameAlgHash, err := nameAlg.Hash()
@@ -167,14 +180,9 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	label := util.RandomEncapsulationLabel()
 	secret := tpm2.KDFe(nameAlgHash, z, label, ephX, pubX, nameAlgHash.Size()*8)
 
-	if restricted {
-		testName.WriteString("restricted")
-	} else {
-		testName.WriteString("unrestricted")
-	}
-
 	result := TestVector{
 		Name:             testName.String(),
+		Description:      testDescription.String(),
 		Label:            label,
 		EphemeralPrivate: ephemeralPriv.Bytes(),
 		PublicKey:        cp.OutPublic.Bytes(),

@@ -1,870 +1,968 @@
 [
     {
-        "Name": "00_P256_SHA1_128_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "5b94ece7592fcb7057f24a348dcecbc49c908190cca9648142f995b63c62efd6",
-        "PublicKey": "0023000400030460000000060080004300100003001000202305d8c2d146e7420d63d2ef27455bc7866e1ad0f973ee3515d0efe938ca820e0020531cae3de26827344e409dd772a1be383541b0deb939b999ed65fbdad9e190b2",
-        "Secret": "4041ab354149777d118042634422f6a96eeef5b9",
-        "Ciphertext": "002032e522e333864a3f4d78fb324b7430ebc907a0e0a91408251cc51f77ece669f500201b12d993af7711e6a8004dc3a4511cd3490f6f9c26529ee5085747011577d0ca"
-    },
-    {
-        "Name": "01_P256_SHA1_128_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "cfe30f36d4559eaecedcc970d770cdd648006dba945ae5fa91ca4f28bc9345bc",
-        "PublicKey": "0023000400030460000000060080004300100003001000202305d8c2d146e7420d63d2ef27455bc7866e1ad0f973ee3515d0efe938ca820e0020531cae3de26827344e409dd772a1be383541b0deb939b999ed65fbdad9e190b2",
-        "Secret": "d87305fd556a6e8a3d5ebffe3e7559f45f61e5ce",
-        "Ciphertext": "0020ea97f2f3726bcee59a40b300c540f2d54b9fd07f5d3fcd7b0895f1460aa877480020e7bb8944f0a058d68674be4e90f8574927b577ee92d40680c443b2440b1d43d4"
-    },
-    {
-        "Name": "02_P256_SHA1_128_restricted",
+        "Name": "00_R_P256_SHA1_128",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "97a9f3706d14236e00fc0e14c7ced98e12e6ec61d618fe4929fb0a87d1f379cd",
+        "EphemeralPrivate": "f04e686d5a23d504775a033556054b6edaea08a3bc1729aea9177ebf2c5b2e82",
         "PublicKey": "0023000400030460000000060080004300100003001000202305d8c2d146e7420d63d2ef27455bc7866e1ad0f973ee3515d0efe938ca820e0020531cae3de26827344e409dd772a1be383541b0deb939b999ed65fbdad9e190b2",
-        "Secret": "06d1797337c70bb188751bb2d77316bc2a149872",
-        "Ciphertext": "00208967169b1372e94a43b89415f4a1e45554c7e7cf2d4073db02b1538e00d22bc40020a494fa59858c9ecac6b2df43011d8b8ffd2e40d9c5482d0956265b613eedb771"
+        "Secret": "a4fb0d267ee64f21ba04de75a3dd7d8ea250ad52",
+        "Ciphertext": "0020e40e9c29dbe1e6f1a962f522c80768df4d740adccbe00321fc6e575c1a1382a1002040ec8c90f23ea14787a28c941408ee818dbc7c2d2d44d895956c219232ba24a7"
     },
     {
-        "Name": "03_P256_SHA1_ECDH_SHA1_unrestricted",
+        "Name": "01_R_P256_SHA1_128",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "4e13d2a46ed4ae90332e27ddc76643601b714f18a9b98007e85f2e65089be2fe",
-        "PublicKey": "00230004000204600000001000190004000300100020201841f4c52b7feee08f109b1b6b9f1ed3761c1e710f0397b29705aaaf2e6ccb0020e27dde79642084b7e032e5ebabd9990735534c3a90881b523ac997da4716abc6",
-        "Secret": "aa3bb0b8408a897cc20780bb8aca730e6da5908c",
-        "Ciphertext": "0020d9e5aa951ae6b1f05c02af694c67451c24768c569e61b2747e9ba03729fe86350020caec2edfb62a5b5f3f2dfcd006a8534920c4739fe3924d3eeb0a2ebc18f9d53d"
+        "EphemeralPrivate": "035e151300426dbaa1e8665dc2b33b1730de6d634a1cf94249a353ad5b3aade8",
+        "PublicKey": "0023000400030460000000060080004300100003001000202305d8c2d146e7420d63d2ef27455bc7866e1ad0f973ee3515d0efe938ca820e0020531cae3de26827344e409dd772a1be383541b0deb939b999ed65fbdad9e190b2",
+        "Secret": "0d54f82793129c7a816a2fec6c2b61da52748b00",
+        "Ciphertext": "0020274313c0a3b5ade065bc8a6201c3a89b57f517cc424efb13188f96ae8aa035c90020df21c760f01796c89b82c28771500c99274828deaffdc5ba8c511850b625eb1d"
     },
     {
-        "Name": "04_P256_SHA1_ECDH_SHA256_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "9c65c63c4450a5f0e709ea4f49e8e9779b5523f0ddcf9daca54593923f6b73fc",
-        "PublicKey": "0023000400020460000000100019000b00030010002094be9e10ef36ec6af35a78aa3a48827f94a46cf3c482f7401c7e93418a862ae000203617c839968e0b991cbd616e351bfec43f47ef301351507b78f8447564e91665",
-        "Secret": "77404bc1197289b9504ffea546525df08aabbef0",
-        "Ciphertext": "00207df80866b0e5a039b9de8fe7a133d8095210e2e5a7ca2e729336188b03a894f700204e3d4a6db6c0d4fca2da077f524da0cc0b81b3f7c6e50bcd68f5ac91b3a5c213"
-    },
-    {
-        "Name": "05_P256_SHA256_128_restricted",
+        "Name": "02_R_P256_SHA1_128",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "f346336073485f9b3d0d9e83440d41a560eddf649b620dbd98fbcea33401f8c7",
+        "EphemeralPrivate": "07cee7288c0150dbf6548b92f67b80a50cd425f379d3cde880fd7fcce87fee94",
+        "PublicKey": "0023000400030460000000060080004300100003001000202305d8c2d146e7420d63d2ef27455bc7866e1ad0f973ee3515d0efe938ca820e0020531cae3de26827344e409dd772a1be383541b0deb939b999ed65fbdad9e190b2",
+        "Secret": "dbca53caeb6970248bba4ad4124850bac2eb2ef0",
+        "Ciphertext": "0020019fa45d8fa0b07189b20088d9d570d4874240cbbc4683e7acc6be737deee5400020d1f1498fd75b27d9949ecef0d784881c66ce5f8d3d1f25018d50ed969503faa0"
+    },
+    {
+        "Name": "03_R_P256_SHA1_256",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "b72dd8bd30bb51f8a1433b8e7465d681ca893fc42dd17f656d21868eb84b3d59",
+        "PublicKey": "00230004000304600000000601000043001000030010002062b352e73a0543a71b9ddca0199ccf0c06dcd03dfbc92e934d0bc66f71b229b20020c9c70ce040ee07bf8fba1f5369da018cb59a60a8b45f90ce475b6aaa84197a08",
+        "Secret": "2fe6221034f0532f1fad1699bb52a138f27d7bf5",
+        "Ciphertext": "0020565f3daf82728d28040f22bbde2adcec0a98bb7db77aac57f236cd9277fd8ce8002061844ed56cdde7b56d3bf865aba3087713c5828717dd8d8eb4fcbb90682a8ad5"
+    },
+    {
+        "Name": "04_R_P256_SHA1_256",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "ec8e14029fbd0a5eca9a91ccb257fd02040bd841dfae9a0b7d2ffea4aee49f63",
+        "PublicKey": "00230004000304600000000601000043001000030010002062b352e73a0543a71b9ddca0199ccf0c06dcd03dfbc92e934d0bc66f71b229b20020c9c70ce040ee07bf8fba1f5369da018cb59a60a8b45f90ce475b6aaa84197a08",
+        "Secret": "80fa9cda8d2882cdcb366f4e5c6291bc7370ea6d",
+        "Ciphertext": "0020c9532d61a277cba573ef917c4adc5621849af5581cbbc19e3ccd36a08e2175a40020e1f26b570270ba627d3b4324a94860bcbc23e5f86fa3402944181a176a07bfc4"
+    },
+    {
+        "Name": "05_R_P256_SHA1_256",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "c6f291fdf46d1310cb95fba066e14d8238daaa5feb4e2bd665723fbf89a97aa8",
+        "PublicKey": "00230004000304600000000601000043001000030010002062b352e73a0543a71b9ddca0199ccf0c06dcd03dfbc92e934d0bc66f71b229b20020c9c70ce040ee07bf8fba1f5369da018cb59a60a8b45f90ce475b6aaa84197a08",
+        "Secret": "5653fbc0cdc2d704e8f8e22c22eb5b6cea9dd129",
+        "Ciphertext": "0020e0ab323126939b7c85516dcdfe45cd346a9c7a47c55817708b97944d107b6b7000204f0948b49f6dc97c2b00eca68a6c4fb8001e8b611ec950466e19ca2a283e0d6e"
+    },
+    {
+        "Name": "06_R_P256_SHA1_256",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "5f50f1bb651145de65d6500c308e0572c37b141667f3903f485c06322580f176",
+        "PublicKey": "00230004000304600000000601000043001000030010002062b352e73a0543a71b9ddca0199ccf0c06dcd03dfbc92e934d0bc66f71b229b20020c9c70ce040ee07bf8fba1f5369da018cb59a60a8b45f90ce475b6aaa84197a08",
+        "Secret": "f9434ed9965c35088bdb2aab67faf28abfa16589",
+        "Ciphertext": "002039387460da18807dce3ac93c9ac88adf231ef85c4e7ea5866efa7064e96670450020afbeda1ae32dd5cde31a2553720865777fe59939df8b0cad60b6dcab5c246492"
+    },
+    {
+        "Name": "07_R_P256_SHA1_256",
+        "Description": "restricted ECC-P256 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "bfcf98cb670d637a5ea4348028e34dce098d6f14e92b3f174e7c869925801d60",
+        "PublicKey": "00230004000304600000000601000043001000030010002062b352e73a0543a71b9ddca0199ccf0c06dcd03dfbc92e934d0bc66f71b229b20020c9c70ce040ee07bf8fba1f5369da018cb59a60a8b45f90ce475b6aaa84197a08",
+        "Secret": "2e25054710e2e94696905225cbcd43322d6b796f",
+        "Ciphertext": "0020f2776bf46939ba040fef77f14a35daa83354f9e9d7d681a38078537e3e76ff51002026b484827e53bd4c09abf1bbf69757369f53b9c7dc8c45cef6597378ecbb2b9c"
+    },
+    {
+        "Name": "08_R_P256_SHA256_128",
+        "Description": "restricted ECC-P256 key using name alg SHA256, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "6124ee9ee8b4727619558d19dbb80292fd4381aa51a40b1d264cdef4317b6ffa",
         "PublicKey": "0023000b00030460000000060080004300100003001000209cb3efad1473a317e0cfc99c48ccfd30769885ce8824b2679374aa8ef2415cb400203c8797c503170365efd4904b73e42c94a5ca23ae1ea7a352201e36abb47bc04b",
-        "Secret": "7a6b289a9bf0450b0b91c5e7f1eaf0257f7345c0b1c79bee35a5e3f067299c57",
-        "Ciphertext": "00200d0c7661724d888a0a5b80cd04d92da4a3a6dcb7927bd2f43955d4d0a5caa5480020c9699af6b5cbd70720f71ea97a503e88e2a45a81601f9c7435c9724b2a14c24e"
+        "Secret": "e1f5d7dde52ddc61b4dd28e6489d643183c8857411b0de2a271d0822c0e21852",
+        "Ciphertext": "0020518aea5837a2547ae439f2e571bf934d2f2caaeca715c415008215e7d058fc6f002099ed18644411548c82e042ea68eb6e9be592325b6a4cff47b5f1cf7dc337ac01"
     },
     {
-        "Name": "06_P256_SHA256_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "5231c1f7a5ea91f689c2d48aae6c4787795a3979989144fb06d08b05e503a922",
+        "Name": "09_R_P256_SHA256_128",
+        "Description": "restricted ECC-P256 key using name alg SHA256, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "125b5358363c98ded6c0d5c2c6f9b8dddae3662334cb739f459326addeb84422",
         "PublicKey": "0023000b00030460000000060080004300100003001000209cb3efad1473a317e0cfc99c48ccfd30769885ce8824b2679374aa8ef2415cb400203c8797c503170365efd4904b73e42c94a5ca23ae1ea7a352201e36abb47bc04b",
-        "Secret": "da755219b7677edb1e4b89d2c3d6a2c01174723f09dd793a9999c6d08893c2bf",
-        "Ciphertext": "002087a49a8309b63e3f3146f4bb9d1e3fee102fb764b37826e9a33d7223f6cd089c0020095cfe9cfd518ed35147471348a5bf70ada80968a121e193d32776e9d6123c66"
+        "Secret": "1e1e794dd10273a279c49f4757354edcc1881476348a451621ffb8013c9fdd7a",
+        "Ciphertext": "0020be9891fe37b391e51ce09ebed4a7d0e4eb81bafbe7dfaab28d4f038f23bc69180020d937f027082849d57b7d02b7feb341b47c749c033dea2cf7bcee9ee2579f773a"
     },
     {
-        "Name": "07_P256_SHA256_256_restricted",
+        "Name": "10_R_P256_SHA256_256",
+        "Description": "restricted ECC-P256 key using name alg SHA256, with symmetric scheme AES-CFB-256",
         "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "8f72150f8997b5896050c6ebef02eca69acbe5b3263052cf9d8641c3fee54f22",
+        "EphemeralPrivate": "d0b36a09bb35b41f76da2a800507ebdb6f774572e348c5c3b13a958e52eabbf1",
         "PublicKey": "0023000b000304600000000601000043001000030010002063032f762deb7e045395a8b92525dd2b78abd3dbb0a9b115073dcdbdc287ef6100209e68b913b9269559e2c720b2bc4a30286de71fec48faab7bb5a9219bf46f3e15",
-        "Secret": "8fe8808b7e9686700481abceaea6c01dd2e21cbb86c4cf8eaa3b6fb8e2063ee3",
-        "Ciphertext": "0020f703c6acee61e9d32e289858e93a34b74bde833599c4d0ddad59b6f8f0dfbe4200206d1abbc4ebd87309d886dc2304ef446773ebc40c2ec4c35ba664a043092447ad"
+        "Secret": "0fd1fb8b41f210333b9b799a6ca49b28571bc689136726d52cbc23e851e72d91",
+        "Ciphertext": "002011d72159d8804f99237360c07984c6ea1341a154035727ff8d605eeb06fc387e002011fea3cb11b739d27d6dbd8a21a73b489632a8b9becf695a8362206680d8b706"
     },
     {
-        "Name": "08_P256_SHA256_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "1932fb290cc70a75c03158539c4f84b10bd99e6e466428bdaaa886aaea9868dc",
-        "PublicKey": "0023000b000304600000000601000043001000030010002063032f762deb7e045395a8b92525dd2b78abd3dbb0a9b115073dcdbdc287ef6100209e68b913b9269559e2c720b2bc4a30286de71fec48faab7bb5a9219bf46f3e15",
-        "Secret": "4182fbc1efba5298e12e81186a95558121ddafc622e1a850b6cae5ed9b739869",
-        "Ciphertext": "0020fa3dd1051ca1bf73f24d91f57aefb16f6a76665e3f4e3984ab8616094985f63f00209ea077a270992a4e87d69de6fb4da6251ca41e3af7b8fee8ea74e622a311d7d2"
-    },
-    {
-        "Name": "09_P256_SHA256_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "065c873fcbf723b4c714cf29d511d9266731b37a29dd234da10580bfbfb5df5b",
-        "PublicKey": "0023000b000304600000000601000043001000030010002063032f762deb7e045395a8b92525dd2b78abd3dbb0a9b115073dcdbdc287ef6100209e68b913b9269559e2c720b2bc4a30286de71fec48faab7bb5a9219bf46f3e15",
-        "Secret": "ac9824b5903f1bcf4fe84b3b5db6689c1535a59ca4df7b01a0519648b271a19b",
-        "Ciphertext": "002029dcb77bf9a9f9f230785744b0fe3e14397a9e0d0995811603da9f91a8fed02400205cd73619b79817eef590b54ea62359fccaf271e0ce1eee63dc205c4e844b5dda"
-    },
-    {
-        "Name": "10_P256_SHA256_ECDH_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "15846bd10e5d383789e3b1f28645523b70e10e2dd7c4a09dfd0bda0c93a1b5ef",
-        "PublicKey": "0023000b00020460000000100019000d0003001000207a727451975c3812e5832c7a538fb0b6d57c1c7f901f8fc23b50b147f98c4e450020198559628d2af660570af783b61f200acfe6fbae9657858252f60ab3d59cdae0",
-        "Secret": "060936d575129b47e6782e483a8e00e33f186a15a3f7d79f832c92d571e00ef6",
-        "Ciphertext": "0020d8256c372ec799a3993bc10bf55a9414750ce904c9297197d66372cfc29b7e2f002044bae1c95dac8a9ddbf3d4c5d9981ce151ea029a9606c9391a30d75c7f2164ce"
-    },
-    {
-        "Name": "11_P256_SHA256_ECMQV_SHA256_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "c775352a11c57ee76a8ef660abbda7785f9d640fdbaebf3cd6303b7fe2f1f127",
-        "PublicKey": "0023000b0002046000000010001d000b00030010002032db16c3cc176de3c283c24eb6af0debc0bf14b5acca4b9538640599ea94aa630020f7ba0b88c98857dddf5cf1d5194cd666b7c3574d7e4cf9f02fad5156fc32a157",
-        "Secret": "01ff1eca0431b07d4fb77b181699593da8ace14bcefed8ae5bbca3c0d9766af6",
-        "Ciphertext": "00201e399912fefc855794e94799829a72b5add7aebf2585f3af1d439d1f5b7685e40020dabd5a88fcd12c52562dd6a49b5c12226a9d77b3db057eb0852811f1432c945e"
-    },
-    {
-        "Name": "12_P256_SHA256_ECMQV_SHA384_unrestricted",
+        "Name": "11_R_P256_SHA384_128",
+        "Description": "restricted ECC-P256 key using name alg SHA384, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "58f1916142e518d6969dcc484f0ab78c55aac6041b5cad0f97b2c6d30bcc9809",
-        "PublicKey": "0023000b0002046000000010001d000c000300100020beee3dc3bf938cc414a5a94a90651cb54e8a04a1c5b6f767d87f3f734ec30c6d002084529e0836743524b56a7a4657fa4bb5f3676992dd06dd7d508fff2ccabf7102",
-        "Secret": "e269e2b6634601f3dd159d09fa46738fc6eb0804a5cb3eb69caa7b400c502d55",
-        "Ciphertext": "0020afa9a05e0cb7c65e3319edca682ea9d0c05f7569cdce15cdd766f5dfb409cbe800203317242fc5863f396d894fe5013571787e4cf30c919f859b8552694fccdbfe34"
-    },
-    {
-        "Name": "13_P256_SHA256_ECMQV_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "e14bf8d8ac6192d1ad6fe1e23c59a7ead9281a39610b6ff89f6a3cc0d486b4c2",
-        "PublicKey": "0023000b0002046000000010001d000d00030010002049434f275108edc0087526eadb94c720929cb0842a5b9d23ffb785a3f51d30170020a4f1faa9632d6ae373bbb9b2525738a4f1468c69fe2e17e2fb96966ab8855da4",
-        "Secret": "48643bc59a1be620d175473d02d03c18aadc03c65c7a9d2ddcabdd89f89e83a0",
-        "Ciphertext": "00207d019d979b27cfe0cdceff9be0299096c4db9d065c3df4cac8bd2c9f601ad6280020067dead21c89b3af1612427946340a3e75c56ff589ac47d29a97d5852af42c1a"
-    },
-    {
-        "Name": "14_P256_SHA256_ECMQV_SHA512_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "3c1dba3de7243f56fe6d1886f6901ad4048a9919ba5e05566c820a14e30a078d",
-        "PublicKey": "0023000b0002046000000010001d000d00030010002049434f275108edc0087526eadb94c720929cb0842a5b9d23ffb785a3f51d30170020a4f1faa9632d6ae373bbb9b2525738a4f1468c69fe2e17e2fb96966ab8855da4",
-        "Secret": "74305497394f889525de0c7ccd2def0c8b159c0c86261efd04b1cffe8f806d4f",
-        "Ciphertext": "00207eab055344309a7fcd039ac8907b4ac59e632cc40343cebaefcdec9cccd6a00f0020f7164f7dca074764fa80d38105d98ad1d2fd73dd7b3a760dc6743616fae5ac0b"
-    },
-    {
-        "Name": "15_P256_SHA384_128_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "7a1d50e566b227a82c8d7f1de7212001f44e261a8c2b30f7bddfd89eb35b808f",
+        "EphemeralPrivate": "37a702d8616cb0f3c66f3886d5ef47e000f52d1a21cbf3e3f819276b291dfc37",
         "PublicKey": "0023000c00030460000000060080004300100003001000205ebeefdcfb0491bf4bd90a748d0950088b631a883392697d11b4c8124f673a600020733d4969871bf0fe2d2b4cd15f78992a3eab5be3f8eeea26c726c499897d14b3",
-        "Secret": "6744575a1f4a968e1ef105b32cfb4f0d67a8160cd0a0c72de208a172948c37778e795993e96f622f84c7b33e416821fd",
-        "Ciphertext": "002007c90379d8993893236461fc0ac0058050306df83fb3cc4831c600a9fc16539c002095e96adc92ab328fb1e31498095df1b3c54dbf54797f518b4c50cbb44fcea33f"
+        "Secret": "cc96fcb63d5d3b28599d6e84af0b74305d8ce9a70b898e6c5ec24d1346a7d7ad241533c89b9f8e6f07481fcb4cdf61a7",
+        "Ciphertext": "0020030c46dc263beadcd7d60676f5076d908f227c5d2669088676a5bbeee11ca86a0020d211bdd6a3f0461110c7b037f31a24d826bfee9183e292b4fab5b131c90c2aea"
     },
     {
-        "Name": "16_P256_SHA384_128_restricted",
+        "Name": "12_R_P256_SHA384_128",
+        "Description": "restricted ECC-P256 key using name alg SHA384, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "4596ba3de4690a4c02ada15ddc9e2c8f8ff6b0ec7a6b84b88974084554f04157",
+        "EphemeralPrivate": "4ae5a5ce46c102625cc65074ba070b16c5d0598d1d4cee70ce06f249b49119c7",
         "PublicKey": "0023000c00030460000000060080004300100003001000205ebeefdcfb0491bf4bd90a748d0950088b631a883392697d11b4c8124f673a600020733d4969871bf0fe2d2b4cd15f78992a3eab5be3f8eeea26c726c499897d14b3",
-        "Secret": "9dcf87b0ff253bca6803163a7e753864f33e7dc68425d39b404364aa0373ce82f433548ba3c54f740e34d5d99b5b8302",
-        "Ciphertext": "002056392f585a7b41ac7d26515778cca1928e0c13c4bd2b27976336ce2e988e6f6c0020056026b18b1f5f0130c12ccd3e519ead8913b2bb62883d00e23637276bdfb21d"
+        "Secret": "de779c15a09a7f50cc598e4870605957669462ef5011f2340c07db2a7345c58db2f5758db69f1aff71cbc0d50fe87651",
+        "Ciphertext": "00208707151baf77d786d1d9342d9dedbf5989c4f8db9243428b21e95bc6f79f18c40020caa67e6eee11f803fbb1f523a7792d6fa6fc65c24067c4384b62e33bfb6da832"
     },
     {
-        "Name": "17_P256_SHA384_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "6d48e9cf60f7d99c9e3b6c5e7e3a35941f250cea128084621c611e0c14ecdf35",
-        "PublicKey": "0023000c0003046000000006010000430010000300100020f5b59c315b6fe0a2e203060ee8effbefd7f972ebafc601d3174384095bdd3ecf0020aa8f57c62fbef40c5b0e20ebeb30842959b9ddc87f1d234cd059adbede6e02de",
-        "Secret": "2d5d49c89b93a01f7b51f49576409b8d15dcb30306a0cfd7ef42d0dc2d72e2feffdf70d9913df63b8220924daa46be69",
-        "Ciphertext": "0020b6aeb04706ec4e2bf5895dee458856cdff103a0426b19c235aeec71b32cf6c680020a4e5d59fd2f7382fb409060659318d1dfb0d9b3bfaec0185cf80996fe5de1ffd"
-    },
-    {
-        "Name": "18_P256_SHA384_256_restricted",
+        "Name": "13_R_P256_SHA384_128",
+        "Description": "restricted ECC-P256 key using name alg SHA384, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "a25d18f9b7930785d214d28883e715537c811c1b362c85277f5d66eb614cf278",
-        "PublicKey": "0023000c0003046000000006010000430010000300100020f5b59c315b6fe0a2e203060ee8effbefd7f972ebafc601d3174384095bdd3ecf0020aa8f57c62fbef40c5b0e20ebeb30842959b9ddc87f1d234cd059adbede6e02de",
-        "Secret": "4ac48a6f1643c984cfc6f0122b77b09083beaa07b91fcc0576b0bc3f3093b70de4cb3c3e9731129d9ab0af2a4fd6c93d",
-        "Ciphertext": "002005d0fe3344626b1ccc1013ba8cd2d00638c038d97a6785e6a37a49c52f5afc5b00200581f555ad66906da1d982f20f32dadc99efc3f506112786e85a2fd6afa6889c"
+        "EphemeralPrivate": "038f2e814b5dd9f836493a04ce37ee7bf238f1f6252eac3f6f2c88a480f78ef3",
+        "PublicKey": "0023000c00030460000000060080004300100003001000205ebeefdcfb0491bf4bd90a748d0950088b631a883392697d11b4c8124f673a600020733d4969871bf0fe2d2b4cd15f78992a3eab5be3f8eeea26c726c499897d14b3",
+        "Secret": "371a25aac3dd4d59dda028b368921eb899e91128ef7da3a677b6d417b2990457e78260c982a72993df7ec3b14d64d97a",
+        "Ciphertext": "00202d1051a4aae8a2ed40a5705078b740f865dad042bac40c5dfa5579f19440dcc500209dc5be2e65b958fe77d6f94f773cf3e8ee10d98d53f773711c3c59ff859bda95"
     },
     {
-        "Name": "19_P256_SHA384_256_restricted",
+        "Name": "14_R_P256_SHA512_128",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "456d50c36478cf7584ecf27f271ccc1539b26c85c410b8acce6b09990775e502",
-        "PublicKey": "0023000c0003046000000006010000430010000300100020f5b59c315b6fe0a2e203060ee8effbefd7f972ebafc601d3174384095bdd3ecf0020aa8f57c62fbef40c5b0e20ebeb30842959b9ddc87f1d234cd059adbede6e02de",
-        "Secret": "f613bec462a3e6952936b0c1c2641c180480b70de638a5af5bc709e74c9489bed4b79ee26575c5eb7860516c8e50c785",
-        "Ciphertext": "0020fdaf50ce9983993a221311587c616ace3e9264417646179f8e726dd3b90dde1000200897f28efa4f6f0e01bad9a4d578b6564c46542e233ec2f79319ca158214bc09"
+        "EphemeralPrivate": "ed7d4b2e7111df14452f6b5f554410850fd0f0636de31ee26dc979237c1237ba",
+        "PublicKey": "0023000d00030460000000060080004300100003001000205cedee24c1f41878ee9b39bfd6196a0c1ad6a8be0192a472f8ed5a9223822fd5002076dd0434ff582861063ce8a5ddfef8a694791e6894dd5c0a3493fcc32b7639f9",
+        "Secret": "a7c47efc06b497eea7a7a517cfb2c6e4a57d6d028203cf228a351a61d0128518db56732bad0ce1fadfdd5aaae8b9eecfa945b2a37dcbb1b87ba14d49c1ed6cb1",
+        "Ciphertext": "0020c9eb188e28a6aede0c3cdfe75c2d116e711b83d877ed7179f72425a544846bf30020d6eab448d9faf16ff3fbbeaf68da6e4ba7121f4a094375c8f89269d2df3f8000"
     },
     {
-        "Name": "20_P256_SHA384_ECDH_SHA1_unrestricted",
+        "Name": "15_R_P256_SHA512_128",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "451b9185323630eaee2bbc3087bde9f8ea268e8b85fa4a1a6750cc8872e4dde7",
+        "PublicKey": "0023000d00030460000000060080004300100003001000205cedee24c1f41878ee9b39bfd6196a0c1ad6a8be0192a472f8ed5a9223822fd5002076dd0434ff582861063ce8a5ddfef8a694791e6894dd5c0a3493fcc32b7639f9",
+        "Secret": "802a02500671935bb200822d25244f024ea410584d27f7706e3201e590917bcd2361ff7df192d74fd4da4983252b72c8411730e842266ba983a68432970e3f46",
+        "Ciphertext": "0020d19ea02d3f0d042897b2c9a6b4cab5496a34ec1a64a99b306b1db6d117cd1094002099349a8c02450feb55a9b628b14e0b5976c609258caf1ca4a45bc27d0fea0eac"
+    },
+    {
+        "Name": "16_R_P256_SHA512_128",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "0f346ab907fe05fdfe258a1adc6ed083527e2d8046b5f1830a6111cdcdf187c2",
-        "PublicKey": "0023000c000204600000001000190004000300100020227631dbe9f712601fa79cedd1fe8e52692ed3cd15192b7f0f40eb40590caedd00209bd8d352d4eebbc892d86b7d6bb9ab9f5d40f5d93440d4008ca6ecb4b1d17a6a",
-        "Secret": "9a446beb340ec7fff2780fc72628ba499c6c148d9a723542d736dc69b55c956e2f10593b3fcefda82f470bb49519a035",
-        "Ciphertext": "0020a69e4c18bf64d03a5755b427d1beb84ea28cc05ddf41090862f3d96ac5a3603600202e91a022db83224fe8c72c2c9a7fd775575d8d73ad72a9638b8417a2adb01556"
+        "EphemeralPrivate": "eb060b0003179ffdfad000134232c934810f675be0c0d6988a79d26266a713d7",
+        "PublicKey": "0023000d00030460000000060080004300100003001000205cedee24c1f41878ee9b39bfd6196a0c1ad6a8be0192a472f8ed5a9223822fd5002076dd0434ff582861063ce8a5ddfef8a694791e6894dd5c0a3493fcc32b7639f9",
+        "Secret": "70242d62ff6682722258973e3bcba4bff59f9e94fd46f4af88c40d09cfb048e0f9fdd468e518abb6784449fcc3015f3bf7239f5c1f7e0b7cd4311786d6b34972",
+        "Ciphertext": "00207fdab3bb1ea7872d3cba964e04125fd12e7c930c0b31a2882f4f5df3489c2e4400209fcc6393db211140ed5db49ce977e1b653fbc860a16cfc57c88d56c35cca1691"
     },
     {
-        "Name": "21_P256_SHA384_ECDH_SHA384_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "c2c2c2da41ca69534eb47a311467efe972882fc1d4b58a5e0364289d439a4b44",
-        "PublicKey": "0023000c00020460000000100019000c000300100020c578aa5ecf91b63dd3a6f1d5610dad04581d002973e570963ff03b23fac649740020033f23280f7cbeaeb9e8397dcdb7b46ad6dc5f9b5f7687e4dc1cfb669ae6d1d6",
-        "Secret": "0867b116999954ae25d4aacaa77adac8a3256b6c03c3a0da8c52dd18e453e58755a0ce1e9a887e3561e1ce37f9d86c37",
-        "Ciphertext": "002035d2d3a0352461dd4f274f4bd95fc24f68dced327854e21d54bcc055f880400000203a4c9db371b62a6919cab7ca7ffec260fb2d9684c457efb11e7abf9cc94fb8e0"
-    },
-    {
-        "Name": "22_P256_SHA384_ECMQV_SHA384_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "3f4ec7e2d90e7133603be74a47635f9bba0f596c4d6db7fcbad7618d909b2830",
-        "PublicKey": "0023000c0002046000000010001d000c0003001000202f31307ba5262bfb43abbc1a8459cd0387ff33cd1005b2787759f8e02ac9b53f0020d054f0799fadadb5c8e6523542986fe41f6e2ff6c1bcb92ccd60ea0aaf802851",
-        "Secret": "e0656e5c2524094b62c8dd5eead62f05acaff3d41120fab934d51a558be6a2e8a9da33899f238e30018390f75c325ff3",
-        "Ciphertext": "00200f93df2f585fe0248286cdf5aeff7fc59d6d369611ffe516244e28adce1cc00300202d30a37ac552dc7cfb3488fba5e04260fdd8707cf437d9f2d0fe1cf1a92f0357"
-    },
-    {
-        "Name": "23_P256_SHA512_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "8ff2c8003be778e9e8373d2ed331c618c6fc75908f78babd6c19632d4bb3e285",
+        "Name": "17_R_P256_SHA512_256",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "7638b9b43ebcbf128a69b40ca060eb40a151af74504f77a49bc8ede53d396e72",
         "PublicKey": "0023000d0003046000000006010000430010000300100020b3a645060be408297749aa01a1a99391cb1b1fe5b4ed61342430d1e26854e62d0020cbb4fee5b4a3c4c70e84f679f2fd22b042cc9f41c54b6255c9645745c986051c",
-        "Secret": "6565d2a02fe22769e72c07d7609cf262093a61349d23eeb80e2dec43b5e672a6aef1a4d407a2bd8b2f93f14db8c3f6a4c7335e842104a01d050aa80cacd1d3dd",
-        "Ciphertext": "002009c4faaa8b43a1d757fe022b3ac7d31f133b73dc17b0a022022ba853f3c370ff0020ff8f27ac3ae9ab5bd1bacb8375fbee991a3b8dc6e807419d47170c98604363b5"
+        "Secret": "8a84cd4fa84b11022d0204af39ea82953aa7b397fd48298d4027777b31ed38fd816c60d36c4518a945b9f8dd668dd7804b27d4001d160cc693caddd8c9893cad",
+        "Ciphertext": "00200ecf2c70296214c79704d50dd4734a485af614b1f63120dadc96cd0f8e398f720020b215f931fc20a3d4e72cd2d580aced7f50b9cdf6b4235686110070601af55dff"
     },
     {
-        "Name": "24_P256_SHA512_ECDH_SHA256_unrestricted",
+        "Name": "18_R_P256_SHA512_256",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "239601c37011bc6ec6e3f8c725f77db5e219877c03d39ce909ca87108f63cc6e",
-        "PublicKey": "0023000d00020460000000100019000b000300100020e6f3c423b480a08adb101a7b5786d1315c83bbd9f11c9c6eaeb952ba2d52864c00201bcb2994138040f2c6e6e4c96eb989f3237b9605ef76aebf553672f841480a29",
-        "Secret": "f70f169553d11e2cd1debf12dade5aac0dcb5eb46ba373b9eba161432e045c4738c898f9dc6210e11feacb5ac239d08fc7582a0af271ede64ec1c1c420e00cad",
-        "Ciphertext": "0020983e3289438ef986f5770fe90cd2a5bf08e2228ffcedf1ce48dbecc7b37076c700203618e225160b8160cef1baa0060147c93370426ae88a109ce719f1db5819984b"
+        "EphemeralPrivate": "5849395a95968ad6ca0d3e5079e0628538ed0e709aeeb51f68e56244bb7711e0",
+        "PublicKey": "0023000d0003046000000006010000430010000300100020b3a645060be408297749aa01a1a99391cb1b1fe5b4ed61342430d1e26854e62d0020cbb4fee5b4a3c4c70e84f679f2fd22b042cc9f41c54b6255c9645745c986051c",
+        "Secret": "ae1023007df879641876d26f91156b1d5a35607ed2fdddddb1802e2937b5f57226fc8b838f8fcaa16739af301007217dd934abadaaf71b6a0870c195d344cd2d",
+        "Ciphertext": "00201ef61ddf5f4f38a4e083ff5b893c80ec294832b94a641340164dd260a49293a40020479a7caa08096641608da6c95dd239e7858e5710f69e3d7a175bda059aeecedc"
     },
     {
-        "Name": "25_P256_SHA512_ECMQV_SHA1_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "7f529b7a93d50f761cfdadd65733a6a14db57a59607e27e97c04cb157ae621d1",
-        "PublicKey": "0023000d0002046000000010001d000400030010002086c79b4632d81b0a2615e4f621e6083ef77b59e7fd6479661d0f5bee0e0c4d200020cc5dfd1c78c86ed2463a22c2165657bd5699ea39e16219eea87b21c9e1d681d7",
-        "Secret": "8c56b4cb41b665fe84413ffdc16839d588bf34155df8ab40b779c709a3cec9bc9ce86ccd73011aedf960619e74076762804609e1e1e84e67653f3648d10db807",
-        "Ciphertext": "0020a559dcd78f55cac91a68f5a6494149a367ba4ffe5b53018438ae044f45d916f60020e3110a9268d9badd7b19bb698754624e76f51c991ca4ceea062e90d1969c3ce7"
+        "Name": "19_R_P256_SHA512_256",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "fcd7d4dd2f958e6559994d1687ac3d967a01aeccf443a34891ba2f17b08c89b4",
+        "PublicKey": "0023000d0003046000000006010000430010000300100020b3a645060be408297749aa01a1a99391cb1b1fe5b4ed61342430d1e26854e62d0020cbb4fee5b4a3c4c70e84f679f2fd22b042cc9f41c54b6255c9645745c986051c",
+        "Secret": "34e5423c6495c744c766a23a15b7ab6acbc07105da902f1f0a3c00efb09795139f4b2f93334c16976c739a58705c4fba088be2f7dd381cc5739a4621665fe5ec",
+        "Ciphertext": "0020b7a52220dc0cb5fcbff99f88ea571bffafeed57e8836bd8c912f812d56c35a9f002087a620674ca3712e55390150c5c03423837184577c7fec98fbd3ded33110c72a"
     },
     {
-        "Name": "26_P256_SHA512_ECMQV_SHA256_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "acb3393df1f7d3282195d5f2f466e6476f8cc7df39ec501efc3d332a23abac5e",
-        "PublicKey": "0023000d0002046000000010001d000b000300100020ecdd2f20e73e42dde183d976b11d7bee5b2de7caeb25e39e5ec940641ab8178400200d81708db6dbe8e406ac62194c89cd43946fdc3d8d14b556c3de83db898003a3",
-        "Secret": "376273c655474a293cb493e882a3da4770f41e0886aae322fecf95f7e0ca173dd84579066f96abf1da93ed6534e92f948dc4ad18a79e000372d8f56758da5037",
-        "Ciphertext": "0020875f5595f021ee16fdc5e3aabe342c1bb54f8001d0a8fd18e53f80b914d64eb1002073d40a299c9c475852be1f52ff698ee09835fcedd00751d039a77e08ff48019e"
+        "Name": "20_R_P256_SHA512_256",
+        "Description": "restricted ECC-P256 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "3ca19552a33f76c0155a14244b373d0fb41a7b0172d1487f5f5d65c66df56dff",
+        "PublicKey": "0023000d0003046000000006010000430010000300100020b3a645060be408297749aa01a1a99391cb1b1fe5b4ed61342430d1e26854e62d0020cbb4fee5b4a3c4c70e84f679f2fd22b042cc9f41c54b6255c9645745c986051c",
+        "Secret": "8b1365761c3eba84ac38d2125cd6dfccd0eaf676f0718d3b185545160f710f4621b2fb391e997e7bf87b7daaeaa0051558133aee8b584d537b9809a57ab3a1aa",
+        "Ciphertext": "002001c9a5fdbb04fadee7ad6fe3be7a02e90d52553c23fe39393decddb9c793890c00209a74d084eb6bf2201dd340f5fb196d7872f1d6e177846867a168632b9c044d5f"
     },
     {
-        "Name": "27_P256_SHA512_ECMQV_SHA384_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "4fdf237eb4360da8715a614c03f7e532303fc4d55fe0c29e3dac5f587c1e7396",
-        "PublicKey": "0023000d0002046000000010001d000c0003001000202c2840dd6a1ef530e5269bca7a78a23ced46a6ef762e164e3354d752e94f2258002082461b345d68a0ab539b2b8a4630852257c5124f43dbf1e1f8d7a7d7d6ea42a3",
-        "Secret": "b0422fe7c75cfde216eb4918ba7887b80f54550b4159a85b3f7f147741378839332d33291189d56b093e2729fab603d0c48ad7031ce547411fe2f93de7a40bb9",
-        "Ciphertext": "0020548f4e1b2843edf8ae7a8191f9389c317e6329dda50b5cc2ffcc26043da8500100200c44069207b1ef135b3f5675b448b06efb572098d6d4b4af08d741046541f989"
-    },
-    {
-        "Name": "28_P256_SHA512_ECMQV_SHA512_unrestricted",
+        "Name": "21_R_P384_SHA1_128",
+        "Description": "restricted ECC-P384 key using name alg SHA1, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "36cad95138726db2a9ff6a15f965b1ba8ea2a57bbb9ca648ef00b61a4ea574df",
-        "PublicKey": "0023000d0002046000000010001d000d0003001000209bb9803ed012f9223668f4a7f6b4fdc444404c4f78c331a6c02fc6538e5fffb60020b6e730c55d088212e6af4b385a9016e183fc7584008a58c2ffde42ceb03cdb8d",
-        "Secret": "5f4bd89864cb1ff5aee383fed0b21acdfe3cac53b96e6a2d23724c8ba0d336ee29a0a57d42020cd6ef86412e7355725d35aaa5a90d428a93f11ed9ff995f0bea",
-        "Ciphertext": "0020d8cb78e56fb2bb4235807c6a23b5de0a6267c54e4f97eebc7d8ba8b123bec00600209662be850f3c23be9a63d7e96acb4592bd99ef8f3d8fc156a4b41af3720e7a40"
-    },
-    {
-        "Name": "29_P384_SHA1_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "e66f80b87fb6d5d6f362ccf844bf86cdacccb31552bd71e2fbbeaedb6b4d91ea4b9b554acaf7cc0bcb78418812875428",
+        "EphemeralPrivate": "a6d9c60326719316dcaf65c3c930670d2ecf134667a7074a5a854b3ae11ef97c1602c5df927818b99439d2f9379adc26",
         "PublicKey": "0023000400030460000000060080004300100004001000301141e34e5b480fda59fe1d0ad986033ebd8fe40f1684e0ddb2c95b17939555e2e845a3e1d064cd18bf1a665fd4a97c3f003005b43055eea435dae5d53109f7783acb8d9aa1323099d9b8e650288af84fe99c93dd13f1c14de1c0017ea15726b2a344",
-        "Secret": "c00f52a3dd715d685b3cbe6078f09c9640ee0838",
-        "Ciphertext": "00304fd6f2a57f8cc72003afcd30e9cac4467e8933398b6bfd7f85f1e1388afa582b39e21cc1ef5d5e5866aee805597cbcb40030df9b0c9bf09b8894afa52e934468fcb20c656f6fdd36e8ce6ca6aff99b0ca3710cfd57c1977733a07334ca8f629a0a95"
+        "Secret": "63a2712c4c1b9403ce6eb9c241a79a8e593455fd",
+        "Ciphertext": "00300479840d325861b19317f534a70c9d025a71a0de73e9712f63f7626eb47025cf4b199c1d5386951db9804260f3bcfa3a003022daf05336d8ba9f42f30f4ebc6114b319d51bcbeb2e5724d926350cb8acd1e1097e908ce6aa09ae79449a39e095de52"
     },
     {
-        "Name": "30_P384_SHA1_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "7821117693fa6c340492409b348f50e5dcf683aac46c1a690f5c094b0492899865449d922c0a0970df802ac678bbc5d8",
+        "Name": "22_R_P384_SHA1_128",
+        "Description": "restricted ECC-P384 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "3cf5a7580bbb813ecf1dfbf9b9f77e35c836553c1b0f6e957cbe16ea8326a6d548c33f7b1ff6d4354928fc3e3b765938",
         "PublicKey": "0023000400030460000000060080004300100004001000301141e34e5b480fda59fe1d0ad986033ebd8fe40f1684e0ddb2c95b17939555e2e845a3e1d064cd18bf1a665fd4a97c3f003005b43055eea435dae5d53109f7783acb8d9aa1323099d9b8e650288af84fe99c93dd13f1c14de1c0017ea15726b2a344",
-        "Secret": "3ea42ca23f0ee414427e144085905012a2d0a662",
-        "Ciphertext": "0030bbcbee3764c231b53b2597e9c5daffcf3ae0e619c97101e807b38c1d8e993ddc6daa1dfc5d0f56b325b68ff2c606cb230030cd4e66028fd216eb9ae1508f9f0fa4b59a21a616bc991ce9bf8ff00a0c53ebeae200e2feccd07480def9b62e09a12897"
+        "Secret": "1feaaafbbfa852af287637fd7bf2cc2a7067284b",
+        "Ciphertext": "0030dfaa45c1deb52c414313634bcb4153cbf8ba60458dc3a4a4f1a78e3ce62bca22ebfab6014adf77fd2d4d6dc9af331a280030beff4fadbc47122d7c3ccb74c55a9ccfcebf98216c770049610846fb34c312106e4a04c4fd94538afd5fc27999db06fd"
     },
     {
-        "Name": "31_P384_SHA1_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "9c50a19ada3a5729c8866dbd82d486efa9ca814ee1e53cc706272759cd9ef84b6d9938c6af081e3538e306f45f2ae3d4",
+        "Name": "23_R_P384_SHA1_128",
+        "Description": "restricted ECC-P384 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "4ecb9ffbe36ac6199384999403edc85fb37427f16878d51f56ac2e4512a74d0db3d646a73222fd0aed5bb9c03bec1a20",
         "PublicKey": "0023000400030460000000060080004300100004001000301141e34e5b480fda59fe1d0ad986033ebd8fe40f1684e0ddb2c95b17939555e2e845a3e1d064cd18bf1a665fd4a97c3f003005b43055eea435dae5d53109f7783acb8d9aa1323099d9b8e650288af84fe99c93dd13f1c14de1c0017ea15726b2a344",
-        "Secret": "32eabcb285301fe7de641a478ef1c98f203119e9",
-        "Ciphertext": "0030aef34085cf4f4055d654b8043ffc947b7d9dad605fb82bc8ab6a0a3f16133a5ab28cd35b7913f5ae5b309674be587a390030cd25dedcda93a4f1972eb9399f12e357139e048866263daa8bb03e84faa4442d5fcaaa3c8dc365d5dd246e9243f3c3ed"
+        "Secret": "d7a920d20ea5d82ccd749ba2129b9f150d089319",
+        "Ciphertext": "00306d9ead149aeb4659f89ebca6ccd0774626082322207170e3c1ac9e8786fdb79ca2b1b7b29389f793b2e220b1aaa7d7ed00301cd09ef30f7555bdfd1b87d0e5293490bbafab3b9090c6300118d9adf62aa956cf4ea7784bcf9c3998c85966731376ac"
     },
     {
-        "Name": "32_P384_SHA1_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "9a570a7c6230c8129499792b83cc76081596da3cebe1d007cc882cc3efcfcc5570f74e38986c4baf04398a246714ed97",
-        "PublicKey": "0023000400030460000000060080004300100004001000301141e34e5b480fda59fe1d0ad986033ebd8fe40f1684e0ddb2c95b17939555e2e845a3e1d064cd18bf1a665fd4a97c3f003005b43055eea435dae5d53109f7783acb8d9aa1323099d9b8e650288af84fe99c93dd13f1c14de1c0017ea15726b2a344",
-        "Secret": "0a1b77f251cdeafac093bc7d6880d8fc69b6b024",
-        "Ciphertext": "0030a04bcbda11ea52f11db87191312ae1247319193f73b6533d4ff68e84111cb8659e895fad5ea336a6624e6806836479af00306330aa8aa99f321f8294fd76e322a1a0aa6e095811bdd85651116467c510d8df335c379e4a835d45ff7182e2308ec1da"
-    },
-    {
-        "Name": "33_P384_SHA1_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "0d63b6fa4f77d3902fa3686a7860893ec5f181a96cb61cc5cf02910559bc4066b643b4f015ecd4efacc7de79bf2afdef",
+        "Name": "24_R_P384_SHA1_256",
+        "Description": "restricted ECC-P384 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "dbd65625b9ac1864c914b81830ef392540e68700a9050e194177c829eaf11659da0cba1625fd8050010d0d88ddddbe42",
         "PublicKey": "002300040003046000000006010000430010000400100030eb02f088482da0133fa290297ff17b97c9ed66744e2d488b7a1f4023414fe900161d78f8d80a7a6412b405f6361d863d0030956647ea2d355fa9c5c5ae9ff6ce788ba8e2f3cb0a707cff7b211366ad9b54c174724d1916b4626079034dbde4f23ea4",
-        "Secret": "37085795b2afe08f09412b1a7c76c93390131610",
-        "Ciphertext": "00302a55afa43650b7bfc2b1abba941863a1080379507362f6004672d9740cb62e956b1f2edc394f63a8c1ab315b4f102ba2003027611f4e4ad77b2087855c81212b8c8a009376de9d8fe870ad5f81b12e1053f5c9a6b94c53d94a5f2b6bd91b227b2f91"
+        "Secret": "7b2359b03fa7cb0429286ce9b5483b266a74465c",
+        "Ciphertext": "00306068cfb3b98c174af053a526b49ba665cede1dfbf3e852757c51c0a3881b5951884a995f628e7fb72e14e1ac1e4e5bc30030159196b885adc7ae75f710cc5e87408e6cfdbe789c5e61f1e6506c6caef1ca35c231a57fcfac0fd8662362d51242274f"
     },
     {
-        "Name": "34_P384_SHA1_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "19776459c869210484e008e1ff9c651e6a336bd349d6acc5e8cfe5751bd2e12a8c65269c668478d8568c60598c186b93",
+        "Name": "25_R_P384_SHA1_256",
+        "Description": "restricted ECC-P384 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "5aa3b8fb905978b61fbd897d3855befbaf9802707eb700e141fa827a320715301c03033ab4ddf2650f0256e3965b2ab7",
         "PublicKey": "002300040003046000000006010000430010000400100030eb02f088482da0133fa290297ff17b97c9ed66744e2d488b7a1f4023414fe900161d78f8d80a7a6412b405f6361d863d0030956647ea2d355fa9c5c5ae9ff6ce788ba8e2f3cb0a707cff7b211366ad9b54c174724d1916b4626079034dbde4f23ea4",
-        "Secret": "e3bb09f53300674b7b25ad87ced296120d23928f",
-        "Ciphertext": "00309aa3ca0699886ae1e49daab45f33c8a0c9757031f73a693198688fdcc50aa053d569ff8d23ddb4be28a3a9325ba968ba00302292f734c43129782e10810b63a349bbb0c40aab32996c5b17506792b9301fd63049bc74eb9602790652fc0969dfd778"
+        "Secret": "f6f58a423f98380892a570693b9dc7a4a8277e23",
+        "Ciphertext": "0030c68eb3e68ec66f217491c4e3d896fa02de4d0840fccd109f69eecec6487e52963c5b8f1da194389e3b46e8b01c528b740030a334ed9f761d95e9e016808f1e451452435d3177e2dda1915286136e9f55791f2ac52418bdb8053d52df133a5de6fc0b"
     },
     {
-        "Name": "35_P384_SHA1_256_restricted",
+        "Name": "26_R_P384_SHA256_128",
+        "Description": "restricted ECC-P384 key using name alg SHA256, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "4cb2f6b7fd6d1390f3f3fd13f0534e8200921dd40b270ea81c6bdd16dd09d1a00f244f18be8597a4b1092d56635c750e",
-        "PublicKey": "002300040003046000000006010000430010000400100030eb02f088482da0133fa290297ff17b97c9ed66744e2d488b7a1f4023414fe900161d78f8d80a7a6412b405f6361d863d0030956647ea2d355fa9c5c5ae9ff6ce788ba8e2f3cb0a707cff7b211366ad9b54c174724d1916b4626079034dbde4f23ea4",
-        "Secret": "1942cd83989503fcc02757124b797f7ccb7f862d",
-        "Ciphertext": "00300f01f8864b67a68eb8bba149cd6f3b5d83431be00ff5b807b5e55e60b9952b7b19fbf0aac11c0ceda316fb71d73cf65500302876486a0adb1a303df54bd2d4be691c4d17e284ac3b1dd56ae48793d76aa193bd728ef72e4067a7c544bc9d0a0955c7"
-    },
-    {
-        "Name": "36_P384_SHA1_ECDH_SHA256_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "7568d70c00c5ac1bad0555c26527b183c8b0a47332c4718c4c1964af16e50c93ac4a2aa2956152dac16a00cc8d95a946",
-        "PublicKey": "0023000400020460000000100019000b0004001000302e0a90f98cc49d3c3f19f8649f975cd1cf657074e1a929293834e0fa9cbf580119eb935eac0ca3aa0991c8a3ec821e230030f847535ed9aa1293851c50eb7902c2069f60e132e7740eace9600cc2f240844cad8cc5591caf8d3385774abfaddb6f3d",
-        "Secret": "e66e20580d6d6e01234298cbf9abd9e6b16e779f",
-        "Ciphertext": "0030137dfa393e354bb81aed57bcc9dc5a138843726da4eec5c5ff598de54760a410edec2250c4d281ee29d696273f5acecf003041dde026dbdaff8af47cc8660c4d5647861708ea838185901afaaf0ccf475dfa72c665e79cbc14142355e17f2ad5629a"
-    },
-    {
-        "Name": "37_P384_SHA1_ECDH_SHA256_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "c9faa274de5f287e5ffeb41016611f1310a4234f35633561658e15c7e2c11742b36c0d8dcb513b43be46b6d7dc99bea6",
-        "PublicKey": "0023000400020460000000100019000b0004001000302e0a90f98cc49d3c3f19f8649f975cd1cf657074e1a929293834e0fa9cbf580119eb935eac0ca3aa0991c8a3ec821e230030f847535ed9aa1293851c50eb7902c2069f60e132e7740eace9600cc2f240844cad8cc5591caf8d3385774abfaddb6f3d",
-        "Secret": "8c545e25c42545839e6057a418bc629d79c5732f",
-        "Ciphertext": "0030d0356eb68329f4fd28829dc7d13abd99b9f9243a2eb4b1c2b5e0b04647dcd2c695a349d7dda50d71fa9c92a1ab53067c0030b211df9ffb7c5ebd2b632130a1a993a8f04091447925811e77c708e424d8b21aa9e00dc8d43a0d0d3cf81003f01f91e9"
-    },
-    {
-        "Name": "38_P384_SHA1_ECMQV_SHA256_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "fe92f073406537d4d30082677c9bcfb505fae1a96cb95b1b44d954e22de7b3b60262a2248cd72c3b0b44248ff5ebd05f",
-        "PublicKey": "002300040002046000000010001d000b0004001000308dbce6bbe5e3b42d6ea79b76a0d5a5046ed88e846cf166eb198c8dc480f67f562e821e0d99e933afdf3159010dafa65300302772c65211d2e021b5387da8e115fa0cd9bd36e65296c1d26dd831e47f9c1be2f5a888c46e02ead089646f4c37f5c5f4",
-        "Secret": "0b9e053ceba619a8b165f819a8d8e3c1c93a023f",
-        "Ciphertext": "00309759d9baf619d7b196cf5f33c5e2aec435d49db8ebfdb2b3fd6eeede70290cffd70f33b9c22c9a16d6cda991cd367e7d0030d3785996287b2c4ba2f86c21fbacf0458a4900acc3c7204f63e10b81e7f5d36e93d5aa0f8f2d7fa852530f4df9d5bb6b"
-    },
-    {
-        "Name": "39_P384_SHA1_ECMQV_SHA384_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "38fce7c728a6d155c10ba7d5750ef5fab43f906e11814cd8a2acbe02bd0e8b60a4363020e3c4c4ee1aa00dfa3d01b53e",
-        "PublicKey": "002300040002046000000010001d000c00040010003026983db45b242f6c5d50df8e07f6f8308c4a293637c3176d361a8bac550b5df2a305261f930c3ca6d8efddd5f4074fa700302aa05c302f4bd1579a370196e26b8e530c1813eec3c0be331da00bbe706787a8bd140a346b79649e0a1a5a48f473debf",
-        "Secret": "913355c6bcf7b62eb85e3d6cddc5c4cc514c204e",
-        "Ciphertext": "0030a0f811b4e1f77df2c0d1a37125ab2dacf29f7ba06470b0695264bc889c3a77a5d647ab83c18b158a86a21fb1f02ddd600030ecf22e9a4ea61e66cecddfcb017b100d65710a6a06c706b2c021f73d46287b989d92c15432c6ab7b329e2d31a8d7b1b1"
-    },
-    {
-        "Name": "40_P384_SHA1_ECMQV_SHA512_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "b14b6e29830bbfa1695f96ca31cca7b40b381cbac3f11d4a18e24fd4bc6ed5febee79b89112e882fa64f5203d947cdef",
-        "PublicKey": "002300040002046000000010001d000d0004001000302ab66f7152ad5ea32cedf845a6cf9c08735a2cf583876169123df40a6fc59552ce58057ce24486b1a7d93ddc3011e17a00309378f16e007a6ff87ea7552f38224c5dcec326252771906daf808c1e9dcceb042e8480cfa62b67ffc064227b5fdf1626",
-        "Secret": "03dccd9b407d3950ab28bcc44aecc2ccb3f13f36",
-        "Ciphertext": "0030984a154fb31735db6ed1e5f4198fa7ad5f918b1a604b2e742f07ff55ba58d04a20243c02c20e7324b7b5399defba0e8a00307eda5098bcc674ac9f58083a7d7e5fd55ad6e286ab836dee88a6823ca63d81082949bdc57002357c982dda374779d757"
-    },
-    {
-        "Name": "41_P384_SHA1_ECMQV_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "3b99da630e7ab3929a21f77b589cafb005b3975097a4c6187fec3e1f598279d9eb3d9bb44e22b92d285af09100353de1",
-        "PublicKey": "002300040002046000000010001d000d0004001000302ab66f7152ad5ea32cedf845a6cf9c08735a2cf583876169123df40a6fc59552ce58057ce24486b1a7d93ddc3011e17a00309378f16e007a6ff87ea7552f38224c5dcec326252771906daf808c1e9dcceb042e8480cfa62b67ffc064227b5fdf1626",
-        "Secret": "1f9c0445621c60b5e24b13f8b9a26305f9056669",
-        "Ciphertext": "0030ef45f9f691911f706a6233d9f07a5971220eeeaf89290eb9627c593fc4083c9797e69f4fefbbe69a1aef81cf29a92d7e00308b7d821599e0ed61b956fd570fc136b169f435bfeaccbc84d7b7eb55dddd67bdecaa6e0e53f637a1d1cfee9b91a12aa6"
-    },
-    {
-        "Name": "42_P384_SHA256_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "1c41601f750b17ae783e891c861a1a6b99093e210c7fd22b1b5ce8af81c5075a6c70209a59ce298256af5374b2d3dc7a",
+        "EphemeralPrivate": "63cc1222b3c3788fd3b778b57c11ca34911105751c62ab77df71a0f07da54c5ef1ca5f2c8b5e04fb9a7d8bcafc418a9a",
         "PublicKey": "0023000b00030460000000060080004300100004001000300d8c968536104cb54b228a9b01eb34ff3daac982685fac5d418a0b5ffb7e19239c686823149c3d2dbab87bb73a4ba7be003008f3fe46c86bb9a023823d06b817add21ef8599ce267a73af6a8ef27d712d7f09b6d28a18e7f958048c8010c08a30e48",
-        "Secret": "d424aee998ad10d48a56cc71ada71efe5ca4cb0ebeba1ac1ced966dbac24a93f",
-        "Ciphertext": "00302680f9ae155125c57aea3936a87151fcc171822844c8ab39c64f6b9c784c082cade40d5a1e6df87f3985e6878f706bee0030ba57ecf62954654aeb9fd5bb91fa376b42dc8d3fa8170c4b077a7c24434f7a905465aaa8ee116e32492220b7d1723e1f"
+        "Secret": "2abb1f3ccded1bdb96ef7509026835ffe224b26e149964c158103b5023be0771",
+        "Ciphertext": "0030100d823bdc61983d0b7c38a5e42fd0edc0f3197e6362d37858711acb4df49f46ce8667d28cc23ff5b490693923a15ae90030589fe8c8ca4ca5296461439d9fc532b6acf4fd139a8ccf2cc993ec560cea58c62ccaa7664b6ad8b4f65c802534d46115"
     },
     {
-        "Name": "43_P384_SHA256_128_restricted",
+        "Name": "27_R_P384_SHA256_128",
+        "Description": "restricted ECC-P384 key using name alg SHA256, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "ae051bff351baf8847e5972fb34741993831f21b616dda6c1dfab3c0f0158fe3b9f0cb4cd50a418c940e71f9919469cd",
+        "EphemeralPrivate": "36d26438b11034da513ee64d7ebd2cf452f96f5984ba2689231d409b29d7926156a79cd8e62f6573b82dc18f537d2363",
         "PublicKey": "0023000b00030460000000060080004300100004001000300d8c968536104cb54b228a9b01eb34ff3daac982685fac5d418a0b5ffb7e19239c686823149c3d2dbab87bb73a4ba7be003008f3fe46c86bb9a023823d06b817add21ef8599ce267a73af6a8ef27d712d7f09b6d28a18e7f958048c8010c08a30e48",
-        "Secret": "61727797c03f9cf53d65a2b5169a7af643af518d93e58d8563a4f8cf1eab3938",
-        "Ciphertext": "00304e9169480dfc33112e93d13e2315cf3ed9c0ea1af31713268336aa8c17c80a133eff49191652d37b5231a48be90e79fa003026a13cd5eaceae3432d71d0c3d4c5851249cdf3d281881ae1e1b33095fe6cb23ddf2227e9230d550e39b00df7d660080"
+        "Secret": "56d4f3af5a8d56421567d67c9c90280ef7f97ddd8a620c055b7a0a9d5ccd3386",
+        "Ciphertext": "0030f4e323f2ed415177d9821db4d49402978aa970a01224abd76c5b3d55f62c02f90b1471c2c384a08356ab707c46a5e1a4003066eef8030900ad779150d1b9d20e6af586a78504f211983fcc83a9ed0bd6229945f6f1b9e839cb08586f40d2acb57dad"
     },
     {
-        "Name": "44_P384_SHA256_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "941169a4d0b80844a12ba9040a8e163f14256b29f9458605a3e94b20e1c75fa055fee1146284bb7d0d45e7f543dd1eca",
-        "PublicKey": "0023000b00030460000000060080004300100004001000300d8c968536104cb54b228a9b01eb34ff3daac982685fac5d418a0b5ffb7e19239c686823149c3d2dbab87bb73a4ba7be003008f3fe46c86bb9a023823d06b817add21ef8599ce267a73af6a8ef27d712d7f09b6d28a18e7f958048c8010c08a30e48",
-        "Secret": "5c6692596a70db0021e134dc8a946736914c6daa79f96c88fdb7de31037bafe4",
-        "Ciphertext": "003042a2ba73475e1c9eca101d91331d5cc8d068eeb78abf14b36ded49847e99e782448601a0df39b7ccebff490c1601e39a003048089066dbb4a869c9d00e00103078242d09acd983829095cc3ec870e4e73d1448a312d3cd4770df18c2e3cc473c518c"
-    },
-    {
-        "Name": "45_P384_SHA256_ECDH_SHA384_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "929a418b6e6b710fc280c77293559c761ad0e80dff64b46eab6d5ec8f4419c645745c787688d52abd5cf650bdd7de8aa",
-        "PublicKey": "0023000b00020460000000100019000c0004001000308eb07349c3124cf558972e5b9227d5830c38ef7995efe7ef1ac970f1a388b9e5b9b4d4fb63c6dcf9dc02ef288d5565ac0030c246790d61b4c8795ff095c4c98f875dd38bca1a15a6ab44c874d325d1ee2a816e99b2d6d849fb285072f2e3a60d5f71",
-        "Secret": "7389a6066e79b0aadd77eea19c7f7b7178bb0dc4dab96224030f6b1ccb92ceb5",
-        "Ciphertext": "00301315c0156eea1904d8f80d8423dc935dc1e3299ad5d08cc41e8075149847ff30a3018451c0a705c2e34b4eb88facad7e003038e9f40f73864286efb8e65839a73f11c872c775634c9f4f3bb1812c8cdcbb3e49bd038ee43d50f606154ccb9571321e"
-    },
-    {
-        "Name": "46_P384_SHA256_ECDH_SHA384_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "8e65827daa217240bc31c5d2f61e789c07228a578d37844521424a002dd158f85f766d45397c2139a5bcbb65a04985f5",
-        "PublicKey": "0023000b00020460000000100019000c0004001000308eb07349c3124cf558972e5b9227d5830c38ef7995efe7ef1ac970f1a388b9e5b9b4d4fb63c6dcf9dc02ef288d5565ac0030c246790d61b4c8795ff095c4c98f875dd38bca1a15a6ab44c874d325d1ee2a816e99b2d6d849fb285072f2e3a60d5f71",
-        "Secret": "3b0fd48fee37a7586eaa9ffa7af6a0d8d0fb80bbd976e8413157d347ef8a285d",
-        "Ciphertext": "003029cc7dad956ac8046162e6a54ae299a2c8871398fca301b11b2664fdf394febcd5922fb94b6df8ba4e0b894eff8957e00030be3920643e413f0509f824e6fc0a7eb7badd95ef85a15cff3acb1f8f70333f636734008e0ee9918721a3d4da4c3d341d"
-    },
-    {
-        "Name": "47_P384_SHA256_ECDH_SHA512_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "e39f5a8ebc79ba60ea94d299d064ce2184293d87e83d7053b1898d474c122c74d4c0d284c0135dfe4bef138e460b4399",
-        "PublicKey": "0023000b00020460000000100019000d000400100030bff658e4291e93fc9a47e2f99c8995361523eb6e0e4aae03d3702fdec6278cbd59c1e296678ec6b3db7de36606a9d0d60030c1e2656d6494472162b3a6fdb3e59e026c4236cba0a8cd34b360cd266e9a066ee70af8af7b3c171a49ce90799437e630",
-        "Secret": "c282e71974e3f71ca3e59e9695e894e521c04bcff3cfdf7253844b493bf56ee4",
-        "Ciphertext": "00303cbc239663b1be239dcb5e814cb71c9a7762d21dc6010ecb318a1c6753ec51b1b847bb45047eaa9e6dcc5bb7453778620030eca3e60a5ec83e50167a25f91fb8e7b2d343867a02c7d2e9324971e003a3ea55799b8b367c796516da10ececa2aa86d7"
-    },
-    {
-        "Name": "48_P384_SHA256_ECDH_SHA512_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "7e3e25de48d500d423be9034c7339cb86821d52491309be7fd5fd86eadb69e1da37e7dd93a5fa5996a634738b57cd804",
-        "PublicKey": "0023000b00020460000000100019000d000400100030bff658e4291e93fc9a47e2f99c8995361523eb6e0e4aae03d3702fdec6278cbd59c1e296678ec6b3db7de36606a9d0d60030c1e2656d6494472162b3a6fdb3e59e026c4236cba0a8cd34b360cd266e9a066ee70af8af7b3c171a49ce90799437e630",
-        "Secret": "cc3e2ddf8902864e1bb9ce61440c798c61c871f119148de0075d7b9258a9d0c3",
-        "Ciphertext": "003007afb606e34a51e80bdb478f736184165c089ccb6cab225c951f4b91bf4157b9afea29fad5aca4c160a01cbee53e39160030ac5866ae68f19bdf0c75b88b4e382ca5d6289114be9b837f2174220f565e4811fc6c51223b0670ec40b97374dd2f216a"
-    },
-    {
-        "Name": "49_P384_SHA256_ECMQV_SHA1_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "2f73ab6c97be658aa855ff64a49d1d7614df452ec84aea91fc24cdba6371fcfd32de46e77e88637abbcde88066808570",
-        "PublicKey": "0023000b0002046000000010001d0004000400100030b2d679b396a5e61789c4aaad838d63506f3d53608c10607ec8f37d7e5119ec8d19fb5e0872ac75bf0534f870ea1a792b0030d89b8e7793fe6654e99aeb35affc7c9427ce1dc26e52013a7496210b7c75cc17c169f7916bf557efceb3172a9114ecc8",
-        "Secret": "1f6bd39ecc41604c1717bdb0551300562c226264b94c7513da02c8b9d0b96857",
-        "Ciphertext": "003049ea77d40581ccdeec83e94ce69fb0b3acf1386932e5187221e6affe22dcaf7ba2297d61f9e2b1e1a56fe57a4de36a7e00309f628214d918d623ad159e050e3dd75e18ed1329808fed86dc4b1c506e23fb1927b8051e20d4987ed3c0d8c65489378f"
-    },
-    {
-        "Name": "50_P384_SHA256_ECMQV_SHA256_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "1a5d3884eab3921f6bb14b33e0640ed16bd11635022957ae453d1829690a1b41bd0ffc7316963fce243e9a07950af1d8",
-        "PublicKey": "0023000b0002046000000010001d000b000400100030a9b7442375369fbcd534f0750ff45228e37cdda4e1e478ef302f7a99c5e302ebede499a1bd22b167ea694dc99be991090030a138f1471cc048214fb91e3b3454aa24260123387c050e12bb490c09bf59236ea54d024129b55bd263364cc334b76ab2",
-        "Secret": "323f9029251a9510bcbb40af4f5cb298a8f876bfc7a9aba36fa00a9100420fcc",
-        "Ciphertext": "00305ae8e35b106bf191775c1fa27efa4a4f6f918d052da43780bb391da5577c957335fd719c7beb3fb629a19114dafe54bb00306978135f8260b7bb24255fecff5ca78a6250af5296abaca95b3265823c1a9ac073934c300df243d04c1b75613e90771b"
-    },
-    {
-        "Name": "51_P384_SHA256_ECMQV_SHA256_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "df82007c4900b7f5879123f4a6316da0f847d2900e8bc2e8f23c2b4f923dbeea0d52b6b7e37ed6ccc8e56cc57f272e83",
-        "PublicKey": "0023000b0002046000000010001d000b000400100030a9b7442375369fbcd534f0750ff45228e37cdda4e1e478ef302f7a99c5e302ebede499a1bd22b167ea694dc99be991090030a138f1471cc048214fb91e3b3454aa24260123387c050e12bb490c09bf59236ea54d024129b55bd263364cc334b76ab2",
-        "Secret": "2fd540448b5580f8dd657351025ecf14931456d579050244eecdff56eea45505",
-        "Ciphertext": "0030c4443e21ce3e2cc92830a3363dbc6c3149b09534bfc9771ff5066f66f00a824e06903d7dcc91fe61d851bc9e73343e18003057e03d21cb4360b9867bc2f47fbbe9ddd0948a7a2c838e322f5763520a0446b403cc0b53b93c37c8cb1b80ccbe1f8542"
-    },
-    {
-        "Name": "52_P384_SHA384_128_restricted",
+        "Name": "28_R_P384_SHA256_128",
+        "Description": "restricted ECC-P384 key using name alg SHA256, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "cf806155fafcfabc5043c2e95013ffb9c69b1944eda94ab10769c76650e989054d1f13da1deb2a7039413063be904b6c",
-        "PublicKey": "0023000c0003046000000006008000430010000400100030d21d6279e25b3549f002b76f69d0238b6aec99cd1665eab6e73ebbb16a1dbe39e10274ce7b434044e2319ac1e69a1a62003001ea6efd580cb9dfe3cc9873880c7a883ce24959132104b782157d51cc0939bbc982b000c020de59c08247f5135dbc9f",
-        "Secret": "6f82996beeafa37ba7b62a67e0f13bd2ad8aaf2f3ba82ee2c98c2efdefcd5a979f3aa0d8bb87f47f19e933537831a713",
-        "Ciphertext": "00302a5f178b64b2b297857dfea9ff5bd3db712434b6cd71adb1623eb428ffee6d64d4f9cc39336458257e709604b5a23de500300acd4fed6fd29339945257d973a9facea906f7c671b9b036c3cf8ce3fd06a59a49a4de924eadc163a2e361d8a2258a99"
+        "EphemeralPrivate": "405cc15062b407c475299419e0af1f699ba36eb7899aba9b7015808b1551ca66a7db6f7f3a6d8eccace8ef55f8cf6427",
+        "PublicKey": "0023000b00030460000000060080004300100004001000300d8c968536104cb54b228a9b01eb34ff3daac982685fac5d418a0b5ffb7e19239c686823149c3d2dbab87bb73a4ba7be003008f3fe46c86bb9a023823d06b817add21ef8599ce267a73af6a8ef27d712d7f09b6d28a18e7f958048c8010c08a30e48",
+        "Secret": "8080dd4d5c565ae7248f841fe4b96ca5f17da9cd306bd29488c5acf124ceaee2",
+        "Ciphertext": "00300d535c17db3b1f70902f532f08e888298f05e291dc33a9b27ec9ab5dcc102471db84af73340c1686fc1fc2fabf3f41b600300599ccc765ce5e109edfd5bdf19793b6415c959b398ed74c0fce6b4dd82e5bf64a2dd45385013b1a2553a1aa6173eea8"
     },
     {
-        "Name": "53_P384_SHA384_128_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "03856eeb660227dc782c274467f525cca28c7f404e84a7176ce017a9b19fe01cbaa276cb78a21ce68ba25e303f9b41df",
-        "PublicKey": "0023000c0003046000000006008000430010000400100030d21d6279e25b3549f002b76f69d0238b6aec99cd1665eab6e73ebbb16a1dbe39e10274ce7b434044e2319ac1e69a1a62003001ea6efd580cb9dfe3cc9873880c7a883ce24959132104b782157d51cc0939bbc982b000c020de59c08247f5135dbc9f",
-        "Secret": "fc75413a6ba92c1467155f7d18c9fb3b4ffb90ed8d98caeb77e569a4905ef6252d38f79fae811bfa0bfae1ac8dd57c95",
-        "Ciphertext": "003069fffba924a74d4960778549cd5497cc9a30218c2a41e2252e62cbd233ec134115621ac37ad9060101fa9b20fc66073e003003d17487751e1227359086155b5366dc82d4f9de39c1a5cf2ff0c025b8d95c25d1f6a24a6509a50c4b07b3f6720b077d"
-    },
-    {
-        "Name": "54_P384_SHA384_256_restricted",
+        "Name": "29_R_P384_SHA256_256",
+        "Description": "restricted ECC-P384 key using name alg SHA256, with symmetric scheme AES-CFB-256",
         "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "41a269256f85b6f7fa57fa7fe1cc90d13efa6303316baf57d3e8b1028716862cb97a45ef25e1efaa47f9a1e3c541bda6",
-        "PublicKey": "0023000c000304600000000601000043001000040010003080e2d41932ff50fa25cdbc150e8f49f47609f5f84c294158cb22c8002ffdcaca1420a26fc6de81486fba313441afd8130030a52a846a6d2b13e0f14442188490680ce4cacb271806dcac3cb7a785caacf9d5934cb19d19a8419cbc81d8f0cebd8b29",
-        "Secret": "9a356c5fac530b15e5fb5a9c79435a5884f177769aa0e78eef2b3bc02263c0e41fd783a7fb0d7ed35e0a6a8ff2bbee8e",
-        "Ciphertext": "00305a39aa8343079190009673d439c2d4aef87a60faf14f985e5793d7584c0e1c3c9c1246e68fde0a899ceb25b7f0caeb6a00308296ccd054e8f645573f0b1bdb48e364154ed6eec774603f3654d24508be88f77881ca7c02d397f226e3e2b30e8ab18f"
+        "EphemeralPrivate": "4d56788d6dd52983027a0b17301fcb1221be483705657d69ed66fb3d4f12508b44b66c7c45903d5b9c682b36de6a17db",
+        "PublicKey": "0023000b0003046000000006010000430010000400100030a0d0c3ec9861abad2cc84f4819a80149e7bffa589f3a2067b05c3be1424d7484ebb27f4c8f3d86cb3dbcd34934cd3e700030aded3fe78fe233f694c768330a7c139c1c6449ab403803520f5939b4145067d62a3f9611d8562dc83759753960a9c8fc",
+        "Secret": "3c46f2c66f450ded8d12ef9869892fdc851f62fe3388ea62dc15cf30794c0d0d",
+        "Ciphertext": "0030620a2d54bbcbe3ff76cf312402c4fa35f43a5280cc65540d48c5a248001e1a5335ba12ca904c0592ba99d2c33ed8a3430030d70b43d1cb4b3def880b2f958e2ddf264edff580dc4aa45d8b04d2fc3ad9a56730dbca38ce1e8b2a6ddfa677a0ea693e"
     },
     {
-        "Name": "55_P384_SHA384_256_restricted",
-        "Validated": "TPM2_ActivateCredential",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "599d37448fb089fdcb1b9be440e41ea581d492d39f568d21bc0247804ee8d20e4600887e3bf409b8e69a581a47745c59",
-        "PublicKey": "0023000c000304600000000601000043001000040010003080e2d41932ff50fa25cdbc150e8f49f47609f5f84c294158cb22c8002ffdcaca1420a26fc6de81486fba313441afd8130030a52a846a6d2b13e0f14442188490680ce4cacb271806dcac3cb7a785caacf9d5934cb19d19a8419cbc81d8f0cebd8b29",
-        "Secret": "3bd197153196826fbc63983f7d8261e48305b5bb1193901def64a38416a2e39e83fad8382431064ff7fd155f31ba6306",
-        "Ciphertext": "00307dbbc0f734d7c490e02f7ff578c796b923acdeaa70d0a3a598f07bb555b726f0ca706351dd73d280f6b18ffde513f2ad00303d61e1579f32235f6282a47899fadda8e5ca622034ddc3b9d61fed8f37f74403fa49da669944f56b217a2d476da057ee"
-    },
-    {
-        "Name": "56_P384_SHA384_256_restricted",
+        "Name": "30_R_P384_SHA256_256",
+        "Description": "restricted ECC-P384 key using name alg SHA256, with symmetric scheme AES-CFB-256",
         "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "5e970433f10ae26989f14d8c880b5322b7840cbc77a38aef37a27c58def86134b443b53b40edb23c82d416e5953ddfc7",
-        "PublicKey": "0023000c000304600000000601000043001000040010003080e2d41932ff50fa25cdbc150e8f49f47609f5f84c294158cb22c8002ffdcaca1420a26fc6de81486fba313441afd8130030a52a846a6d2b13e0f14442188490680ce4cacb271806dcac3cb7a785caacf9d5934cb19d19a8419cbc81d8f0cebd8b29",
-        "Secret": "f14fc4d916a0a0d0455a134a5f31caf8511311b6764f45c01c78b23feb5d827af75a6645e1b40322402faf0495d303f1",
-        "Ciphertext": "0030fccf54401421924ba0e7ae5a1d7e5b81b2a8216517f5084c44ef26935f8b6f44a994ec544afaee9b12e1a83402fdf16b0030094c8f660ac98e01a38ffba85413fd323eb0ca13003c3180a6c288e87c5d516b799ede95de340131e0e97b57d61074c4"
+        "EphemeralPrivate": "dbd7c2314aa280ac282329817a1f7cacd6a65e90dc5b088747aa22d5789da6b7bbc33fd3829a85ac5565d086901ebebb",
+        "PublicKey": "0023000b0003046000000006010000430010000400100030a0d0c3ec9861abad2cc84f4819a80149e7bffa589f3a2067b05c3be1424d7484ebb27f4c8f3d86cb3dbcd34934cd3e700030aded3fe78fe233f694c768330a7c139c1c6449ab403803520f5939b4145067d62a3f9611d8562dc83759753960a9c8fc",
+        "Secret": "ee7863012003195a437496a45cb5ddd01fb7b53e20276cab91afe5e231294c3c",
+        "Ciphertext": "0030dc93c14c4298baceff0a8f380018a5db7dec156ae66e76694c42eec9c2b55a44275dcbe191cba58ca192c3eaf6e9cebc0030d7210be097d9dc63d0c717c9248d82369623cacad78a46e8123b591484575f93ec3fa79f824ed66d4be4e1f0c72adf95"
     },
     {
-        "Name": "57_P384_SHA384_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "62dce237612aac9fcd5025306fcccfe3b148027cc9b8a6571f2b3d257aed1cd36310061655cf54de9f821f7a4c1c0e2d",
-        "PublicKey": "0023000c000304600000000601000043001000040010003080e2d41932ff50fa25cdbc150e8f49f47609f5f84c294158cb22c8002ffdcaca1420a26fc6de81486fba313441afd8130030a52a846a6d2b13e0f14442188490680ce4cacb271806dcac3cb7a785caacf9d5934cb19d19a8419cbc81d8f0cebd8b29",
-        "Secret": "cc5f0d1d9520e18b29eafa63176d266c7fca6dc63c7546ecba6278545bd5bd628b4236471be587012a9fb55ec15558c4",
-        "Ciphertext": "00307e065b01f9bdec7183e7fdae6d3fd4ea6aa158c3f29e4976f22367e84835af62f0f25a286ea40d707fa9b0e5dc7a65ce00303452777587e3e40440e04086d8d724db2d6044d698d692c9035269048362d409e134aad12a08933971970ac8c55f60d3"
-    },
-    {
-        "Name": "58_P384_SHA384_256_restricted",
+        "Name": "31_R_P384_SHA384_256",
+        "Description": "restricted ECC-P384 key using name alg SHA384, with symmetric scheme AES-CFB-256",
         "Validated": "TPM2_ActivateCredential",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "7b8feeae03262e99d9841c58558678b1de5d7f4cf002ae65742e0c72acdce34f5082089dbb9b25c5ecddd03974042b94",
+        "EphemeralPrivate": "d5f7f9162a096643c1e487016270269d2d77cf01defb91247528a56725797ca4e7d00990ed7758c40342ad37913247be",
         "PublicKey": "0023000c000304600000000601000043001000040010003080e2d41932ff50fa25cdbc150e8f49f47609f5f84c294158cb22c8002ffdcaca1420a26fc6de81486fba313441afd8130030a52a846a6d2b13e0f14442188490680ce4cacb271806dcac3cb7a785caacf9d5934cb19d19a8419cbc81d8f0cebd8b29",
-        "Secret": "e305842773b62eac4247bcfd9199ff415db9c2fad7605c11da22055eea7e41b1b1de439513cbd24937dbe440cc3efd56",
-        "Ciphertext": "0030c77ffd6f7b87a6d3cc7328046243bc0d7e428743b0c8b8549b0056e256862f875fb724461aec01ed66c42950f813c202003092427aca935e6f69e5924f0a2f592b374d1d355c5e64ee6bafcfd752bf154d1f87b582cfc47b21ff65434de5f932a5e9"
+        "Secret": "27629d228cd9e7ef507bd930a093456e7820b59c92428bfb81b1e03c551fcf0c31fe7d630d2327acd95c82c8257b194d",
+        "Ciphertext": "00303a83328dfc6914c2f94f89434deb8775104223c5dd1ecf475de4997fa7b15622e61bbb405624f587eea7d1a28b8cf10700302180a8b82e45f0b9a02f342f6b60858832529aed82c2deb8da012d888e379131d8ffe578dd39ccd0041f2d5480542d74"
     },
     {
-        "Name": "59_P384_SHA384_ECDH_SHA256_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "5b35d5f3a06ebdeebe1995e150797ab9ceed0c1a1b650df72172d68a0f93b742f827b2f33433b5ae1a554e2ea99a72a0",
-        "PublicKey": "0023000c00020460000000100019000b000400100030cd48c10f7d1c25cedc11599f881e93aa4b9930ef086e5b426de060e403affd7648b6bdda1459d0d8ae2d4c183190f95c0030c4e85608fd457e25a83484f14f201c62c5a46a84f14cf2afa0c53f4065b49f58322fb682bf06bfc09dad722e15ac558f",
-        "Secret": "833e9c57fdd0feca8030c894a853c73fc9656522bdebf0116a246632a239b011ecfcb7dbf35ad0eaefaba017626720b3",
-        "Ciphertext": "00302b87b2e2db0a70a910800301c4c3d966baeaf337d19e5168e6cd536923f10e555c3a87c4e2ff685ec47065f786618ff90030ee8be7cfd077497ce65b96cb275aebb9412643f31b0bb287a964422959c71ae584b64dbba62d368f4a9dd3c33d000097"
-    },
-    {
-        "Name": "60_P384_SHA384_ECDH_SHA384_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0f2f809cc50b0ecfa4e4cfc9c730316308a3173229823726a336802e91882e3bdc4e776dd5f588d20e44053626945c49",
-        "PublicKey": "0023000c00020460000000100019000c000400100030d26007fc71cec2e8e4940a6be66a17b60ce386b6e46ce326ed2fd895e34d307dfd99a790e5a38c867debea68dd58147500307bc5f936c0c8988558439f6c0fadf4acead3efbbe57ae85e32ab353f48eba0190ad81defa04822025d06f8f54f89e0c2",
-        "Secret": "8e65e5852bcc0ce6c136370cf7fcd11347d15076f4c0eaded180764cc6e50f4b91c94eec5859ed81655124d46321aaab",
-        "Ciphertext": "00300331a1a986ff4802d63a2d8c376b84f3dfae5813336eea8e72acf8cb1278dc5bcf4eaf2b39cb9aac217212aa8ac0342100301d3f6ab58216df650b586524fe2a1efefd14e44991cae4e111192e067976dbd686da0f47211e4b882fc88717e494c9c7"
-    },
-    {
-        "Name": "61_P384_SHA384_ECMQV_SHA1_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "46ac8431d155aed9232c60a5899a439cbd933d46aca004d1299f19cd2060da1831bfcd94656d8e0daa95a37d63eda19f",
-        "PublicKey": "0023000c0002046000000010001d0004000400100030b18fd0aae7bb872520ff868ead2959fed717a84e599e60062045b4ba2056d438a98a95ba6c34808ae55a6202dfca0d2c0030ca2f726d30d5c7790099cd6605348baf072ea10ddf922ba319794dfb64d4dc3df658a0521a10a4e782cb366e9f73abc4",
-        "Secret": "5c6de6945db6beb28c43f64161465e2b8ae58f44d1771a33540a507a8dcdeda8794ff93ce66c6c654ddbd3b3b59714d4",
-        "Ciphertext": "0030e96aac9fb397d97219d54d3a695f98b41f0330b61317be72318cc75aac9c58876c67cbd406fb4a4e47b1b40f4cfd614200305f6f7111d6e11972f474b22de30dcb3d659c40c9eaa4e490c3f12463cc61fa6e92da0fee5049654b03a60c0fad8be6d3"
-    },
-    {
-        "Name": "62_P384_SHA384_ECMQV_SHA512_unrestricted",
+        "Name": "32_R_P384_SHA512_128",
+        "Description": "restricted ECC-P384 key using name alg SHA512, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "d5ea8cc251a2e6e111a8b9a09afbd2d7c0cdb16b067614caf9704585e6662430690287cb704c7c7d838793b5e5784fe0",
-        "PublicKey": "0023000c0002046000000010001d000d0004001000307c6aa1a01c141957e6399039aadbb71ab0889385cf5620a497d45943d696cbb9fba4793a8f9520bb8104e0aece346f540030e3f0d0fe6e41b85a098c9ad2959f6cccf58e285f0cd237ecea9eb8b1a9aae370d2d8b6c22008f3003cd80d681e3a3cd1",
-        "Secret": "4f7e0729b6fbbb5465136f6979e4eaa3cd37d282e982b00a081d10990a782a00d969a36400003f262c0cb3c7149d429b",
-        "Ciphertext": "00301c578f0db627c5d448ee893edc2743e4aeee5d7a924a862a2a05035a97b50f88d2c3c33a1b43d3bbab5bb8f6e30478ac00306d0b7fb7d0ec6088207377a353c47757b6a9b64c958dbf59833709ec4af5a9b1492106e7e1c5bba37097c272c60fc7ca"
-    },
-    {
-        "Name": "63_P384_SHA512_128_restricted",
-        "Validated": "TPM2_ActivateCredential",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "14c0f3ddc53343f8a5ddce20804efc7b6081328de836b20d65c62ed452beeeb04e11bf68c6901a7cdc65a8379fafeea1",
+        "EphemeralPrivate": "9d9f495e1b25e4bd18968fedcf9fc0910f9181eb315d49e8242784786d535c81456df3cd0a49593eaf93a38540ab7f65",
         "PublicKey": "0023000d0003046000000006008000430010000400100030b60da6840a6211ed7ce0f4881a9be53a380a06eae9b11c08b597a2891628913515f7aa825bdebc696dbde244953d94d40030e9a483dac12d214659770492b739dde217647de856fa1862e8f2b19e03add27fc1ee510a5104706c0a809ee459d58b5a",
-        "Secret": "ee7b9747e2dc334e605901d86f35ba8b4ea977fd60ca3b42c5999073b59e4b89d665fd08590cf57a3a6763ef643503aada0517f8ea16d365de045b56e336ba33",
-        "Ciphertext": "0030b470c656915c41ab2f3bf54a571668ac6699a5779934ffc07dafe4c147be03fd3bd03036f8b40aae3ceb0ad1a7eb9f450030e91f5b8c98c534861cf47d66a04cac7e74878bd219cfb3fddf48c7d2cd1d416ddb63f7b18fd64601ec57835f75c050c7"
+        "Secret": "396bfcb2d30696ae5119b4bf7c3599cf03205af5b3f367190811fdaf02c62c15c542346f235608c509ee88e6c5d18460c32fa171f67d9ad7aa463de6f61285b2",
+        "Ciphertext": "0030293c78ff50ab3de17ed28e51814fd5e5b97f1679ecc86e9bfeea007e01a731fa7b56fcc155d36fd4005f2c70d784ad5f0030c3eb5e768850e4d7581768176bd532e30bd4cacda6a0f2256f0d6232a67055ee84fce4f331af295db37d4c80ccfb2cad"
     },
     {
-        "Name": "64_P384_SHA512_256_restricted",
-        "Validated": "TPM2_ActivateCredential",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "5a6499b3d4dc24b4ea6c698aa8b5176d7826a313ddb2f3637bd9fc30a84d73222d177f7aa5be387063d55209fc7cf8d0",
-        "PublicKey": "0023000d0003046000000006010000430010000400100030cdf8b2fb8f4c51c0b7c960515ef19917b013a7b621e802186b88ee9a0cc523b97a740bec8f38e5435aa752f0f88b6f6000308e235874f9d282b458b554f4fd16c345423e7e4fbdf01338f8c21fd5e1cc70902040c6905ab63044f229a4148b3f769d",
-        "Secret": "40b48a9bc15e764678a16abd321f17a58404903ea71b9b9f86bef58303933a45ad275a11f6ef33a41664faae64bd25d3461b645ba9ad4159d25cc4123e30fef9",
-        "Ciphertext": "003076213ca499877019cfb41bb1818f2e7af4145ac12da4193f92289183c8516eb93450f33ed68594d0dd0f97edd12d78d6003083bb0fd870996db72f3625583cf88f9f961fba540fe364fb6c5d3b0e628ad0f24e469472481d52ce210194dd693ebadd"
-    },
-    {
-        "Name": "65_P384_SHA512_ECDH_SHA1_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "13165e95f10c172eaa075bd433f804a91a8d0f7678491dcf6a46036d80d3c04a235a2031f77faed6b09306ad6118d33b",
-        "PublicKey": "0023000d000204600000001000190004000400100030b702fdda34dfb7550dbaf2cbb9dee3f1717ccd0c2440037153ba3963d4b2ac645d8b919a261d32ac9da286b5a0538d6800302e22a0190e946a7ad4b8acaceff21ad28d02dcc7a7ccebb3e286f3a55f0588f887bd61c790942ccd9bc93a488f791b86",
-        "Secret": "99f6b2d0dc3ec5ea64df73cfd849fdc88daeac7e03bb20ccf1224b55cde8984576bff6976ea697681f494474427500633aa04a51a6ac36e77ce89c6ecba10658",
-        "Ciphertext": "0030b3e9d54062a17fe1647f161a932cc3901ef43be3c6908793dc7c34ed5fe48fb0cf9a11539636f7c4fd5b3363a449850d00306c6b1f1e4b9653876f82d78870769de0711828a76acc54f687fcb98e109f52f3436f819912070de21e7c2e71954a24da"
-    },
-    {
-        "Name": "66_P384_SHA512_ECDH_SHA256_unrestricted",
+        "Name": "33_R_P384_SHA512_128",
+        "Description": "restricted ECC-P384 key using name alg SHA512, with symmetric scheme AES-CFB-128",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "342b2297ef3033b99da94ac0726af42ed23fe3fa27c3836d9fb95b0261f2e8bcae28a6880b5aba875686bce3d298a80d",
+        "EphemeralPrivate": "b61be7c6be09e33f65e141b18575f9eacb26a082143e078377cb5b4d1667c24032a24ffed2aba62e337321c55ab66039",
+        "PublicKey": "0023000d0003046000000006008000430010000400100030b60da6840a6211ed7ce0f4881a9be53a380a06eae9b11c08b597a2891628913515f7aa825bdebc696dbde244953d94d40030e9a483dac12d214659770492b739dde217647de856fa1862e8f2b19e03add27fc1ee510a5104706c0a809ee459d58b5a",
+        "Secret": "1bc8aeb45d340efe6f0f388e0aa1704ef6ef3b318c6bed910fb747d6e22ffe7206ed04b9a224995f81a7b8f8f9aabb3ed987ced5c089fd2d490ca7aac8049ebe",
+        "Ciphertext": "00309774e0d0c95f49c6f1be0e0fbf4bbde8ea650dff0a96c6c14580edad32b01c48e2270298472b2b95e90cc8c63e468de300301339d6c56f616e8c540644de17897cce58f375efb7c1cfa3f58ee86d6df710855ce240c5200e0bf73bf5a33aa07697e8"
+    },
+    {
+        "Name": "34_R_P384_SHA512_128",
+        "Description": "restricted ECC-P384 key using name alg SHA512, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "172bd196462d716c20e802204ba18850350da724d2c27a2d532ccf2b5b187151ab9a652ce1a75139cc3c05ca00bf178c",
+        "PublicKey": "0023000d0003046000000006008000430010000400100030b60da6840a6211ed7ce0f4881a9be53a380a06eae9b11c08b597a2891628913515f7aa825bdebc696dbde244953d94d40030e9a483dac12d214659770492b739dde217647de856fa1862e8f2b19e03add27fc1ee510a5104706c0a809ee459d58b5a",
+        "Secret": "df2568aff9a68f8c36dc95c134ce8018c8ee6ad3175b90d62ec5cd075f310fe929b3c0da14bc2897c9f94bdf6a667338bd303f8935af01a5f1bf71d32a3a190a",
+        "Ciphertext": "0030c562ae8be111f2601a4d9a4f6984abfbbf4ac23dd162014f8d80e5300e432193d66d31c5f6c2e58e76b0602f1d4044ab00306363ad5fd598cf0efc8f1f7c5b80e2356985ab8776c015f6e3bbed830f213b728608a601c78fc957a5003894517d057f"
+    },
+    {
+        "Name": "35_R_P521_SHA1_128",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "01e07775054e9b42c3a2557d5046f4252256a4331adad7fb0cddeabbbbfe73ccb8a31773b63a790a51e068db493fce515876aba09cf54d01f7d772e674564c2bc427",
+        "PublicKey": "0023000400030460000000060080004300100005001000420086137365832520edfd257d98734328c1de747fb032bb2fbb4321826f7f16cec3bc6be4445531ed7b69cc16d4de5349a31ca3cceec457cf8aa79ead5379db505acc004200d4d5d391b77d3748ff8a935210ea88f832a4e55b6ea1fbc242dfee2b2b161aafa8ac241741ee05e866daefa501f9aefb3d3584ad5e59fef16775c39fbf6c738054",
+        "Secret": "1534781b16731b72be94d65e5eb69094d5ba8e98",
+        "Ciphertext": "0042018202f260bfdd1870d610bce551a1a23afddb29a7bd8aba51b324092782a8176aa80aabcc6b64d5f993d3b16d0392c082d57a1c46caad7a3c3818ba2dbae9faa8ba004201c194bd512af50c0079894cf20d03ddba3bb69003fb9dee9c5c75426912edc10a51634cf6908034f5ff8d46e9a41a3f9685b86967483056a36ddfbad29aab918945"
+    },
+    {
+        "Name": "36_R_P521_SHA1_128",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "00a23ee3c82383dedadb926a242afa046f9a48a99c1f15d19c6d7e562b154559bb4689b5b009c78d25a42e2a354f48589ebb0ab9c4553bf1877bdd5430049e748d45",
+        "PublicKey": "0023000400030460000000060080004300100005001000420086137365832520edfd257d98734328c1de747fb032bb2fbb4321826f7f16cec3bc6be4445531ed7b69cc16d4de5349a31ca3cceec457cf8aa79ead5379db505acc004200d4d5d391b77d3748ff8a935210ea88f832a4e55b6ea1fbc242dfee2b2b161aafa8ac241741ee05e866daefa501f9aefb3d3584ad5e59fef16775c39fbf6c738054",
+        "Secret": "fbf9e51719fbcbb4252390e6f55dbf309e663b80",
+        "Ciphertext": "004200acd31051bf7de7bd830a44a0455f4ca2e549a63fb6ccb44bc54c09aff0a34a1c437d312d2a12907f262b63c5dc2e3ce174ee6aff9bc045bbb1bf84f2211b9d00d80042003b0a4a6b3e886632dc24d0426be78b071c250e08c7371d33b01be0f00fc40e42201ab06bb3763683da9404bdac2769b7cdfe1b4f1af24b545971f29b91e0c224c5"
+    },
+    {
+        "Name": "37_R_P521_SHA1_128",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "00122867cde29f2ff5cde82e4a587ae1663e214bbe3ed4b89ec239d6af266c89c56fc3054c12ced92b38b0738cb01e83f5d4d6b140308737de39c7fdcf329f0367bd",
+        "PublicKey": "0023000400030460000000060080004300100005001000420086137365832520edfd257d98734328c1de747fb032bb2fbb4321826f7f16cec3bc6be4445531ed7b69cc16d4de5349a31ca3cceec457cf8aa79ead5379db505acc004200d4d5d391b77d3748ff8a935210ea88f832a4e55b6ea1fbc242dfee2b2b161aafa8ac241741ee05e866daefa501f9aefb3d3584ad5e59fef16775c39fbf6c738054",
+        "Secret": "75953d6db5307db49f49d124632274b60eba2fa4",
+        "Ciphertext": "004200c5babf419cf57e5556ec2126eb978a5255f991e917ac317c7b06a46efff9a89f7f6bc8767d2ae707b920a075fa495fc32d3be5b2e6c38699424beb5f9d780b4581004200cf1f97e0700ce61f66ad59e1b4e825bf1912b69a0f8620999335e4b46256f4510ff8264a4989730cc4e21574c52ccb0979df9aad0189606f5ee32cbacdd6b89a48"
+    },
+    {
+        "Name": "38_R_P521_SHA1_128",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "0049920c79b06fb7b23fb13a2c3cfc8eef4852042a6ec8ca668ab82a730a9be4bdfe3870a9ca651d048031fc84f1a0159bed1db1d4fd0fa20bd8bc85f4197821ef37",
+        "PublicKey": "0023000400030460000000060080004300100005001000420086137365832520edfd257d98734328c1de747fb032bb2fbb4321826f7f16cec3bc6be4445531ed7b69cc16d4de5349a31ca3cceec457cf8aa79ead5379db505acc004200d4d5d391b77d3748ff8a935210ea88f832a4e55b6ea1fbc242dfee2b2b161aafa8ac241741ee05e866daefa501f9aefb3d3584ad5e59fef16775c39fbf6c738054",
+        "Secret": "610da4ee9802160d322ce1cbe4377de0f7cf8bc9",
+        "Ciphertext": "00420070b3ab37fef86fad16637fd177e27b55f2787c6de521c7f5cec99f1012d320a4e7fc031af497691e8427e95e3f1450ad45bb2ff2d504329f8799a56072f5a5bf2a004201fe44de38e186a635ef152c97c2a266ffec5b0797d3d93670647a75ea484db931aa390642aa61c07672c89e64ef11220e8d737a309b46ad62fae5106d23ccf3869d"
+    },
+    {
+        "Name": "39_R_P521_SHA1_256",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "00f47f0f76657fa76732a6bf741cea53a5c683901626391ad9525e7f3f64933ba41d1e771064a101076ca70fecf88901e456409275d28f13c3e35073fcd77f6e9b36",
+        "PublicKey": "00230004000304600000000601000043001000050010004200b89792c233738e7601cccd835b83236a81ec2eac7ea72a75e15ff5e135aac561629e954d990508f29076e8c95f34ab8f913af4f867675d56cd22138d77ea6d079600420057f18ae6455bbeca379324c84ebdb8a7facf8e593e489005b3e4e5f847bee7de77206ec11c9229e7ef34c56549c4623c2b116bfe5ba7283d7e9c883ec535570f11",
+        "Secret": "46cca68f5d62bb297099bf603246f82d4ce61939",
+        "Ciphertext": "00420126d6d2e1c93ffd953f08c7eff3eb7cc309810f7cf4c735241f917c087cb8a076a321cce65ffb9313e5812a59b5d68e66bd4986a7a5392c5e3471184fe22d1b70fd004201e0384b712820ca10b5e58d682c2b08524c485e5dd5e94eedec34f4eb7cf1ab0d4930826688221d0acf59bcccf6efcc2e68b684f75b29f0f3d01f01b80013cf68e8"
+    },
+    {
+        "Name": "40_R_P521_SHA1_256",
+        "Description": "restricted ECC-P521 key using name alg SHA1, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "00f04239638924ea4975bbaf7fd9821a2ce059be34e726587e34ce6418bd922be963618129335a687033159c5e4c89afdf03edb86c707eba878dfc28a0305abab81c",
+        "PublicKey": "00230004000304600000000601000043001000050010004200b89792c233738e7601cccd835b83236a81ec2eac7ea72a75e15ff5e135aac561629e954d990508f29076e8c95f34ab8f913af4f867675d56cd22138d77ea6d079600420057f18ae6455bbeca379324c84ebdb8a7facf8e593e489005b3e4e5f847bee7de77206ec11c9229e7ef34c56549c4623c2b116bfe5ba7283d7e9c883ec535570f11",
+        "Secret": "a91a2a271db1cfb25e12ae50848d8f01cdae7e23",
+        "Ciphertext": "0042013bb274bcf7cc702d5379f0bcc50ce96e8bd681644f16cb5edcecb5213c5704615504dafc5b40dedf8d895653cb779ae281709e8e77d2c465d532c71d59315bd9da004201be6a898f108dbf8b3e7a902eea050f733412e09c57e20344c65875103019773f2ba03b660a8e0bb3e9e4f39253c639f29b04b6e27918baa9bae394a88a7587ebee"
+    },
+    {
+        "Name": "41_R_P521_SHA256_128",
+        "Description": "restricted ECC-P521 key using name alg SHA256, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "00384fc363d77fc94727de8ed551a041057fc6aee6370ab11d7825084c48724ba769374f401167c181334fd3682e42502a154aaaa253fb405b285b26c8e140692101",
+        "PublicKey": "0023000b00030460000000060080004300100005001000420087eec4ad32f38545f1ff1ef1e18c94720e77468e3b714f7ff738ee02f5f51397a715069033f4f14a519c3dde35b45bdd7e4b3f5ef8d36b943ea94f0f31944c960a0042011c02212731b5daa47d3965ad0e4e84b2b048e252550e9e29ba3e90dfe9abbf70571edb66a672437406af68f748cc224e82f55589cb640f069160976778d53ed4a6",
+        "Secret": "fe27c975b822f216121b2273d60d3a03b1c401fbabe4182bc2dde289d1cec2b1",
+        "Ciphertext": "00420101786a10cf9cbe192d8c3e069716a032e74a1d5eb53ade5e782b62bbc9396c49531fb4a41cef0eef96ba4712cab5c8fc245a7131384ddf87d6c3e2536af30db54b0042003f1b4d66dc42c7e35d6e4de46f2f7a9fdb75ac4cf99bab94df32c6b5b48e21624252381a39c2da782c1ad965d67963e45132c6f8cad49d4a38d9d38642d3733a2e"
+    },
+    {
+        "Name": "42_R_P521_SHA256_128",
+        "Description": "restricted ECC-P521 key using name alg SHA256, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "011145a82e6a0df61fa2f5ccdc7f3bc20836db24168f2a31a46d54ff7713d6e7b6c93ba0c8f9ce0f06dc09df19cbf6a80bcf2790fa92e8cc8c689751985cdc85d741",
+        "PublicKey": "0023000b00030460000000060080004300100005001000420087eec4ad32f38545f1ff1ef1e18c94720e77468e3b714f7ff738ee02f5f51397a715069033f4f14a519c3dde35b45bdd7e4b3f5ef8d36b943ea94f0f31944c960a0042011c02212731b5daa47d3965ad0e4e84b2b048e252550e9e29ba3e90dfe9abbf70571edb66a672437406af68f748cc224e82f55589cb640f069160976778d53ed4a6",
+        "Secret": "6b10013c4ef59c41ce4d631d735ade875964b80e6f0629d3b29a007953a20da3",
+        "Ciphertext": "00420043bdb3cb85424cf040563eb33d906107a3a20eb7456c529cf71c90a639f8d3cef3f80ba139598a173701ad5a643ba9e6128b9f6258c4b28d8003dcce504101ab7f004200e24d57abe07b9828b51dc9f1abcf0b059c7972a6209c5c719cf5ca5926f9a12a64f349b2013e1207e58668da275c9d0551e4ce6a7c685a3a19f55158638f8d3fac"
+    },
+    {
+        "Name": "43_R_P521_SHA256_256",
+        "Description": "restricted ECC-P521 key using name alg SHA256, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "003947963b009da539bd155c6d4438984a5b597361e47b8ff9285752663128e8d6b75e2f6ad77d6a7decfc02c528c051d9c2e53566d7590841639a5584fe4384ae0a",
+        "PublicKey": "0023000b000304600000000601000043001000050010004201b42aff73fc684e652c911cfe5af8013449b52af630f6973107937ee32eb80c44cce0164c2a7d5f8154c0c4e8f6c2b9328a22712ae3201adf8ee5ae2d896388159000420199a22ec2aca28b8a1f05dd6e9a9565b4ec5c0a46687d78bebf14b253d9038aab4161b4ff0ea410e0c2552796a4d08216d632abd6e6294a95b2078a3b8fdac56dac",
+        "Secret": "0d3dfb68e51e87df247a2dc931ac0b232656d6840427fb4e838b579eb1b2559d",
+        "Ciphertext": "004201cd322536b606bdf465e15aeb3af746fa02fae8860d085331b7895332c1460130467b7caacfeac9ef5a6725e3209d3086161d50c8b4fca294838d5a4fde04d4f4ff004200ea1501c1f5f93f125cc0a8c2454338ad0362555058ef135de41c855b011d7fa261b7c2c8f4df04ee582ed5202e80a2039993e8bd2ef09c0ee8c8b1933419e1c9c7"
+    },
+    {
+        "Name": "44_R_P521_SHA256_256",
+        "Description": "restricted ECC-P521 key using name alg SHA256, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "0056c465f5681aeb3f366e8057ad8cba8cc8f894b78bde12c23212ab9ba2f2548ffd28757c2a136f69b4c2f8b45a62d3bdb97ec04defd4828889f5a6b56937ec7460",
+        "PublicKey": "0023000b000304600000000601000043001000050010004201b42aff73fc684e652c911cfe5af8013449b52af630f6973107937ee32eb80c44cce0164c2a7d5f8154c0c4e8f6c2b9328a22712ae3201adf8ee5ae2d896388159000420199a22ec2aca28b8a1f05dd6e9a9565b4ec5c0a46687d78bebf14b253d9038aab4161b4ff0ea410e0c2552796a4d08216d632abd6e6294a95b2078a3b8fdac56dac",
+        "Secret": "b05e66cb4d6c6fd3ca45ecb4331cf78e7551a5302a51b1e56c3a08422a7854b8",
+        "Ciphertext": "004201c348bc377f1421b006a94a99d156a19661c336ca359e4dec58a0ec76567250aef3a58c838c972c2ff45ea68c0f66ebd072646cbd821bf11b29c6b86add01eb7f720042016269785d8e44439c41125835b83f83eea20d6070a563f6745fd5668731bc7f3814679adf5e5390cef37b0890958cfe69be1efdd0c7bd84f993da2cd51a7570bd84"
+    },
+    {
+        "Name": "45_R_P521_SHA384_128",
+        "Description": "restricted ECC-P521 key using name alg SHA384, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "00ce13fe2d094f18752b3b6fd3ef634f52a7f2c5adac433764b6e746c3fb237c399bd77d7b2e827b7e18fca614c5fd645a3c4280a5f9a93d28835e500b9899e53ad4",
+        "PublicKey": "0023000c00030460000000060080004300100005001000420164fb737dffeb70d93fac5b683c8e6717628833917793359857f128cc7e117ccbb862457fe1dda4833076d71cc46651a3888a129119b982c6c9acaa6de1abea4f41004201d9c9ee8d2b7eebe84c20544919f86182b8bd6a56b3129abb5c6e54713a42231a4ccca483414deb838718bf7cec55bb2b9a3eb2aef4c455b7b2a8aca7eeab221161",
+        "Secret": "6c16c1b77ec510d818569c9a0baff489a171d24df7ea6a125084a756acba93215409351eef814406a736a78242c644d0",
+        "Ciphertext": "0042007b07f57d9b0414e7afe374957adb061eef02db37802edd35afe98540656663a005e57e7d968964434370c6c73afb7dfd3d08949d7274ead50a43493c47e7c7d9ce004201bf910c1aad2e8a316db710bbfc06419cba92c15a18ce85965e58777a3230c48dd679a89afc02b5a6f93aec8e654ff9d3564430acdc6aaceba3a4951cf3a6ba7506"
+    },
+    {
+        "Name": "46_R_P521_SHA384_256",
+        "Description": "restricted ECC-P521 key using name alg SHA384, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "00ab286aae90e18469a1cdddf1f91ddba33e09fa54bfd6422c703fd7e74074403632398d590bb47deeff8f018b06a039153cf09b340968a71f7a8d1e82806514cc6d",
+        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
+        "Secret": "666de49cff020e9b0d9eae88ff6176159e0a0fcf556fe28edec770e3282159675ec88aed30d6a0fd2b7dd9775e731156",
+        "Ciphertext": "004201d564e38e088b1672528b399c14c03286289789972e78783b472627dde605d72088a89be1184df62ba40df5f00772dbbedaad318d87388a999ea108abd17ea27f180042011b74a029e560cb6dd288ef3e6d7c95a3ab0c54dd975042f19743687459453a9caa4e7b3d8dbb048668e11ca7da10491ac34c8b2184b969021ad417697e82f30ee6"
+    },
+    {
+        "Name": "47_R_P521_SHA384_256",
+        "Description": "restricted ECC-P521 key using name alg SHA384, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "01220efd7b7bd4adb41d57cff6391d823b72cc42815e1fc89f7899d8a0dd71165126025bfb81cb7520ab247be150853225d036797b2aeaad29e4d5402707a3bb9e6a",
+        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
+        "Secret": "8c53cb72bda38d8c3866d8217b015a158b05a63e2af0ff39a35d20f0425ed336263c0016be19189d2ed7d0c257d59ad2",
+        "Ciphertext": "0042013d0b1eaf5b22d79226a6ac420b4a7ff0fb949ed3c2be91e14d2d00c3c01c52ef3824aa7abb4bb44d10bc5787b07b30c9e5fbeb029b9eadeb6ee5327ff9eb6cd396004200513dbed0dad21b77568f8d39b842f76bebb3722a47e29216f9a78996c6f330d6831c1f5fbc327e2af7e15b7a55c0bdb6f2bcf3c932bd972832ad07291950eeb6b0"
+    },
+    {
+        "Name": "48_R_P521_SHA512_128",
+        "Description": "restricted ECC-P521 key using name alg SHA512, with symmetric scheme AES-CFB-128",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "017eb484d51c1dad4f326297d9a8bcf5c7ac32fb605473857de2715d0fb1587beda2f781db1c53c16bdf34401b86d6c5722034f804330784eb82e068a25aa30bde26",
+        "PublicKey": "0023000d0003046000000006008000430010000500100042008e1b1bee73feb76be17b907a7bfd1bfa3d8252696b15bf3d5e9d27e1244ed5ac505357d055e583b61360a0da0c59e212ab23645a560ce066eab882decec02c6e68004200a55d7eb598eedca1e44818b67a46e7a469572174f3d0cca1cfaeaf93529e949893c61e7714336c0e36294358bb3abd2da322fc1c645ea449d63139cbd7c99d9174",
+        "Secret": "dacbd947e098c73caac6e5e9191d803eff86696e40bf5406564a4e3887c53ccb19d162a17d836afd7e3c8b809d95e590752f75750e01abe8b00f6b8bdb00ad86",
+        "Ciphertext": "004201755079538ce05e0bb5c4c7c4defb56e1b014695b3ef2f272643fcc5e84b09b00d794ff865a1e6b7a50421e95e5de9c46b23fcbec4d98f65a2e6ec1ec7a323b36f2004201f3ce9f918eacab4822a9a19295041284a5bf63a9df8c58e8d72e0e138b1b2ae87b21892adfc8cfce1094efa5b76ff02345fa8396f267bd97d8ecad0aeb651efec3"
+    },
+    {
+        "Name": "49_R_P521_SHA512_256",
+        "Description": "restricted ECC-P521 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_Import",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "0042728d39ac6b0600461fce115816c8e416199a895608c308e500393c67ebf2db4070be3c491939923f042ff91209b38320f2e3081e91b814858931e04e79d14a09",
+        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
+        "Secret": "61c508f2e855fd7df1057366a59b828b5322aad726137a20e12f2fd26153a8948b996df2ee7a8a575dfca82ca7eaeeab31b49f6a41d141714baa4d15a9c70a39",
+        "Ciphertext": "00420027261d722affbb32f32f22f356a99bf64230e4c3d86f41e4d285e1e979c3f29579de723a0349ffcb4ddcdbfd8dc6384e8295f78ffd28ba94dca14bc096fcfb354d004200a1f670007d6f6bd26357035dea95378e8e3fda4e5331030b8e0057ee9490fd9b53dabd2e2dce3cc37f4c28f272101d94f387c755db3ef21a908a6319745af2472b"
+    },
+    {
+        "Name": "50_R_P521_SHA512_256",
+        "Description": "restricted ECC-P521 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_ActivateCredential",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "0037c67f2f51fb5dba49d54c910744a1d19971d758d1c619a9a4cec0926420aacb3689d155f1ecf62822b5cd50b554a396d9bf4c3557c12b3f4e418405f5c5d5f7dd",
+        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
+        "Secret": "990145e2baf15e366ab16c93687a0cc7f1af0f41be03567260d7d4d66a3de9ec2b8a9958ef297565aa11ea2930fa35d6b9b287abb61fbaedc2b7e54ca935c909",
+        "Ciphertext": "004200c4df8963e65dd6eebea643e833bb7637918af5c6a5a0e2014c219aa2093399cc480d2f2ec288aca06910c6671b58c2efdbc6ed692a2c3efd45f61bcd0545f3b5750042014518e2767cbd19aa81ee3ad96d1c62098d0dbe2ebd4fac7ff4d02a9d51d4c71d484f93bf982fd1c1984e2aad0065affaf92e40dab50a4501f987cdbaf5a87d038e"
+    },
+    {
+        "Name": "51_R_P521_SHA512_256",
+        "Description": "restricted ECC-P521 key using name alg SHA512, with symmetric scheme AES-CFB-256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "016c43efefbf22afabb12f545fb605317fecb98fdf2f34389a81ca21184fb2008ae6c3d42bcb923f770e61df147db8e17317cd3e8f0de98eabc06a441c3f7c9e0fc5",
+        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
+        "Secret": "5124fdb897f185074dafadb8aee254788b116c094eca0806e06d3d93ea89c94eee964c7dc0475553468f8b12f8fc4d904fd949aaa1b714006af979c1503b28ca",
+        "Ciphertext": "004200f373129ee2be4ada049edf45e94b97572aa2f79ba177e7cd32d5bbfac123ec8b1acea5c61e0c48e6de9c60f96368eea7818f3fcdc3cd5881e31e3745e537b9e6d5004201d58d916900a3dabbddb49277bbbb011101a30b85cfdf5a82a0f88ef5d1bf18e3c74f9b921d077ba5d9b4ff434eb7a4a28894d7c44c4d34332eb94a0fe781c8e58b"
+    },
+    {
+        "Name": "52_U_P256_SHA1_ECDH_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA1, with ECC scheme ECDH using hash alg SHA1",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "c88dc8b7243ab5f7444d79648b3caa22919efbb5b63e6b004aaca4c0d4d58ff2",
+        "PublicKey": "00230004000204600000001000190004000300100020201841f4c52b7feee08f109b1b6b9f1ed3761c1e710f0397b29705aaaf2e6ccb0020e27dde79642084b7e032e5ebabd9990735534c3a90881b523ac997da4716abc6",
+        "Secret": "338f7fc76f734f235548b5a4d165da4f78d8465c",
+        "Ciphertext": "0020c6d7b670f6b494b985dbb64838a68fe21bdb14c2767fa914814b3a5c4ecd2f88002050920da9ae42a1f8a0b657371504a6fbe7f64e29ccfc948fe03f728ec5dd2ca9"
+    },
+    {
+        "Name": "53_U_P256_SHA1_ECDH_SHA384",
+        "Description": "unrestricted ECC-P256 key using name alg SHA1, with ECC scheme ECDH using hash alg SHA384",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "74e877f6bff1bc867b67ef96d029114de945a223229b6bf10c20b09b3e6e422c",
+        "PublicKey": "0023000400020460000000100019000c000300100020e295300389d834b11615a5657511ece135c0c8237342a138466f0c35f36454890020142071ca4ebbe79b8b04e77d72588a3a8455dae76592f5b212ec7ed32660018e",
+        "Secret": "094a5bf934f748e621e428198d64aad985d671cf",
+        "Ciphertext": "00204c46f896af4f535ee67556cebb76df09b48d9b6c6e9c139e92747400aae597880020f320de990a4006b31aaf2e5f627818924d626a227be17bee7575631cf9c4524c"
+    },
+    {
+        "Name": "54_U_P256_SHA1_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA1",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "d2c3198ea2e212c6a000cc369288d59541fee085b06e548310f82f0cd2336436",
+        "PublicKey": "002300040002046000000010001d0004000300100020a957af68414c99718fd77e201c3057f0c91ae3d9274e1254431789d51968ac18002074d3fb0b6838633c10979a0d875eefff340785fbf8d319f93400a3ca1f91442f",
+        "Secret": "d654e115821ca756131d9c11f6fb3e2d2634560c",
+        "Ciphertext": "002040c1a13bf68c039b43bcc4c7aa9b70601c9ebf12b7c6a8a9424aaef4dac7ddbc0020949965485503ca266019e04a9e2c8214fc036552debf1ee1f5064a54ca85ebb4"
+    },
+    {
+        "Name": "55_U_P256_SHA1_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA256",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "977b5dd5743b372725cd4e7b65272a2f3119d3f0306c4fdacfaa476e8b9f35e3",
+        "PublicKey": "002300040002046000000010001d000b000300100020134eec544150e9fa7e5939464c61dda9a41674910bb992683a73d8e134426773002060cf36b46f0ca1564e160ba83b89750d194c9d4f4bb71e916d22e59a6f82191b",
+        "Secret": "ed6698856898904adb68035e47e6fedf8d665db0",
+        "Ciphertext": "00201b24cef8a6a8b20a160c0af751d6b0660651282eb90b29059f2e6d9e13d7ca2400208e9c1bd349e8792b6c93213e31182e23285f6746909ae22f6d0a140148a8e6f1"
+    },
+    {
+        "Name": "56_U_P256_SHA256_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "23f865a8d66377538768eff3703ef851941ca4d555c51dd868f4c234e4f59d95",
+        "PublicKey": "0023000b0002046000000010001d0004000300100020346f9b719b0d597feb04b8de2379d72039b00a44ba05c357a01202a721dd0faf0020a84dc53b7df3e2339a422f27ad527f704ee874aa3a5e01be8612993bdf60ab08",
+        "Secret": "f234566fd5684f08b4faebcc552c3e5e7b7b2005d45e946bf393ced706dab975",
+        "Ciphertext": "00204943abccf4c25313d43953ec4ce2adbf66cffa34af2826f9d4c3a736d39715da00208c5c7f33ea100336a2e44e00a41acd1253a64b4bd945f35efb9a3cc45b90f573"
+    },
+    {
+        "Name": "57_U_P256_SHA256_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "d151c908974bebe739808fdd6f1a785a7940169cec1e0a8b0f211eb4ed714e3e",
+        "PublicKey": "0023000b0002046000000010001d0004000300100020346f9b719b0d597feb04b8de2379d72039b00a44ba05c357a01202a721dd0faf0020a84dc53b7df3e2339a422f27ad527f704ee874aa3a5e01be8612993bdf60ab08",
+        "Secret": "5da0c3627bb130d03760dae055d012c0786fcfa9b910f8410fb2064a4425ccec",
+        "Ciphertext": "0020e9e484d2001008b1aca0c5ccd8c445f900e9326a64439a90a3bdd44e5cf2ccdd0020e125bb94c0b230aa925a51b075d1f64e6934465780da7c96ac1c3c7ea71e2365"
+    },
+    {
+        "Name": "58_U_P256_SHA256_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA1",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "9ed22f8b656a24bca9b84964e98c4240babc0de28601f842919971c79f5ed0ce",
+        "PublicKey": "0023000b0002046000000010001d0004000300100020346f9b719b0d597feb04b8de2379d72039b00a44ba05c357a01202a721dd0faf0020a84dc53b7df3e2339a422f27ad527f704ee874aa3a5e01be8612993bdf60ab08",
+        "Secret": "b57cd50f7aadcbf47028b72b43741f53072e140276d21a770b5b0c725618b027",
+        "Ciphertext": "0020fcc30175951a57ec629bafd9b3a1fd36ecd6bcde266b5512ce2dfcdf5b27a837002041037d761acdac7b84da0e26a148aa47e0504424d8bc40024b10946684f59b03"
+    },
+    {
+        "Name": "59_U_P256_SHA256_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "fcb95045c5e4774ec12eec45be397e2f2e0505ef87ef508092e516da3a7d9a9d",
+        "PublicKey": "0023000b0002046000000010001d0004000300100020346f9b719b0d597feb04b8de2379d72039b00a44ba05c357a01202a721dd0faf0020a84dc53b7df3e2339a422f27ad527f704ee874aa3a5e01be8612993bdf60ab08",
+        "Secret": "6caa42910af337219554e60a4f20e19f99d497baba7ccaefdb4a4cc6f89bb5d0",
+        "Ciphertext": "0020593120aae005b827b30b0ad77f84bcc40c66e5881d2f1aa836eea3e55e940ef0002023487aa851d83b778485144e02c9d8caa4915dc08c19f5925778024a79ad69db"
+    },
+    {
+        "Name": "60_U_P256_SHA256_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "947a639ca9a3ecaa5128815465c0ba1f68f79e9c3faefc65fac97337c510f84b",
+        "PublicKey": "0023000b0002046000000010001d000b00030010002032db16c3cc176de3c283c24eb6af0debc0bf14b5acca4b9538640599ea94aa630020f7ba0b88c98857dddf5cf1d5194cd666b7c3574d7e4cf9f02fad5156fc32a157",
+        "Secret": "2500d24f5579b01748fad17081ff784b03283a9858a32ebdf681d2aa3e8ac6cc",
+        "Ciphertext": "0020d8315bb4e78001396e3bc5c09f86e812c7a9a124999f16f5c1a25f4d364f91d300207ce7e4637d3dae4f6735410351cd01e2610989557059ae5b26a2956fdd8a3362"
+    },
+    {
+        "Name": "61_U_P256_SHA256_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA256",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "e66745a3d861b51755005491774df07ea4d74b2b14c8f06567987cbd4da54cb0",
+        "PublicKey": "0023000b0002046000000010001d000b00030010002032db16c3cc176de3c283c24eb6af0debc0bf14b5acca4b9538640599ea94aa630020f7ba0b88c98857dddf5cf1d5194cd666b7c3574d7e4cf9f02fad5156fc32a157",
+        "Secret": "b16c3040c9b01706a0cc9e4e9c4077efce7f846d1e502781a3a2255b3fe94f77",
+        "Ciphertext": "00203600708588df8cc4e48894a6dc29fb56caaf4624103e2302e38f9afb05f631a200202c4dd188be11397137db3f62859da273a03ba5142b4e9be839eec1bce27fb25d"
+    },
+    {
+        "Name": "62_U_P256_SHA384_ECDH_SHA384",
+        "Description": "unrestricted ECC-P256 key using name alg SHA384, with ECC scheme ECDH using hash alg SHA384",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "2b2eeb48a59aa432cf9e4d4353ccce118bc9eae3dd05c5f3883f3ef880715a04",
+        "PublicKey": "0023000c00020460000000100019000c000300100020c578aa5ecf91b63dd3a6f1d5610dad04581d002973e570963ff03b23fac649740020033f23280f7cbeaeb9e8397dcdb7b46ad6dc5f9b5f7687e4dc1cfb669ae6d1d6",
+        "Secret": "cb70c07e63126149178e287bdfd4ec36633daba2d4b7a75273f82951766cc556ab9dfb7a9b65635c9c1e1d2bb11c896c",
+        "Ciphertext": "00205c00fb3661b60d60c0b766fa4fd57c8e5eef7edfcca74837d4a4fe93f59d47080020526414f1a460cdbd757c57b6a9d675a481d5470f734ef01228f1e756515341a8"
+    },
+    {
+        "Name": "63_U_P256_SHA384_ECDH_SHA512",
+        "Description": "unrestricted ECC-P256 key using name alg SHA384, with ECC scheme ECDH using hash alg SHA512",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "03ad75dffc43d6a000a3635376a2dda6f88ac967133a2570598da55cabcb930f",
+        "PublicKey": "0023000c00020460000000100019000d000300100020f4e996510be9e5abd92665ba48cbb4d9882695099837fc9d1ef365560c604d6b002029d18132ad60d1346eb8282a6aba7ddaa814f3c27f9cd8f78792b2afc79cae2a",
+        "Secret": "4e64b58a9b67277ffb596c112b6edd6a759e1e09a68daf382668f91eb07ed474415796b0146c574ac4d880125922dfa9",
+        "Ciphertext": "002024f9b4ab1b2f6ff74bf5d1e0be97c7dfb16f86dc0bc366e78e607b60f1ee364500205fc31c2705f3500b8a848c6908c7d4f5f88c8963c73a1618775bce4e2572962c"
+    },
+    {
+        "Name": "64_U_P256_SHA384_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "ccd43de971dd453a6ab507b1088e5542d5b428aef67fadc6152a96c6c47434ba",
+        "PublicKey": "0023000c0002046000000010001d00040003001000205392554d346fb191f3effbd97b05aee88824325914562c1d4a9a4b9eb5b8a090002027e372ead33aed304139d51849e961150cf78e2f438e6a4302c31b3b76efe98a",
+        "Secret": "7b5c8a9c9143f582b3ad8f9c6c50242e6017e2b5d267c458bc7a54a2083693a8ceba7650ba0ba3645b607b40f178a1b6",
+        "Ciphertext": "002041fb4ca284b687deaa2e0a53b0a02ffc267e4a58945668aa8202e9ab571117d6002077ef0037984dbc8f0ed639a94e34e4944e31c23341d8ef2d8d5ec5c0d9a83c8d"
+    },
+    {
+        "Name": "65_U_P256_SHA384_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA256",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "8ae6353bf29d41ff2c36c2779e64cd257efa604ebd221d31101f85613eb06972",
+        "PublicKey": "0023000c0002046000000010001d000b00030010002054e66cee7a988492c9eaa213e8f5b426572cf1c015b35c8dfc4584ce8844120700201d7d600df0f5b0f7ce1002f0086a1f13823d1b903aacd4ea21271d49bcf9ac18",
+        "Secret": "56e6487ef22ee0ad2eda8d2de62ae75ff6a1134b02e082aa467ae43ccd8618f4884b33f43e24ac996c5ecaa5e9181fe0",
+        "Ciphertext": "0020592045b6c0e630e90737b95353934e5e946f98f14285e383bb4503fce2de1baf002031a029ff0fa6a4567d97e5697e515305a5f107811183335d9d4070a53898ff14"
+    },
+    {
+        "Name": "66_U_P256_SHA384_ECMQV_SHA512",
+        "Description": "unrestricted ECC-P256 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA512",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "9f1220438f376d0fc3708f144bf2335006301c16dc192d918ab87d085c5bc4cb",
+        "PublicKey": "0023000c0002046000000010001d000d0003001000204e045c7c24dea40d97d41275437dccf37b878a829255547a3935d48d2afd9a8f0020c3a2a80fca15a4f53f2feaa987d560a72250df55fa5e22c67696e295e9b47499",
+        "Secret": "843a8974fec14be06247198903a60de8a9cbd8e41093399082c1232ca2cee0ef85df728413d02ca3b31de79cdaf266f7",
+        "Ciphertext": "002039edb19e52335b7124a91e9cc1d9c39ea255d95408c13be8d43ca7508c354c2700201c127606852c63dd04afdd7de4ee601ce069a255a983d6ccf9dd846482247a69"
+    },
+    {
+        "Name": "67_U_P256_SHA512_ECDH_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "f6807cdeb5755debbc7a8bb957bc0534acc7dc3b86e811325a9914093544e8b1",
+        "PublicKey": "0023000d000204600000001000190004000300100020ac96dc5958af12f2c5157d7e863922f3130806c9942833144bf3fff7451940110020ed4badb67abd2dcd786ef0c13b930b26f99b8ed7a9be7f1e257f4cb7e9060e94",
+        "Secret": "667123742670e276efcf74755b43480f0f49d0d55d9985eeedcd258c47f52f93347d344e7f359e27227b9bab90940041311360a5aa0ff65a21d591c831cab856",
+        "Ciphertext": "00203b8f1b82c44d3a1c48d311dde6e3ac9d14dd3f2e5199bd97df3b198777a695e90020c772c91d408393fcc502faf5070444ea00e419adcd4e63039bfdc946e9cdd581"
+    },
+    {
+        "Name": "68_U_P256_SHA512_ECDH_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "837a9c960320b1de161827ef6886551873075fe70184c336baa9a47f3cc85173",
+        "PublicKey": "0023000d00020460000000100019000b000300100020e6f3c423b480a08adb101a7b5786d1315c83bbd9f11c9c6eaeb952ba2d52864c00201bcb2994138040f2c6e6e4c96eb989f3237b9605ef76aebf553672f841480a29",
+        "Secret": "62a6a5f1b55e2a816a219eb0acb2964013d554fb8808f002ff60bb7d45ca66a9c3211c61bdbb66db8d4d6b9bb7a520494cbad743082d362ec1994c7cab046e17",
+        "Ciphertext": "00201d79678d6ed2db784507635f3fb437be19c0a349107ce77cf9b539908a44e6060020eb4118f089b8705399affe3ee9b631ebab95609b55e868478f079d653ab60bd6"
+    },
+    {
+        "Name": "69_U_P256_SHA512_ECDH_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA256",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "60d0741d9ec9a44b59922cf67b97eae1797cf80636881afde18042baedb4b824",
+        "PublicKey": "0023000d00020460000000100019000b000300100020e6f3c423b480a08adb101a7b5786d1315c83bbd9f11c9c6eaeb952ba2d52864c00201bcb2994138040f2c6e6e4c96eb989f3237b9605ef76aebf553672f841480a29",
+        "Secret": "f82e9365c59bc43b5ba8cedcab049d987b46da72cb6be36f74a37354ac9ff1c3e37863ff69ee0eb752b95f289d14a4b5706fee7417b6c8df178bd30d232ac8e9",
+        "Ciphertext": "00207cc393450305d28e8d486a9a3d34ed455960b80e86b2a3f5800ec72118bf5ff300200241855bc5ac28795ea88ceb1d9213cc0f691e5bfc44a456e59fe4a8d200eae3"
+    },
+    {
+        "Name": "70_U_P256_SHA512_ECDH_SHA384",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA384",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "2aab3cef85364a6f73cbc77b58f732d3f5dab646e8cbd7163ac2510905e0098a",
+        "PublicKey": "0023000d00020460000000100019000c00030010002081155e28330792dfa6a00e7872531c87b0f3e181c4da3c0db0476eda347d5ba800202ebc81d5b6e33d4ed16a86d6e52e1e30d73a4f9180af85bee36714f9972bb5de",
+        "Secret": "4810419afb292719166108e7bfade3f30e7825e7619eae34964a2a6f3e18fddcf465c04833d2ef7693d39aa6e6ab281408b71a3837f9403cb07e6cd8697e2c35",
+        "Ciphertext": "0020a158fa29424c2da4e038da694d14f43a30b28a07cd9a585fc6b8ed99147883d10020c76e55e7ca5376dc9f901b3bc37d304d554ea9c4e9c8a1137ffc41ac0df0a94f"
+    },
+    {
+        "Name": "71_U_P256_SHA512_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA1",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "fc2792d0c4dac7fc6765b675ba57c106e04b02430e59194ce92bec735cec8a0a",
+        "PublicKey": "0023000d0002046000000010001d000400030010002086c79b4632d81b0a2615e4f621e6083ef77b59e7fd6479661d0f5bee0e0c4d200020cc5dfd1c78c86ed2463a22c2165657bd5699ea39e16219eea87b21c9e1d681d7",
+        "Secret": "aef70d1aee62d0a1efd2d82830a07c69a1a03c4ecf2e3b6bbb2d3d81586b8d29522de88b5163f94132f1221d0564cb6d24b9bed656501aa43a75b901ae1d381b",
+        "Ciphertext": "00204497bb083747ec9a1a97ebdf9f9a789b337cc716ab577da089da36c620dcab4800207a5c5d93e591bfb1cf971d0be0dfc5cbee81358066043212568a86edd911c0a1"
+    },
+    {
+        "Name": "72_U_P256_SHA512_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA256",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "7a096f771964d720bd84164635c7c3bd5aae4e2115dd909212d70f9e557e71b6",
+        "PublicKey": "0023000d0002046000000010001d000b000300100020ecdd2f20e73e42dde183d976b11d7bee5b2de7caeb25e39e5ec940641ab8178400200d81708db6dbe8e406ac62194c89cd43946fdc3d8d14b556c3de83db898003a3",
+        "Secret": "699f45754c6e351157a8f2990c3b043bb55cd638031ff72aeb4141b7ab81b7d69fb90dd53ef32ae76fc64414dd7dc0888cefa7b84283389e6792c150eb698b02",
+        "Ciphertext": "00203743f6687c2401523adb5502808d453f8cad4a477f0a4198f9e222eb438d8ede0020d85c854144f3e7ebc83c8cae76dfaf2e3f42b41b9d62922962e28793c34d8b98"
+    },
+    {
+        "Name": "73_U_P256_SHA512_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P256 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "404286ff849a56899cf78f21cf3f5c10c24be4ac7a2c2414e4e8593fc0adb68d",
+        "PublicKey": "0023000d0002046000000010001d000b000300100020ecdd2f20e73e42dde183d976b11d7bee5b2de7caeb25e39e5ec940641ab8178400200d81708db6dbe8e406ac62194c89cd43946fdc3d8d14b556c3de83db898003a3",
+        "Secret": "4e787323c4de30263853234df657ab0b62b1df1fdb3b7e14e1c587d7079d27762017dfe38428aec3317356549f5b8b620e4ebe7163d0fb8b66b2a15fd470cf3c",
+        "Ciphertext": "00202f1bc7cd1f97da87b9c4511acc9726fc52dc325aebe9d80d86b873308120a54b0020f7fac1b21ad625e02c1a0b9d591fea9a548d1752db23b1e1923cb11db3127887"
+    },
+    {
+        "Name": "74_U_P384_SHA1_ECDH_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA1, with ECC scheme ECDH using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "b55c1be779b4e7bc91e3b9ea7baf7a4e005cdd60211d8d3bc8d38a9a501fa70dad645e2e2406b33352817c7646f113e5",
+        "PublicKey": "00230004000204600000001000190004000400100030abf07fa77fe773c250a7913ca76131f55f577017c77c7df38cd02235372fac2b6b1791101221b73daf1d8023cf5ec59a0030fc7a3e8a9c1720687fe21133343c71bf58ad8c35b4f4391d661d7d721ff50bebdca7f32e6fb1fa9653baba5ce31c188a",
+        "Secret": "7055e389bec6e0475588d42859971e384e4c4628",
+        "Ciphertext": "0030ccc9dc73fd879559145058e748d676e54d600af121158444dd10ffab5884885279cfbf612654e312f42719fd07749390003095e13ceb14c538a9d7d8dcfa0a54ed5302af112714b5ec2193e29690b6aae748fc861e0b83410bc1731d382d92b29423"
+    },
+    {
+        "Name": "75_U_P384_SHA1_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "d31a779119e2feedeeab6e42236b088f471cb3988b9d5cdf9131590e0d0d2e5b17254ff172b4d4c33b9d995fbe2e2f39",
+        "PublicKey": "002300040002046000000010001d0004000400100030b092db83da2905e148271ff6dc2a9f18bfac0e43c1f424fd736f3f2d9d71dfbfd2844fb43f0a166d20c248835c2e35170030d1aa8994f85eab189c3cd98bc1eede2b670c0a6514c09298053600976528d3339393a5919d34655746bc36dbb609b186",
+        "Secret": "095c9944c11243f9fc56ed883800e472f774c759",
+        "Ciphertext": "0030910eea4e3694c5a7f7b2a2c1cfc766239974d6ef08ed6c2a405e8a9543ed9e4f43fd0c1eb5ac87c4e276cf7adcbe0e93003070a49ab5b515520f1cc028d9fcb9b5e43e99215f4027830bc1d393e654b91239cfd19d430af1a0583dfbf5c006b729cd"
+    },
+    {
+        "Name": "76_U_P384_SHA1_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "6ec940fb62ec9b736e7d008c0a10cc6e27c9faa3e25a50f1c5eefe1c1c12d4a1f8aa02228f7a4b3082ca9f501a2d0501",
+        "PublicKey": "002300040002046000000010001d0004000400100030b092db83da2905e148271ff6dc2a9f18bfac0e43c1f424fd736f3f2d9d71dfbfd2844fb43f0a166d20c248835c2e35170030d1aa8994f85eab189c3cd98bc1eede2b670c0a6514c09298053600976528d3339393a5919d34655746bc36dbb609b186",
+        "Secret": "d70da5212a662c5c616611d21108618d7a4b7a99",
+        "Ciphertext": "0030656fa5cca14408fe7f1a0d61c4a73b2260c5ffe1c2021d79ff1214415675cbef28aac64fe019ef3528a58380d4bf28ac0030b195b9dde48759268889373c872abb6194699edeaf004d96d44b46b1b2da60186ca82a271ac4586279922d9d2bfa3389"
+    },
+    {
+        "Name": "77_U_P384_SHA1_ECMQV_SHA384",
+        "Description": "unrestricted ECC-P384 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA384",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "e53389a8af34fa6ebf6641045a373887e5829ac6959341974bdc60f84c10da274ffe78d1dd0b202fb685de89c6786c15",
+        "PublicKey": "002300040002046000000010001d000c00040010003026983db45b242f6c5d50df8e07f6f8308c4a293637c3176d361a8bac550b5df2a305261f930c3ca6d8efddd5f4074fa700302aa05c302f4bd1579a370196e26b8e530c1813eec3c0be331da00bbe706787a8bd140a346b79649e0a1a5a48f473debf",
+        "Secret": "39648e2a999159d6889dae506b2f1bbf7cae3fc3",
+        "Ciphertext": "00308dd15c269b6b1bb49b771fc6e6e4385848e222aaaf149dfcd68a83d2ebfdb0b4688462ef974cd6587e37a32c1fabbc1c0030ff3385dfd11a85a0161ae9e8146f12d937f09402ce8dde29554662b53bd092893df836008950801e56bdfad5f5a7c481"
+    },
+    {
+        "Name": "78_U_P384_SHA1_ECMQV_SHA384",
+        "Description": "unrestricted ECC-P384 key using name alg SHA1, with ECC scheme ECMQV using hash alg SHA384",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "3a716bd55cbf47c6d3781c3a8227f5bd40dec5fba10162d46b32dabcffe40a7be850d2b36032ed47f7709c1a74554fd0",
+        "PublicKey": "002300040002046000000010001d000c00040010003026983db45b242f6c5d50df8e07f6f8308c4a293637c3176d361a8bac550b5df2a305261f930c3ca6d8efddd5f4074fa700302aa05c302f4bd1579a370196e26b8e530c1813eec3c0be331da00bbe706787a8bd140a346b79649e0a1a5a48f473debf",
+        "Secret": "6e6ffa87044012d0e4ec85c2f1596638ca26f31d",
+        "Ciphertext": "00307cb931ea4d6a3037477c232756d0430903e4a783d5e75cc208397c382dcdadaf733f0f6e8fb298c039cf1b8b9287fa2000302c49645dba136f65120fedbfe8e209704f28a98510aeb18c35c589e11f52748639ee6cfde2b8bf407f32d71aa0fa5a5e"
+    },
+    {
+        "Name": "79_U_P384_SHA256_ECDH_SHA512",
+        "Description": "unrestricted ECC-P384 key using name alg SHA256, with ECC scheme ECDH using hash alg SHA512",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "a15afbcc5b8023c4a0234f3e21e1e14a1b36d2678c9a2abf755ed62d35375e2632c9412c5f8ddaf0deb1c6c81474666f",
+        "PublicKey": "0023000b00020460000000100019000d000400100030bff658e4291e93fc9a47e2f99c8995361523eb6e0e4aae03d3702fdec6278cbd59c1e296678ec6b3db7de36606a9d0d60030c1e2656d6494472162b3a6fdb3e59e026c4236cba0a8cd34b360cd266e9a066ee70af8af7b3c171a49ce90799437e630",
+        "Secret": "629ed8b1da2248c9f980242bfcff73a58d7699abb04404222fa5a1054f9afe6e",
+        "Ciphertext": "0030a9c4cc6247c5887cc05cd6731acf89f3fe2b79e7b6c31bb6b6e06e71c510000bb87b3f70d4f3f2f29863d23450e5162f003014dde6efe47058ca38eb47fa5f997d19fa6894f7e3c08b8342a49988e7a4dc8fada9b7d09fe24122a90b74e856963683"
+    },
+    {
+        "Name": "80_U_P384_SHA256_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "a5f5ef4635f13fd9f6afcd3d56236dafb9d6d1fd804f5d6d95e3769d8eb819933fe24bf27f938a5e726b0f7afc2a2895",
+        "PublicKey": "0023000b0002046000000010001d0004000400100030b2d679b396a5e61789c4aaad838d63506f3d53608c10607ec8f37d7e5119ec8d19fb5e0872ac75bf0534f870ea1a792b0030d89b8e7793fe6654e99aeb35affc7c9427ce1dc26e52013a7496210b7c75cc17c169f7916bf557efceb3172a9114ecc8",
+        "Secret": "72c7bea2575dc2cb387cf9cc8bd22d66d915a4876bee83f39fa84a2493bc4569",
+        "Ciphertext": "0030292e939eb2920e50ea41665baf8bc6c48064344bd1404745cc1d00dba206b6cfa82275762043fc6593f558e7aae5bf1c003006fb4746f4a48877d0143cc9219bbd3da0b4e2f61b2827d1a98def9776ae9fb0d1be102d58a797bf2fb060615f18e92f"
+    },
+    {
+        "Name": "81_U_P384_SHA384_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA1",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "97fc31eacb3b6f165f1c0bf119d9ef6447dbfd215efff73c0f03157aa48193df327494fa0f621409c15d086cfa511373",
+        "PublicKey": "0023000c0002046000000010001d0004000400100030b18fd0aae7bb872520ff868ead2959fed717a84e599e60062045b4ba2056d438a98a95ba6c34808ae55a6202dfca0d2c0030ca2f726d30d5c7790099cd6605348baf072ea10ddf922ba319794dfb64d4dc3df658a0521a10a4e782cb366e9f73abc4",
+        "Secret": "0b42ea5901e3e73abf0f1041c93b2aa7d83b0194a1e3f38bc8736d7f2d8aeecea4de1b61d9dae74b724f9eaeb5b274ab",
+        "Ciphertext": "0030d7ada08c4686bf582ca0ff8d10144c7b20c11381d342c2882bd0ce9b08ea34cd173ad5b734cfe95eb51de8b7c84e4d8b0030c768a95f5068ae65f78d1e3194ee5d0a2cf48c363e9c9269e99ba540e836c9f5f70edff46bf102d8e33c2cfdef985544"
+    },
+    {
+        "Name": "82_U_P384_SHA384_ECMQV_SHA512",
+        "Description": "unrestricted ECC-P384 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA512",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "01637125fe802abb3998f4a52dcc83ca7b95d4f7cea2ce6856fd6be2a0cccc1b40ce4ff58f961e125bb2ee4924777733",
+        "PublicKey": "0023000c0002046000000010001d000d0004001000307c6aa1a01c141957e6399039aadbb71ab0889385cf5620a497d45943d696cbb9fba4793a8f9520bb8104e0aece346f540030e3f0d0fe6e41b85a098c9ad2959f6cccf58e285f0cd237ecea9eb8b1a9aae370d2d8b6c22008f3003cd80d681e3a3cd1",
+        "Secret": "f61e42d5cfe913676fd99a6d8f1ad96ed569264b0dc603124a364aed18b02689b7f150ba65bf2c0d8adc577d11d6561d",
+        "Ciphertext": "00302f5ee117a8afc931fcbeb1fdef0438d0959b085bb73c6bcd7d6e983d8327ff6b1f5af791565bd50ce66fbb9605014ee2003088a1f12957be2074d48d3f9bdcc3d74f22c348db02fec4c6650124b6d388e85f9f5d5349c7f4ffc259155f3b3fa72c72"
+    },
+    {
+        "Name": "83_U_P384_SHA512_ECDH_SHA256",
+        "Description": "unrestricted ECC-P384 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA256",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "f5a1bd1aeee631f4f7cc682d41c388ac8dd7bc34b3937402af50e58da513a01ef2ea93687429c83f421e612e5a216021",
         "PublicKey": "0023000d00020460000000100019000b000400100030a0a2ce3f4ad02c108a09595626f5fcad1df89808358e1512db99e40538a403b1e7dcbdfd0f8a3197cf6bb8379ea27a800030e6c044585c1c3d7fdbd72272f9502cca24897a9883e3af85ba37e5cb8ea9c673a5a661420f69cbf3b2840c04636efe76",
-        "Secret": "2ac74f072af8056cda0befc5529613af4e168c3fbfe4e0d2869bc826de850334b777b3adb128870a4214c4b5e452feb6d9ce0089b5802fbea239351350d25bb0",
-        "Ciphertext": "00302afb2226bb7f3d8107862f71fb7d050da394234e900ee03ac39f139fb615b81ce2c6a7811c5ac865c05cd255dd7349e70030d4312c650fc63f4b76e91381b20c18a7081d7391ba0602693777c473e048ce27b4a5ce7250bf2c1f09ce9477a0fedf29"
+        "Secret": "7f0ec7901df58e7f9365b17ee0e0ca9447dd3d79538a02a9985661e8551d4f5f821842a3d35323b5cd5ff1e33d70df23af01618e6765b90f587885712ec29f2d",
+        "Ciphertext": "0030d4c8c2d06f9b5a953e8cf66746b82b3c5c70c993b6bd11517bdb4f5fc009bbc8872c915b3a9f1bbe6601b033aeba563b00306b68127f2e828aec03b3a45aa7ffe978f4376f111842fa4c0d3e33c0a3142fcd01989b7c11566650e3266a42e96606ee"
     },
     {
-        "Name": "67_P384_SHA512_ECMQV_SHA1_unrestricted",
+        "Name": "84_U_P384_SHA512_ECDH_SHA256",
+        "Description": "unrestricted ECC-P384 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA256",
+        "Validated": "TPM2_StartAuthSession",
+        "Label": "SECRET",
+        "EphemeralPrivate": "bb339dceca646ab831c4681d906c69269c4273590479b36acfc7913ca335759708e6e46a6d214f599ce6f4d07db319f3",
+        "PublicKey": "0023000d00020460000000100019000b000400100030a0a2ce3f4ad02c108a09595626f5fcad1df89808358e1512db99e40538a403b1e7dcbdfd0f8a3197cf6bb8379ea27a800030e6c044585c1c3d7fdbd72272f9502cca24897a9883e3af85ba37e5cb8ea9c673a5a661420f69cbf3b2840c04636efe76",
+        "Secret": "35518a52107e73e0b9d05017a6097c9ff1f164d71ae7ae32fd813fc1fdcf3b4e230ab3656006311ee0110d46ff5b16eb8270cd38582264b25ba498269b8f2037",
+        "Ciphertext": "003051fea1d4544d173c6e94e094d2b9771787f0b0880953dd9189c493d1555679307107d581faf180072ace0fdb251013f8003016d67787ce238151a51836d67e5d9db4130e18e6ca815784bec4757bc38ab3de64009d552c88a568d103c6ff026e4ee2"
+    },
+    {
+        "Name": "85_U_P384_SHA512_ECDH_SHA512",
+        "Description": "unrestricted ECC-P384 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA512",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "d542e196c965cfaefcd65c60a339fabe6b830cc9ceb2a5620fc7c19a8f737b3f16bbfffc41ea4f4d3685d8eeb5cc2a57",
+        "EphemeralPrivate": "e40e238d2524c1013980a5cb214a0d153db402767257f6fdf4ee640e7c8297fdd7e6daf1124e3920d0647c695b3962c3",
+        "PublicKey": "0023000d00020460000000100019000d000400100030967084455663564000d9e968b798c679fbb53e862888802db51158c0baab767e1e14a2518dbb4bcad877c295448a9f0e003087921d7da15f87cfee37a2e7d875633513253645d2b0404df689380bc5e1e4e34cc09353ae08a2ad084eca2b3ce17b08",
+        "Secret": "1b5bada687d2b61b7b53279b1ffaea4b33517bab26efc244ef3e856a161ff35987606527cc36c2988d7dba7aec5a3ce6db56c3fc4d772546d81f311b3c49cf6a",
+        "Ciphertext": "003090efc53c2ada7271a43548d0c18a5cd28fab1aa6ee68108e4ee306f4f893f4adc168fe76ce74b420cb8dcfb83e12dd0f0030028f39bfb9409a671963a27bd05d61eb7a7d1e7d15b7639f515c9f45362b4eeb00a66bc356135e2634ebcae609242174"
+    },
+    {
+        "Name": "86_U_P384_SHA512_ECMQV_SHA1",
+        "Description": "unrestricted ECC-P384 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA1",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "bcfd0be8848f9f70b46e0499b6991ce697da3e9acf8f1d569a13ffeee522cc1b7ddc62ca2ea63265c6df86ed9775ef14",
         "PublicKey": "0023000d0002046000000010001d00040004001000307b9c85cf1bb49deed8606118afb2da02e889079dec5740435793cff799205fe7d8995accd37a9824e8b66d107ede95030030b91ed259f0b842ff6a95683e4e3e216518f4bc36a4a89e80757b419efd8158d971841ea9155e235a94b8782cedac6da9",
-        "Secret": "70ed20dee6ffe58a3181fd0f84d6acf2fbf5e94476a27ddc55a1b413de90748ca350c42ee83733c73f1c60c1170fea8adf21b38ffd59fd4b12a0130b0785b846",
-        "Ciphertext": "00300b40f7484cf23c7520b00f41314d9aef4880d47c0853d42da4d14b02d24b0b7d5fdd81859f63a44fbf304a2b369bcc110030252aa4fb3646133991142b0053200aff0fe1852e54579c2a77e5636f7c9d619820c3f5162cc3f5af93003b31971f0db7"
+        "Secret": "12eb519b4e588da184a135bf46d587bed77fb6b1e8de35a5f207a1ec9cfa2b44fbc5e673be7dd38f03029652523817ca2d365d4960fc989b9388fa12273ca225",
+        "Ciphertext": "0030911fbf4f59044175aa31dcf05384869be120c75c6f9b2935851bd07d41989c10ef8ab21c812d0e47aedd02e71a7d256d0030fb906ed92a84da05404822ab4d3f0dbc1aa05dfb88c38c82ac97fc9fa4c9da1a53cfedce3e72a69b80ae2795f024c2a4"
     },
     {
-        "Name": "68_P384_SHA512_ECMQV_SHA256_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "961c4672bb721aa98a68f652dfa7104e23ca3f9b93c77d7f6e8384b2a0e538c9b182787182aa84c6068e42bca112387e",
-        "PublicKey": "0023000d0002046000000010001d000b000400100030e20084332af56a04c6bb7be3559b5427c76fc0e7dadb75f2ac5f91382e06bd7b6b55d4643ef106ca710d3fe36cfbf54500303b7ca5d9461120388e1b1aa7ae8f09b2e7ba4b1cd832b1daed4dd41828e5a148c170e4261fac39193a5a63b6b4d43f90",
-        "Secret": "2e5415ba2bf7b80e2b9e814acfabf1bace998b98960799a94a02766d27bcd4ed97b47a88ca4e10d5d155b31b90d634d6c2c3eadbea7eba4965d05dfd2543143f",
-        "Ciphertext": "003014110653b458c19e324429d4c2936930874f31209f1d5eacba0a7454e564c1f7069fa8182dc0f69e61e3c236c745d4950030170eae1fc87101cf5e95212f5c7058c08909e67d2a54233aef9a252f114140f25910b8fabd2e2b986f42b52d325f097d"
-    },
-    {
-        "Name": "69_P521_SHA1_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0044cf0f9cd132c3aea631bb22d84623073de2e813dea9eb2f0b6c9596f495bbb8e5184aead7ea5d5149d2aa0b60dd1a2b563c1529e0e5fa5392ba77a2615d6406bb",
-        "PublicKey": "00230004000304600000000601000043001000050010004200b89792c233738e7601cccd835b83236a81ec2eac7ea72a75e15ff5e135aac561629e954d990508f29076e8c95f34ab8f913af4f867675d56cd22138d77ea6d079600420057f18ae6455bbeca379324c84ebdb8a7facf8e593e489005b3e4e5f847bee7de77206ec11c9229e7ef34c56549c4623c2b116bfe5ba7283d7e9c883ec535570f11",
-        "Secret": "0dc6d8042857af049cd4660b13ed9f5960e2f176",
-        "Ciphertext": "0042019a42fcf3b35aa72dab4cff8e1b4663dc3bcd294fe320b9ff7b458642f636cbbd467ab4a4b5c244fb5c1f582889f9dcb863adec71a0ad9fee68c5845798225167850042004889affffabb70d79118a378dc6cec00986e97ed4da9ed8e4f780dc7abf4e9aa42123a55dc0fc7ca2b764a43102c9e0d22a7a1a40e750ae123b5053c3bc48a163c"
-    },
-    {
-        "Name": "70_P521_SHA1_256_restricted",
-        "Validated": "TPM2_Import",
+        "Name": "87_U_P384_SHA512_ECMQV_SHA384",
+        "Description": "unrestricted ECC-P384 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA384",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "01c6bfb5f475791ccb9f66f1543e4d5cb243fa34bff2436a1610ec07bcc803a425448d0ec9dc8545b7af16db0d4938e0d6607c4282505d60963d29251d824d304526",
-        "PublicKey": "00230004000304600000000601000043001000050010004200b89792c233738e7601cccd835b83236a81ec2eac7ea72a75e15ff5e135aac561629e954d990508f29076e8c95f34ab8f913af4f867675d56cd22138d77ea6d079600420057f18ae6455bbeca379324c84ebdb8a7facf8e593e489005b3e4e5f847bee7de77206ec11c9229e7ef34c56549c4623c2b116bfe5ba7283d7e9c883ec535570f11",
-        "Secret": "f26085b93e13d76a49b4e393b2503ea9b2a83c1e",
-        "Ciphertext": "0042006a1b90615ab143ad8cee295f81b53ab050db56df6e0370c4f4cce71bd9e6cf00164d97e53326ec75571bf13a8eba46a6f7e0d86f01f53b9bab1109496248987ae000420111fced61b933bd0e1c12812193a61ad70190bd12b668308b6d7f56870ec300115136efd8ed7e0fcddfb51fe516109ff5368df9faa058a3ad6af5d07b318e344f49"
+        "EphemeralPrivate": "3bed7747ad1490b2fc8733e3b279cb68427b914d0fba3c6e94a131237454cb90727a6b32d95f74612f0262f1f26cfc0a",
+        "PublicKey": "0023000d0002046000000010001d000c000400100030c085639f5771812726bcb18a11bea8da8a160be4843f9cdc6198d4522aa107d3cadc4bf900db75b6a76e49c99dd37c370030546e711afceeb3628208c6cbc3a678fa8674423f739d5878b7db4ee4831b7ef838b70184e40d9f9487db30f9550f27fa",
+        "Secret": "a18154e31be14b02900480e79ed36694820e668c5d19d521eeff3407251b486834d7eb295a84ca78d36cb07002c2e86172850183ce0fe7453f2b708b7939c137",
+        "Ciphertext": "0030dceb3693844ca1ad563cd9c5072f33c1678072012d921c3675cfd996fd9752583e3a0e4fea888cc1b412496ca07e50d700306eda9a247fa9195651bed75adc0e88dd668743189bbea3053a3e926e730edc2b70ed283396583ac1e2ced2bc385c3fe9"
     },
     {
-        "Name": "71_P521_SHA1_ECMQV_SHA1_unrestricted",
+        "Name": "88_U_P521_SHA1_ECDH_SHA384",
+        "Description": "unrestricted ECC-P521 key using name alg SHA1, with ECC scheme ECDH using hash alg SHA384",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "003dbbcb504b65db214da2d45f439f21322a71475abd6758f7470766a3bb7551643a1c09554385bb5c5c6099d1d9ec8b069cc0fd66bd6736c4ca2f6e03d583f7b943",
-        "PublicKey": "002300040002046000000010001d000400050010004200100fd97ca90d20b15961b7a5f6ab54ce0fd140ba37cd3dcf47d532a4283bb277e2bf1dd881bc7f36ce0adccfd9d23c74929e5229a22440b13680c72ad366add45c0042006f1dda8d5675fb42875b00b8e70200984d5ec860f05e09fe84114847373236ea94caeb90d7118ccb16ae2272db983ac77371ed36131801a9101387e4ecfe80d6bd",
-        "Secret": "ed35a0919b1e94e77c60e658153ff0a921e5478a",
-        "Ciphertext": "0042004322a6a2934830f675bf4a62e97b28a790d5f40ee37604643af6e1b31536945b0b734a0fe72b75781cec44b7e30e4497ae985e1000b9bd4077991cb023dcf7e85a0042013da457cd6a91438bfa265cdcbe68a3d51529b50487d6fde7e925015e9fa8088a6c0886ca924ba49320124e6eeee86121f7c219dcd15f88f7a7cb51badfe5c3b1fd"
+        "EphemeralPrivate": "00770db251ff8eca8539c2492367a7026a0a002e9f1b06a3f57031dcc261723a7ce832224c7952eb95ea820e6305cd4e106dacc01e48e7a2aae2aa387396493e250e",
+        "PublicKey": "0023000400020460000000100019000c0005001000420163b84a5b64ebaa58a5ab02dcd7404a1a8c13a60ec936bc147a6d2d8076d04579ee2cefb02064a7ab14434f5deabea2dbc399e595cffb81570670bcfdbd7bdf2baa004201910339007700d941cf79ea07f5d66501458a8f1d307477fa1de2f942b484206fa6799da2290b0df12de1c2bc40ac51612c88ad575ba20d20942b0abbb52a38eaed",
+        "Secret": "ca029960e275ee469cc34f9047b5bd61de2874cf",
+        "Ciphertext": "004201d9ba1bfed3b73cabb7925b6d4f0c424b89fae8745ddb0c333767c4452491a208c131620a60f8985273c4ed73a09eb6584bb4f9872c32d54a457d188caa95a2b3b2004200ea0ed19c22a82d7f0fa36349ea9cd08aa43df384bade4f4177e5d92c4878a6837520e3356c14f02756196e39d744af5b2bf92505c40e9e8a935e9c6de3719f8f01"
     },
     {
-        "Name": "72_P521_SHA1_ECMQV_SHA256_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "01be8ca1e76a1229ea3741fb924485767476258a00c748aaf574d8114ba8f93978142934c2375027a8a011f05c0831f6d298a7264e54966d3fed8449ac6c83c50eb2",
-        "PublicKey": "002300040002046000000010001d000b00050010004201f489bb00048fd90d483ab577ba4cf5641a482f50a98c616b85e653779d88fc151c69103ce1703af951b5b7db691c9e7f9f84a026f2038425c9082f7b2704d91fef00420099165add9aed86de7e7a22c864d9a6b48d9a0d8871fca53b546969a8b165a58392f4990c5d6475117322e6cfcdb7b2b4e2dab8ae04016ddab3fbd1d1895a4135c0",
-        "Secret": "88c748d42089defc90cfe61a0700fb989901be04",
-        "Ciphertext": "00420096595f3d34c02c096a308651aef6aec10bf74fa1557a4b7801328c6c0982068f29441633d9ec75e29d5fc3b05429fc0b3d4e88f93dd538cb9210a8c8fd1f46eb2600420066809121e0e56b127ed167cc535a4ee94f5186583c9e648a9972faa9f4891be22d81253ebc2263a772c1b9ac2b3097f2cfd7de90cc0ddf9cc55ebd94294220a12b"
-    },
-    {
-        "Name": "73_P521_SHA1_ECMQV_SHA384_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "0073a80add3ab78a0dfeea0aa36054d3229e999e2059962caf913cb5b905bc2a2c7ccec9ee08b5bd94a572251ae49ba054698a68bddfc45de4feafc5b61cf5481c23",
-        "PublicKey": "002300040002046000000010001d000c000500100042007910ee8885a507b5c3a867ea763194020a8ca1764f4b7bb315fce087aae90290bd3b9745f0e45fce85a914b63c885c1869a7a1b5c673e99f12fdb66134a5a7b37f004200f8b59760ae5b6523fb1219d569da4df2dbc45524825aa9a1f03c8b4a2cabd8238627ddfee16808dd2ff2cab62c51ed187994ccb03017c2018eeebc877232ddb42a",
-        "Secret": "3f3e8f51857b0834c2083b2b0115eadcc380f66b",
-        "Ciphertext": "0042011a26ff31922d371da9cfbfc66d4099118db3dd785b682bf04059cf2b212849ba07ea919b00eca7b0d41c581d29019f274eb162121128dd089eac90448be4800f3b0042019e8431d3821439aaa4c438c0bac000f562a86faadc2f53d55c86afe260906f26d4c46360a6adf007045e9d5fdc1177a5cad526f64d0ff79122a7935cd1b3333a2e"
-    },
-    {
-        "Name": "74_P521_SHA256_256_restricted",
+        "Name": "89_U_P521_SHA256_ECDH_SHA256",
+        "Description": "unrestricted ECC-P521 key using name alg SHA256, with ECC scheme ECDH using hash alg SHA256",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "004a34c05e859d2cbc657194b110d7d0e674cf5245cfd60affca8da00469c1c79d16f8591e57bed9092a0349771990d8646a75e008427e2d13342a71f862044ebc0d",
-        "PublicKey": "0023000b000304600000000601000043001000050010004201b42aff73fc684e652c911cfe5af8013449b52af630f6973107937ee32eb80c44cce0164c2a7d5f8154c0c4e8f6c2b9328a22712ae3201adf8ee5ae2d896388159000420199a22ec2aca28b8a1f05dd6e9a9565b4ec5c0a46687d78bebf14b253d9038aab4161b4ff0ea410e0c2552796a4d08216d632abd6e6294a95b2078a3b8fdac56dac",
-        "Secret": "cbf454f5cd97e1b09ab65b5669e28f0df2a560a2ff9201a86dbd11fab72c6647",
-        "Ciphertext": "004201e997b7418e763ccba49ef7e6af13a1b5d0efd4ab505c0602b022e9014c6b8739eb482e06b0bad34a3e1da6b603257d4806322cd6877fa8fe1c12c6044a6a6d4f2a004201c19c75432d4b5fcb1f7d54182cb35658deae12673a6218b1f1dbe161a6ee84c9416fb114b07d8957e9d87d1886d6dd7614ec19cf5fa225ed4bb08d956f8d5ddfa6"
+        "EphemeralPrivate": "01555277c4cb70b36c1dddf19de1cb5cba2bcb5006812433538da6e6421aa895f04124d04db151025e118f586a0fae68f4bdeb34521516482cc3109f6ea33fe58a06",
+        "PublicKey": "0023000b00020460000000100019000b0005001000420162c54e8645fd5c49d0e4c2184189ebeb92afe754be82e30a0b203c90c70dc2e89bbc0ac015b980b5124e85528f429bdcfdce6d8bd9ca85a84b958f36d7eecfe2b4004201da8d472282ced3a02f2a55bea6d0621ae85685b80e6a26157526c3a780dba780f5b01760c49ac7d24b7746f65a81934e4ebaa8dec9a920cfe930bc91834b7941de",
+        "Secret": "d74dd181fea6b20bb9b6317c1e92757f928b6800860483297d7d5c6df382db5f",
+        "Ciphertext": "004201a8198efc0b54af4486ee7ff9f499067f42a15bb15fce29398a5d98e674a565f83f0e7923faa7be636de560c3fcf820de96d0b56cae87f152bbbbdd76111dec0310004200de2cf755c74291e3d096b37c2ef4b5ccc9b80798a2c0961fbd0c643da09ec83653468738d8a2d983878e9fe1ec4a598b7e4229ef730ebe94df4a0a99091e7aaa68"
     },
     {
-        "Name": "75_P521_SHA256_256_restricted",
+        "Name": "90_U_P521_SHA256_ECDH_SHA512",
+        "Description": "unrestricted ECC-P521 key using name alg SHA256, with ECC scheme ECDH using hash alg SHA512",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "005c4374320657750ae6889e5697ce34bcbe8992fd528b910e17785b96fe1b441c54a276fde9411bd8ebb5622ab49e9e4a72c8a4472e61a863059efd0abb295a9128",
+        "PublicKey": "0023000b00020460000000100019000d00050010004200bed1b880f04d19f034ffa5e98bd30769cbb15d9d2a7be4f41b9a96973d136e20b3f4617f515af18b70217a8608c5024fd3fc6b90e03ba5bdb1acf2e701713937500042018fafe2a53cfa58392632cb396a2d13d96b5aebd15e040005a83a9a078033cf255ce6190bf15a2191204e90557929f8833c04bcce3e63eeba8d99fd22835dc9622f",
+        "Secret": "3e5af2c884eadc5378bea03f9ec2a3c8758a5bbd81ac3388b8bf44fbcb39388d",
+        "Ciphertext": "004201c8ae1973e4154af3a295293afc337b600d260429985978c18a98a38e2541e3b6012126b474c673f448a430c5997adb8852f39688e9a8d86587729876f5fa20314c00420080b4932d0f4e11d0779adc0c3aa7fd4372418dd99e51a95ed5273e0438f050fd5a06e3db10e9f9ca79f095c60ef3db9f838632d7c183e468bfb4d63a2e462b2757"
+    },
+    {
+        "Name": "91_U_P521_SHA256_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P521 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA256",
         "Validated": "TPM2_StartAuthSession",
         "Label": "SECRET",
-        "EphemeralPrivate": "00e4232f5d6a6dee45082416e98744d953621c5d355f1a988980a3aebb9ebc150efbd859da25e4dad62cdfffee67d1c36b5301531bac2dcf025307686204d6bc2f7d",
-        "PublicKey": "0023000b000304600000000601000043001000050010004201b42aff73fc684e652c911cfe5af8013449b52af630f6973107937ee32eb80c44cce0164c2a7d5f8154c0c4e8f6c2b9328a22712ae3201adf8ee5ae2d896388159000420199a22ec2aca28b8a1f05dd6e9a9565b4ec5c0a46687d78bebf14b253d9038aab4161b4ff0ea410e0c2552796a4d08216d632abd6e6294a95b2078a3b8fdac56dac",
-        "Secret": "cc9531d5671d5dca1dc10794a520e47f876f7c3a37824a9dba7fee0f3813c7ec",
-        "Ciphertext": "004201a6138f792ec9edd54abd5ecd40ee1f08c40fb81ef434f6078ec4506bd064fb51a85233afb1f0aa90bcb028e87a6bc9bed4c6b6389b5b97c154c0eb21b5744ebece004201ceb59a119f3ee691b3a3addb649b57908e460afb59a7d64e7b9ac8ef6c720f3ebfaa7634a5e0df9d3e01e1e06a0b44b795614dd03211282e5dee0a2db18a45d9c5"
+        "EphemeralPrivate": "014e3812173ccfff7bbea318ed5a0854232cbfd8bf732c76232b019d53ea2dfa3341b7cbb0cae4a58f1cc88a6ded7518d8c572234591fbf1e84e3dd9b825c3f2ad2e",
+        "PublicKey": "0023000b0002046000000010001d000b00050010004200f9d46659aceff79934e9281f02ceaecc4bc3b5497fdc217059c8a17b98e4bceb426a7e3f4485ff03478998592dce309bebc321218126eaaea8754bd08cbbc9ee6e0042009591da6f296bdd31bf64861268269f3c84d9ba6a9eea66be5dadd0309938d9c15ceb3bf63e520e975aaf769edc0937f1e9c65264d331999aa18814539eee00310d",
+        "Secret": "bcdfaf27eaea71753911a64cd0e4c69c837b0aa0901a0a86e09baf718c13479d",
+        "Ciphertext": "0042004406df787c159042666607a508515450ced6b1a3c8d3ff1fbb46052bf5fea787b6fed9dabe476fa6a72f578897e656ecac6e73892b25d57a57d50382b8f9464d0000420137291d622a57045bcb13b76bdd3b2070bca14dcc6d3091c0cd5175e106c04e2c49c5d6c06401fa29e657a242c2ce64ba2e484824295398c79c8e02514cdf9db891"
     },
     {
-        "Name": "76_P521_SHA256_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "010e97d031e2f409478982bcc14d6a4529205fd6f1e2d3ccacfb87464101e74e0de70a78d717feed77efc36b5a15a83e2953638818f4e44bb6a2c7ef04f804d1c3d2",
-        "PublicKey": "0023000b000304600000000601000043001000050010004201b42aff73fc684e652c911cfe5af8013449b52af630f6973107937ee32eb80c44cce0164c2a7d5f8154c0c4e8f6c2b9328a22712ae3201adf8ee5ae2d896388159000420199a22ec2aca28b8a1f05dd6e9a9565b4ec5c0a46687d78bebf14b253d9038aab4161b4ff0ea410e0c2552796a4d08216d632abd6e6294a95b2078a3b8fdac56dac",
-        "Secret": "c26b752df3570bc83d97472728dd1fa535a6c5185ac4c43193231b7d5f6a18db",
-        "Ciphertext": "0042000ccc591d18429de682cec3903fa86abf23864d096c66772e6fdffd4cf59aa63219882b773f4b2a072b0bd48a693521e53803ae0cd5d6a1d10451812dc13369eea00042012f4a600e1f8bab6de5b7defad4cfbbbaeb612f237580dac50592625afa6df93ec2577bd2a280af5a4a0bf0d896448f81c06d3f2f15d5c6339e18325dbd1591f98a"
-    },
-    {
-        "Name": "77_P521_SHA256_ECDH_SHA384_unrestricted",
+        "Name": "92_U_P521_SHA256_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P521 key using name alg SHA256, with ECC scheme ECMQV using hash alg SHA256",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "00eea2644fd8536b8110645d8adfb9eb9ecf1bab3aa3ec447a479011969fca230d7bf81cbdd4f1713e8ab78e30ca991b2c0e73818156773a23f1fb29a05c919ee48f",
-        "PublicKey": "0023000b00020460000000100019000c0005001000420100519e1608b1609e1db342ab6427538cffee4cbdfc373fbd5b729b794082f40b49ccfaa11cb28aca32fe3c05e08b0757b1f987a6a311ddb8387217a1f36ee1501200420107e81b347eaf39ad6f78a38593692111ef7ffc4589186c66cb52ab04df55f0d0d973f8a5a906486f78fc00d749bce6291f23a5f102b8269306557f120b412f5757",
-        "Secret": "02965efbaa7477ad6552d941d0477ab8847a1bafeab1e876cc43e2ee020541c4",
-        "Ciphertext": "004201a2009fbc99689909986d68bc45958c82ce539dc5715b04d4cffc031f136d19e9d34f12d80c4a27ec3ea5949b3e24cb8465ccadb14e9d5fefab926913fd3b4a5c55004200578eeb540cf35cc2b2eb0d47ee17bd2aa610b7ad68066e7418c5fdaa27d29dd8e4520bf898a98bb1904a62f46c41fabf0b0eb4cb80fc58833fd0a993bfe6cafe43"
+        "EphemeralPrivate": "01208f6e7efc42e7ab52efefd563f57fe74369d5aa9518113c336baa4c1cfe19e63038166299e7d8fbd78c7510d978656c32aee861d1d9b8c9489a7b9f1737af8ca5",
+        "PublicKey": "0023000b0002046000000010001d000b00050010004200f9d46659aceff79934e9281f02ceaecc4bc3b5497fdc217059c8a17b98e4bceb426a7e3f4485ff03478998592dce309bebc321218126eaaea8754bd08cbbc9ee6e0042009591da6f296bdd31bf64861268269f3c84d9ba6a9eea66be5dadd0309938d9c15ceb3bf63e520e975aaf769edc0937f1e9c65264d331999aa18814539eee00310d",
+        "Secret": "f2cde35fea462f6cf12c09c988f2d75cbb90b20f3efeca9062873533534fa028",
+        "Ciphertext": "0042010d16a4e7553b6c08f7dc28e913976262bf5c47fd6e2ef4009b0f761bd59ce16c1c686b9141ac9afe0541fa9149317b575f5959fcd98f992a5f332e50838c4c96d4004201c8f0391df5a6e5555059f3a411ffef0562d2b28da39ae06ddfea5b39d613f3b6c2479eaa8d947d8758081445034dd574cb09439ad79a0b6602ba70bd93c0cc457d"
     },
     {
-        "Name": "78_P521_SHA256_ECMQV_SHA384_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0166c0891ca38388be4244b8c2406222b3e4f3aa076570c2a4466e47a7b00659e8dbf5c4b40f9e9618e508ca1e2e0a151b015c1ee4c235c94bc43c2f16a59883b0e3",
-        "PublicKey": "0023000b0002046000000010001d000c0005001000420072f2385b58fe4bc421e3114f02f13c2cea4888241dcb9e0ff650fd14d4eab249e74366f70d4fda2cf716e66faa92967cb8860f79396420f70cd98c15bfc648005c00420019073be882b3bc324e4d2598b5128f01b8b3986b9e61d660ad1af51c69e380c604a41db251d18cb13e233904cd3092159320ba3a5f08f0bc1c4781b75ad29d0b73",
-        "Secret": "c54d09698f060229701c586d4a09190991dfabdd9fdd8822a5884cf10d4a36d0",
-        "Ciphertext": "0042008c9cab0a044e53421d4d3aea890b07913be135b259a08e4ce636568a1bccacb3f965d6fd86becd24964bbbcd7c2f558d79ecabe0d6c4f0fbe302ef54cf09d3d38f004200e84bc06e6d9aad6747d77f4c2728800d74b5c5d2172dddb24ce67c4efcf8d2afd4fe3f5bc8f7c78fd465627cddccd369d09aebe7bbe34d1d202f98e1376f33ea53"
-    },
-    {
-        "Name": "79_P521_SHA256_ECMQV_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0164e72d79f7a4b161891272c8afba701ddf2f607b259bf26e25d5accca81bbb96f9329423b2119fa359aa6d976312ae35e6bb7534de70e0bc456a64810b1b8f56d5",
-        "PublicKey": "0023000b0002046000000010001d000d000500100042009251ec4975c8697322d3c90058082a995d783d4d920514394500e23235d5522ffb3f0f6ef67fdbb50084065564853c44e2fcd18df6894f0c987eab6b2669719f930042007ce77c3c83d7e998d2ffac530813a79b80da47ab9f017499e6a7751eb96a99eb1f9bc15423a6067f8329d6e0fdf3644885691494c6244f817cc782b41c9f36ece7",
-        "Secret": "8aacbfe6011dae6101e16b2135d0d2911c6547a431c7890319565247c5806292",
-        "Ciphertext": "00420149d3e4c9b5f4db23f47e3b6edd132eab313ec21e1c57c8ff503dee5d2a64bec4e86cda88052a7ebdf1c29c336bff12085d5af971ce2de241cc305c1ff4d9cbafa4004201388ac207686c548dbcc85976ae5115b5a643ff0670e783da0fbf722913b447dff3b24692adde44c674385766e9c714ea18f5fdef7cf33b4a6aeab0af83c0910432"
-    },
-    {
-        "Name": "80_P521_SHA384_128_restricted",
-        "Validated": "TPM2_Import",
+        "Name": "93_U_P521_SHA384_ECMQV_SHA256",
+        "Description": "unrestricted ECC-P521 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA256",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "016b260127fc2348b967d776da65cb044615fe3397d8bac55091311be608ab4798d35d4a3ac80591172e7606a500e17f826284b14ab12859dfec0e5c1e04b63f2969",
-        "PublicKey": "0023000c00030460000000060080004300100005001000420164fb737dffeb70d93fac5b683c8e6717628833917793359857f128cc7e117ccbb862457fe1dda4833076d71cc46651a3888a129119b982c6c9acaa6de1abea4f41004201d9c9ee8d2b7eebe84c20544919f86182b8bd6a56b3129abb5c6e54713a42231a4ccca483414deb838718bf7cec55bb2b9a3eb2aef4c455b7b2a8aca7eeab221161",
-        "Secret": "96b88e5214e42cdc5c79853a2ca95da594237f0fbf16dcd787c9012b836b32a746954d3fabc38d808e8c4e3e462a1c4c",
-        "Ciphertext": "004201e5e6c23610aea3ec9a43395708b0d5e55ae824e0ff24e8b668a0d3024a728febbbd2e65560695b9ff804c08305f10291e1b7478dcfbddd4f327a010155a474930d004200f3a970aa71f84d2dbbdc3b3020a0c74cdb35b44c1f5bfffe3315da852c8309c30879a63726e1c83734c813b64aeb6a89ba4f484b910703224b2c4cc9a9b0a6ce2f"
-    },
-    {
-        "Name": "81_P521_SHA384_128_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "0028ed6b991e9f3f2b3855a641d5216be47ae65779c8af975429f8df699575fea6274992562a7067ada56b32bfd9dab1ebd0a028de1d198eed67700e8bb52158bf4f",
-        "PublicKey": "0023000c00030460000000060080004300100005001000420164fb737dffeb70d93fac5b683c8e6717628833917793359857f128cc7e117ccbb862457fe1dda4833076d71cc46651a3888a129119b982c6c9acaa6de1abea4f41004201d9c9ee8d2b7eebe84c20544919f86182b8bd6a56b3129abb5c6e54713a42231a4ccca483414deb838718bf7cec55bb2b9a3eb2aef4c455b7b2a8aca7eeab221161",
-        "Secret": "93cad3d9f77674bf90bb4db05a3226cf43ef4f3667d20c81c0c32d1502956e8a4b8b1c84fdad02fef981d09a8dabb05e",
-        "Ciphertext": "0042019541e868bf225c27efe8e2aa5be57728c70119f07d6025aea3379936ef06437bae1c5b476d6e1066e37562f2da4b1490e5246aa3ef3a822f4080eae3b861a6b08d004200a3710db2a70019974ddf70b166a14d3e30017cd13c7ef90faf31baa373a127b99e6ddda5529f5ac2e8c767dc5985906341aee71c68d89a3880fc24f4d61d587db1"
-    },
-    {
-        "Name": "82_P521_SHA384_128_restricted",
-        "Validated": "TPM2_ActivateCredential",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "0148846e03b56df5f9f47e355b9081a08b6907dc4b5f1f91c16e2827c015c4d544119a1331b88952afe5a75633962c4dcf4651a7eb82e0bb08f5bc51976badb1c5ca",
-        "PublicKey": "0023000c00030460000000060080004300100005001000420164fb737dffeb70d93fac5b683c8e6717628833917793359857f128cc7e117ccbb862457fe1dda4833076d71cc46651a3888a129119b982c6c9acaa6de1abea4f41004201d9c9ee8d2b7eebe84c20544919f86182b8bd6a56b3129abb5c6e54713a42231a4ccca483414deb838718bf7cec55bb2b9a3eb2aef4c455b7b2a8aca7eeab221161",
-        "Secret": "c76b3f57240213f9e6ebe3a44ad1a81f1a61d9966fd535407f769786efbb35d7f07448daa36e6e752c280b61170da901",
-        "Ciphertext": "0042018b4df6137b5fcc308696bf09adadf4ef57e5a1ad3d9c416b8c095fc74efe10cdee77de94b8c0a9fe2867c4e34d9a53e8ebbb02fd46b5ef3af5908035f610e98bd50042005d68c7efcaba41d0c81d7f401454939206caf6aaf0d75bd2f83b0275d551d9f5ae56d86e3827e274d533b2f28f1b0aec13bdb4f3a4333edb1943282854d40a38a6"
-    },
-    {
-        "Name": "83_P521_SHA384_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "006cb47856774021aca93761629b0ece9b1094703c51cb4b82f8f07bd5c4d32fd677f2eb0ea700f00cd7695b348927d1170bc45792a7f93e57f251a3c8eb8261d570",
-        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
-        "Secret": "b7e1e2819d52db005e14ce791b45f28c118a2650858727a1c684e6ea6b0e04208074dc1fca235955568f00e16a2c0eb4",
-        "Ciphertext": "004200d21133086dfe6444dfb1572b3518bd2e1b299572ea94c6c503ec850a47edaef60351805e4439e0621be94b06f6dbb080675d8d418372019e81c9471bdd3af3cbd8004201cbff6cea07f11e915be9f7adcc28c6382d26c27fb5b7796e2573db786be93b55706b7d0d15e6c2f94658f2df081940426d80df2f4b18086ac9d143e46933e786d5"
-    },
-    {
-        "Name": "84_P521_SHA384_256_restricted",
-        "Validated": "TPM2_ActivateCredential",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "00534bfa8662aefd357568904ae05105d3997aa5b8e2d3cb4eb1f76b1c759c2d8c3f52b938996b62c98c0c124244b2513fc0670e978eb3486e5edf9d614581c3ba5f",
-        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
-        "Secret": "62751b42529a029f903e164c38e32d67bb3dd605dae07293adfae1e0ad4383183d721d4e4f5c62bf9254aef55f59e8b2",
-        "Ciphertext": "004201f8c80f91fc2f80b6da05ccf2fdd32cb28aa84b19ce601894f8ec268de231d2dd257e6b0b3fd3c67b3c665a0e3841ef53389399aa1911cb7072182e87913b003a1600420161719fbe286db69aafcbe46e7c43b557b7f5315bbc9cf90b34cfd8c36f03180e3dc0492aa8c5c7b5d305b807f5765eed4890d8e4d2c855ee9ba29e659c42979d78"
-    },
-    {
-        "Name": "85_P521_SHA384_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "001eb1fdfd9c808c02296acb6fc8d1eb779b184f5003c1872509a748d04da5eebc48f41413f769e35eefdb60470b686ecd2f94c54534a2d256fb638c4d797a4f8c62",
-        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
-        "Secret": "c553d57e2ec48884cd0739c49e9005e47d13676f3979f168166572d38512e3e5b3206d77c96138e30a4ed624b59e53e5",
-        "Ciphertext": "004200367602af6d8d9e9f78ae250c0e3bc49b2ecdf635ac035ad8b65af9f75fd753043ddde3c1d2e56d0b6ea027634dd0cc29d9b3fa6f81be29638a244ff0e13157acb40042009b6c82d9912b9498fc77df48d9694854be26fc32d798f2773ed772659218f37ad9249067ee40fa87069b264d89de5dc3077c477e3e763616bb6f44efa5cb327ae9"
-    },
-    {
-        "Name": "86_P521_SHA384_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "007351b97a65b6d49327129bf4b4008227acc90e28f854a31b7e45ee627c32696834f4ba67dc5deb30c523f9334ded2986f5c8cbf62ba71c62bf6f034de650d8fcae",
-        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
-        "Secret": "eb0b359ea1660d58d277d60f578700308a601e7a5bbcb37bc4f48fa24eec142841762c52503a86e30f9f4c0d850a8866",
-        "Ciphertext": "004201cb2e800b74e889be05b652c6ef011c5fac38fa00099bbb4b0b86be6b9c5ff93a081c51f9cf94ca904732bd1dc3af9269231725cf0065c5fbabbe16c7759c667de900420094c620d1e53247597aeb4cfb1a2e1a911d1ac6fd19a57f399b73c0a913e3acb70b27b40f1a9e34f0be812495e698d43ff72d4f9591786b7d20c0378c278163d84f"
-    },
-    {
-        "Name": "87_P521_SHA384_256_restricted",
-        "Validated": "TPM2_Import",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "0162803599a86f9ba9758ba7ec4161ba014323359501f478ff43afbe36d2d514fd5f4394ded788da07a97c3ada20923edaa1159215b879db3a2356eb65060bd27f3f",
-        "PublicKey": "0023000c00030460000000060100004300100005001000420161a9cbaaccfbeebb620927e01c786b016e64a8e6863b442fbe1e5c2118c0edaac05f37b3cc9bf1e6ba20441031a6fef230a44f6a148cfcd125f6434b8b45bfc4be00420002887b1229ed5eb373bcdd85d4793a94748609a515d6c82e04fe63135504c870790195bb9be9f855be9e6567c5b834a5a0138cfa1cf83501ebb17879b9e520fabb",
-        "Secret": "9104140e29a19969b23978219e929dd2b8bfc1bb57ecefc8c93bb4aa09ef75b3941d48c3305f8c87fdd030cfcbc7accb",
-        "Ciphertext": "0042016218c9bc42f82a519f2b48642c452364a1bcea45b139989c42e05df0f25fa9f43f3276c89972c4147b1bf22ce2d63130ac2015cedb4a1609042ab62256bd14c5b50042002b44fadd3fd0aec0ebd0c45b46524995c1aec0c12fbc7d912ccbaee76092a883506c39d37fed921c0049f0f52b0835b06b8343939c1eaac1bdc08770fcb035d3bf"
-    },
-    {
-        "Name": "88_P521_SHA384_ECMQV_SHA256_unrestricted",
-        "Label": "DUPLICATE",
-        "EphemeralPrivate": "0124013fea2d4b1ad0b678e5a4a8d987c1170db53ca8199d4e92084b2f8fc06d5a7970d38097a9eaba9c383e54ad185da6935d3819fd342b300a0abed11811150f09",
+        "EphemeralPrivate": "002409f979dccd19d62f4e72848bfc0c6c7b3050486c9f565468c314e2e456ac4041b2591dc22dd797da10e8d7450294f1db5a021c97737488edb0c52e58c6431d9a",
         "PublicKey": "0023000c0002046000000010001d000b000500100042009fa95f6b3373e0ed4a4ea5fd9405274a7c59c06ed6b31e5b5f5a26e354efe9207e828bfb3d170cc321933ec451d7d8ae3bb588f1b787636abc671799f65ee2ae690042001d16cebb7b2a71eb2f040cde767e4c6017ce2ad324faa9fef7212558f3a23b9af25d3922f6df73dde9155da906b3650621117f166a6483926ee3f0d1749a43b3db",
-        "Secret": "e2c8b6cd82edbfda375a7741616826273c663a4b1f026145df4df79fbb52e9e3396331b26814a6c906e2d4f283016929",
-        "Ciphertext": "00420195e4710d67d0971f0ebd83bdb8924a889e11452dd9e1a76520e899832059d2de897faf95752b61fcebc9c62ac277c69ad9505ffb1370d5cff211f7212989d253f300420028ce4324cb28dd2d8a26660113e1f4bd2c26546e91e92d14fa725f699a55302ba757522f4ee23c87349687dd551ed8175276413c3351e2fca19cd93ee61dadee1a"
+        "Secret": "eb7bfae1e2dfd2b27ec5c11fb085cfaddfac0199a694c6fc666b0e587eb069cc739c5bb72b00953e5a928815eff8d4ed",
+        "Ciphertext": "00420046efe5425c839db5a00b6d2b70ae523cf021c185e5e520effd67e1b8224188a861b34e554079b267597475bea92d3db872c217d7931c0856e627413a4938ec82da004200ed47a4683cbe5ec1e9be816e3dfbdb39ea2501fa219e68d6338a21cba228fb72169792183f8784efabf489e7db3d8a7339a96ae62af3ccd157887220fa3f12a81d"
     },
     {
-        "Name": "89_P521_SHA384_ECMQV_SHA512_unrestricted",
-        "Label": "IDENTITY",
-        "EphemeralPrivate": "009bcfd4ffd1c08ec3474132a0aaf0f30614054bef7d52f7ebbe49b452ac1e3789784e72d4287e8f44a439fed5d184904c232a6ea20374573d448b00e14d6381f7b3",
-        "PublicKey": "0023000c0002046000000010001d000d00050010004200a78824b30ac2c821410f83524d64633b99140be6ea08ffa1feb48082a7ae918086e5fd8d764094a41f4fa4bebdb947255d1083da30b04c6b3c8e20a80030e31d1b0042009b7a0cedf4acabdae4a4beca60ea2b70c4d597b3748dea96df5d3ef8f2d36d43bb92f85f899384f5feeda1ecfc7d2a9d4b877447a5d58ac968890c0939e97f2b7d",
-        "Secret": "3451a138f94cf50cbab4df0d7e607fefbaadbfcba9c5a9eaa57be86f87bfea858b37f1e8161328709484b329c7ebf1d5",
-        "Ciphertext": "004200642357d6d99f3f85931b9afbd681e26487be91130ba67391cc25388d7505a1e93de66c393aac13b46497b3f0fdc9e9c2b8af0b07dd8b61ffd12c0178fb07bbf451004201b7f4b21172d60e906eedca05719659dd1517e79f679146a702ce0af4bd905be51b07184c97d780ce1e19f1aa38f314f4e5a5cac533e3adcc9c1b50c032e831dd8a"
-    },
-    {
-        "Name": "90_P521_SHA512_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "01ed084f9a67e7390fe5885ef169a5f644043d5190062b0afc2458f8fa9c44704652c660ca9a8952a9b539bcec4414588bcf0084ec7321f39c7425e60282ec818f09",
-        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
-        "Secret": "96e3c8230f68640ea656940e43dcb9bcedfe9e123845bebbd54ef84df601f0c4eed53d52e92718c4e1a8257ce410b805e7e38b6e2ff9badd5819069773578ee5",
-        "Ciphertext": "004201e2209e99bfb551debdce9f8cdfde6acab09bae6c5dfd9214a4092ae45f80d0b88dc5286ce1495152dde94aad4160544ddb56a419c4e4d293e30eca14a5867117430042002102ed91d168f0a982315be772e145a91c5ab450b9933cc71150d3168786f2ca5bd868e465c5025979e468f5842e893aa08c307bff1a08f20b69850b80f40f86f8"
-    },
-    {
-        "Name": "91_P521_SHA512_256_restricted",
-        "Validated": "TPM2_Import",
+        "Name": "94_U_P521_SHA384_ECMQV_SHA384",
+        "Description": "unrestricted ECC-P521 key using name alg SHA384, with ECC scheme ECMQV using hash alg SHA384",
         "Label": "DUPLICATE",
-        "EphemeralPrivate": "01fd5011d56585e4483b757c1aa0d948460a29753000f6c7f56fc25933b55b959d10d9486f98458197ab69ca5591b40f7bf88ffc812b53425221f1b32f8f2eae10d9",
-        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
-        "Secret": "28a1eb1e2835dd9a976cc1f63e28be890f31b43b8c006e8f1b0ba69e7abef30a3641ab42be73a1129ccf556b4ec4d3e5cf4b9182eb646a74acc04d4901d7302e",
-        "Ciphertext": "004201a2d4867760369c7cc6d1d7227947b8f6a6de18871dfcfee2888b5c548160fa8adb279573ff20149d3e776fa0d5f7a77fba5235a2cebdd5ab9e926053473eeee09b004200ad1f94e6ff8269ed54f1a95334647b2808e31cd470f7dbf54124fc8045e8d414fd14e96762c15b77a64d4d0401876bb528e9869c48f186bfe422bad801140c0cec"
+        "EphemeralPrivate": "015b0d286b0ea66900044b325820925e2abd0f775347247c7752753397691aab4f5532566070b456b8c6e19599f2f613aabb4764f2790c5c654b26f2c49c74e8feea",
+        "PublicKey": "0023000c0002046000000010001d000c0005001000420085e47a4d2eae14fd2490be53ad150fa98314268b65d04a2a155f905ff12d27b3dfbb1da0b3c6d91e856f0df6719d36c5cc28eab5924bb34d230e1922240a4636c50042011497101f755dfb0952b49365a58de23352d4555c415ca64cfa235508ea7349360b308196213c60a77cb6031b2db4c8ce0ce276cb10d48cf691a3a51b49b832aded",
+        "Secret": "a4a7353e9ff86231e6f920aae51e2a1b2b4bfa6cea53d1de86d85314e5409431bd75b426ac9f6ed74273dab468b09c7b",
+        "Ciphertext": "0042003c4ffec061d3f84431c77d596e9e156e5833840448540927f1210bb1bb00e3029cfaf1c52a778043d47e534bc817c1beee3ce2ec1f51e1b8553e1e40411d56c33c004200a4d0c103c5f4bc1754da654c97d45c3eb7f9f36e8e4748daf1807e063f5be9a23f70e8f186d94941ae4212d50873fad26f387fa0ee952bfbe4f86c447800040d27"
     },
     {
-        "Name": "92_P521_SHA512_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0137c7690669cb164ec70cc9f1e2b46886ebcb195472a87dfbde8bca89d359183505500229574acb06b0ec17f3796a35b980b08a63a137e69a88f2284f6fc050d653",
-        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
-        "Secret": "7f16070f8458fee7e65d7d2e04730c36b2fb98dcc6d67f931ae2ce806ad0925b16fd29b33ec560a20bdbc011774b129431d720061fd0cf3caf0ea6e57c9855e1",
-        "Ciphertext": "004200d4b8763b5829a9f9b6903cb7200c73351ea74829c08233d0f64e01b51b0e80f1fae1695acd54846ac320188f98283222a18c79f0cf38fcbaa33b05c44d734c2846004200a5df31cd8bde9dbefca0952d59c2b8e709a07e5b8858f078d7c0f555bbdff7de25eb9ee667e2e1debfa2fe6603dad33dd336bafeb4ab52b5cfd07a832c936e1c07"
+        "Name": "95_U_P521_SHA512_ECDH_SHA256",
+        "Description": "unrestricted ECC-P521 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA256",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "00a89a0846a707200891fced3f6adbefdcf0252b15dacf4c47f7c516c2b6d4e644ade5c7d987108787a8e2b8e7a3e9880b4a515ddf73ceb8c8fb1af1352d638b9c24",
+        "PublicKey": "0023000d00020460000000100019000b00050010004200200efb62cb8cc7320c8cfa55ebb513d88138c7c758a2bd79c1193d00cff3c285b5280a7b56b15abcb944e1b325909f1ee8c6d90dca670048be376e5af0c6c341e4004200aa0622c7c8210b69a159fd7bb0bd3e00a46b3aef89883e64276d42b31dac4cde7b2ae2fc15e017bb88acf1178fe1fbe0213980553c7cfd13b5ca87ce14623045e8",
+        "Secret": "bfc63feb7af349e3f6718689c65cf847b21c17517b111a3ca6b4bb4eff55a520827361b1299e1ae02fd9a68ed59a4f3c685f58def80d96ba6a408f2f34353583",
+        "Ciphertext": "00420131c15cca4d26c04484f66a2391d6be5997e75c8b7be3ee7d59b5c0f6c3d399c06d524381e0fabd559f0ebbea1935ece7ba6a217426d19b2d0da5c7db633b78d204004201b7e12a45357141acdf3290698a362d028a5157984549c1ff609aa5ceafc2471ec213abadff6bf28464450eb2755f6bab7cb1fd1a70fc80decf22f957fb9345f3e8"
     },
     {
-        "Name": "93_P521_SHA512_256_restricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "017653e0ffea69c23669c162e37720af4e539f1c73647df0c6b1e2900b45660257d98b048a90ed5ec66bbfede9e73577e8c81ce6a274bed853b42fbfd69b8b1cd852",
-        "PublicKey": "0023000d0003046000000006010000430010000500100042007575d7ecbbb4cefdd56a613ce9e6d917a124f4db4b028ad0461bbf584a80bce1f5f85addaafc9dfaf3573303e72414570225c77b79c0b6d6fa23a0c8abb897f5490042018645f9548286f03ecd7e5e63423c4b99bf72ec9eb1800a206b69a627d1404d959ebc9a3905e10a796c53d6bc1628b9debc5180255eab7290cea10d26e5f53ac8bd",
-        "Secret": "fd6c44f047463872ea0183d5b05b57afce14496be35c5f09fa9c9386182c00045946b204234dfb7c5b9465a3c3feeb62fd12295089f8797900409c5528242c00",
-        "Ciphertext": "00420006845439a6e53846b04b157702c062656ea728c4d51ad2beccab06fc19f6ea573f7bfa62bfdf88cd6a13f680fd1f30221c613ac869c886493822678316ba68a93f004200d0d269632e09ab11edd71775b066ea8f8d1b1f8dbe43527b09623813e61f124110681ce36e5cd422251f7a1e128aec61958d0246a1f18b767541faa4e13abd2dc3"
-    },
-    {
-        "Name": "94_P521_SHA512_ECDH_SHA1_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0039c5eeefcca4e5eb413c7e23c289a46ac27618866f37b9342816b32587c38732f5c57cfaf21b0960c722cf0d0f8ee8605e3b27cd4f15a695847ce351deb552c1d5",
-        "PublicKey": "0023000d00020460000000100019000400050010004200927f31ee75302d3f8a44f6d84e3f22c9a48be86af5a9d919ea07d7aecea8af79ba14580ddc3694bf732dfd011a18ee9e22216378a6341e60010dd62bd90a75f25d00420059a805895c35732e4251c5486e5990df6cd4b1f7d9fec9a8b941d2679d006fa93c664ce3a18fa4ebdeb72132af732626610d02397e1fe17e1a7eee52bdc370177e",
-        "Secret": "112380d6fc0be237588a4223cd7c9c178f952ac04872c47ada9468c03f4583f806e594ab39c1c1d5a465dd2a05c7317d6ebbf445a57eef6902a6b3a39fa5c4d4",
-        "Ciphertext": "004201f851121e9333eb74e5cd4936ae70517228a5b50c201f46876c0833647f62e730aa8feec4da92a9aab95e7811745e5898a2ec7497bd02ccfcbe8acbd44a9df3550d004200be60d78516a7227445c5bb2e19f883510a53d478362fda3de1d5764780c81668a23f6855e7c0c9bfa5eece54ab9396dcddd413894c991af34749c6b4bf5889c40b"
-    },
-    {
-        "Name": "95_P521_SHA512_ECDH_SHA384_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "00d95605781d641dfa863ffc8f6f13ff3d00f64dfa478afa2712952291fa19a693728525420f65650ecadb3f445f4c7060cfcb9dfa5030634211a642a58d21a6001f",
+        "Name": "96_U_P521_SHA512_ECDH_SHA384",
+        "Description": "unrestricted ECC-P521 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA384",
+        "Label": "DUPLICATE",
+        "EphemeralPrivate": "003bccdb7b60d2599a6936acaad1666e646a43d1425396461d08afb327b232ebca42e3737dfb7e7548fb744995e12fb8a751d0f3b6e66d8d4f7f6d3825122023a0d1",
         "PublicKey": "0023000d00020460000000100019000c0005001000420117476300ea623c389903baa8cadfd759f280869798f2efcfb710f54e04afab39a4ee5fd3da38151908ab25787814033323f468d7bcca0f81b9069d21955ebe6fc3004200f49adec92c7c31ba0a92f289eb837b9b7f55e90e0b02d0082cae4e6afb5b91991ff60dd5bf1c9f1c4d3968d0d3c6abc7e9fca06c2d01ed346502f5f8cda335ec9d",
-        "Secret": "3b74b317f94ea0cd82d780387455889b35321f02f1561f616e30e56df24412d8429f9a14bcd00ab5ed4a4831e0d5243aa7c5584e8b3478dfd9b9465fa0044531",
-        "Ciphertext": "004201444bd241ffa84280b6cc1e8edf1fa9a6bed085e24e1205d5112f011f954bcece41b539e354035a171989f25df0a63fc54590c9e3948eda8696545a961b16d384840042017994bb2495a62c7211f91a66b712a65b31e5baf2b9624f7104a739db0d8b61a834de4548397066157df4fb5949598aa14ee408984dc55bf419e06ecdcea82f2a3f"
+        "Secret": "c7571ea74749f38b4a8731de8122490acc1ba27447e881b6fbea0998813188fc25da99d692c4bc6c775fcf274848f649eae56aa4fc6af92bd4e006be4a657809",
+        "Ciphertext": "00420032b544592781c55bf239d45d42fba8632b50af42c68b412a312666c160eef3209679e33477536653119261a6ddba24514d8f40e63114550543f22ff9d3d81903550042016f888896e0434b1a0b5dbf2e6537d9303c0bd084bd4ffe4ce5817043dc964ff9c17312bf8a4051fe2349ff3ddc12b016dd5b8694837815e4747a456b11e5e034b3"
     },
     {
-        "Name": "96_P521_SHA512_ECMQV_SHA384_unrestricted",
+        "Name": "97_U_P521_SHA512_ECDH_SHA512",
+        "Description": "unrestricted ECC-P521 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA512",
         "Label": "IDENTITY",
-        "EphemeralPrivate": "00bf9e5345e3408231924b5aadc35909dbe429299cef568e0e79e00e953138c1ab96fef667cad64e31be0ff1a287c4193a9a7adb4a0c4bc912787aca33eeba90449a",
+        "EphemeralPrivate": "0196c93b07c64ec230f0610a4f54d4d5d184c4ee8cf8e0c9b2cecc2bb1608db41925c4d37a5ef549397dbe9e7d2fee54f9f801ef78deeb1c9dbf3873bca860090262",
+        "PublicKey": "0023000d00020460000000100019000d000500100042012964b4fabf7c9d6b456adecb2bbbd2218b004459ceb1272113d043820073468fc896472a091c779cda3b338a7b5c06a86e0f18c8c01f14f22a0773536835b145c6004200026041a886aa4f80243956ddbf1cc23b634dbf7942b5cf7dcaddaef11ef86aa44facfd328a53cd544694d417bf34acf0b217cc5aec0911c017cf9d38f9a6a9c992",
+        "Secret": "b0ecedcc605d3ac7c0f06d02839074eb264501c40083a03a07e5fea69d94ff8debc8803986e56620c44bb130748410b7140d9820efb304c31d55312926c21b82",
+        "Ciphertext": "004200db3fd58c34c3d0176e4b815bc2174f1de51c64f11eee2e270e28659fd6ae419cda09b4e1447659f8f01c51a90cf524aeefcb2b5416c155d78c875fb5829a26d4c900420192982309317c2b4035ea2286e4367f37941349d05f693ecba5dcaf1a08fe1661460cc67fd2a2f4b4d5d0975a974a16007acfb48e4f6c7972b3b119c1664979bbfc"
+    },
+    {
+        "Name": "98_U_P521_SHA512_ECDH_SHA512",
+        "Description": "unrestricted ECC-P521 key using name alg SHA512, with ECC scheme ECDH using hash alg SHA512",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "0099ec3558709095b612a3b99cd7b956cc7b06ed0f484b33a79f69007c18598cba160ea0472eda777eaf0fb0642c5a9e77050142b14a957261d659e3d94074977e60",
+        "PublicKey": "0023000d00020460000000100019000d000500100042012964b4fabf7c9d6b456adecb2bbbd2218b004459ceb1272113d043820073468fc896472a091c779cda3b338a7b5c06a86e0f18c8c01f14f22a0773536835b145c6004200026041a886aa4f80243956ddbf1cc23b634dbf7942b5cf7dcaddaef11ef86aa44facfd328a53cd544694d417bf34acf0b217cc5aec0911c017cf9d38f9a6a9c992",
+        "Secret": "2382641b6ad7dfb677d0f8e010792325d3f603822b4fdd00aa5395b236f8547cc1f7a72353f1b6211ad87d6990efaca73a8875d54129b9ef0aa586949eb45465",
+        "Ciphertext": "00420147abc43d96e663c41387287d12296e3657ca41146f5f6da826409aae85f3ebfaac26df5adada54088b2656cec61fce3e79d46dcebe0eae32326aec1ac08061ef6600420019f042464184b6c964c2c45eb5e2b0c3b21520bfa11ec8cb6fea36b61b4471ff899518fd405aa0e37695bfbb4076fe762fd419c3d34e943883592327f57e159d35"
+    },
+    {
+        "Name": "99_U_P521_SHA512_ECMQV_SHA384",
+        "Description": "unrestricted ECC-P521 key using name alg SHA512, with ECC scheme ECMQV using hash alg SHA384",
+        "Label": "IDENTITY",
+        "EphemeralPrivate": "00ac40465d1ed59cf17eed2c3b1c569c465d01563e4d9ed77cb33067a138d0d31d5005bd461ae1f5123b9d4f738d22f2208cb9d7cd5caf7aa4f472be6244804adbf4",
         "PublicKey": "0023000d0002046000000010001d000c00050010004201e7c17b6dba3dd30567e561e066bcea65b1c42546988a50a4464ddd7cefc2252a6b0582025a87c1fbaf0953453d8e4bc9f6d05125f235b2c53729383c14c5622ab700420011af0e372db4202c79fd6f67417c96b4c81939ce39c8f951352ab470051902fe47f7a0dfc43d7057e199be00410326a2a63c5e5bf015a14eaa04922205d00b20f0",
-        "Secret": "9339e774884eb8753d9fbae108583216a8ec65ce1d17562d2eb714bec3e6c8d1a8dab6f9200ef09643142e3f2b3392d95801f8452af329fa08c37f5fba870073",
-        "Ciphertext": "0042015cb40f12affb20e333bf99a4cbea8e57eacae77edcb418f5c5f3a830b4ed8ce032ea13fcc6aa397b924b08d9a2acac509a6c79717482fb3f3aa5c2277b65d73455004200b4a1a93a73fcf1e5a67bbcc076496d726aec7022b3060ebb59eb5eea6581b8633771e40f18abbdd889f5ffb65ea5010427b7573c67fbe54dc2ab3ee7313bb5b631"
-    },
-    {
-        "Name": "97_P521_SHA512_ECMQV_SHA384_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "01ab5921447390f165b8d15b5b344a0f337bea4a6dca3e287176bacd9454f57fadb7311364982031bcb45cb530e790e36e469ad158ddd2248ab60a0450b2531c4eff",
-        "PublicKey": "0023000d0002046000000010001d000c00050010004201e7c17b6dba3dd30567e561e066bcea65b1c42546988a50a4464ddd7cefc2252a6b0582025a87c1fbaf0953453d8e4bc9f6d05125f235b2c53729383c14c5622ab700420011af0e372db4202c79fd6f67417c96b4c81939ce39c8f951352ab470051902fe47f7a0dfc43d7057e199be00410326a2a63c5e5bf015a14eaa04922205d00b20f0",
-        "Secret": "f1bcfcc5e0a8c413acbf2089d4b6be22e7459d44a1d00f99845c5e98befbf03fb3e67af9856acf7f603276bd6df114693ad29df75163abe419b2e281020d97b5",
-        "Ciphertext": "004201a3581ea3adf1d06adfb3f499eca6b0e1daec9094a4f05238d44cfb6f96afb83bffcc20a02362f288f8063d05a215dba31fb0af58a59b2eba5bf895c912d1a0668c004201a348ef9c6aec03da7166f3b28f0a1c07abf79357cee7fcc42ed7d49e215540e3d7d5404ef48aa35f4a82dbbcc5a871e64d51ef9437d96cc78722d7d414aebfce52"
-    },
-    {
-        "Name": "98_P521_SHA512_ECMQV_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "0059fa80a702afbd7e992ea63c2864aab68379fa61e84ef1a0ee4f358824f2f8efa42ad35b7211691a932e864523b1ccaa967a1af70a5ce960c872f0d4f4ed8252a8",
-        "PublicKey": "0023000d0002046000000010001d000d0005001000420182bec885069e7174647402ee9f56965a8f4c77b8eada15fa22c879c9c4960680ccf8d420c7d50fa38b9e107447167cecfd89f95ed70030b6c2b4094fa5a3fa2fbd004200f4ef12e43fa67358c5874f82f5308af8c059ec34b8aeed13f67522a9337c9717881858a997d40441d706f877b69f022cd4604c280f67b3b1afadf1fd9e1fa08903",
-        "Secret": "c1c70e593912666626311ad31aa4e0c69fdd2f72f22d1e99ffba7a2dc586102602525beffc8db7b17854d77e9ed1dbd99d5cca059e0e2fdc820f41490b43db48",
-        "Ciphertext": "0042009f30bec2dfba9393c5f899043bbdc4dd87c48f9b16a48151e5cfb7b8bf7e743cfd915bc474e3886629539ee7ac3675286d2bd876290e61285ddb3ad3e28609550a004200ecf2bca73be9adfee1b5a9cf6489d693124b7f6632ea04674589dec804482ac942ec4bf2a4360e49181e74a55dcb6e6342216bc267020f0965aa7f72f1a40b7cf6"
-    },
-    {
-        "Name": "99_P521_SHA512_ECMQV_SHA512_unrestricted",
-        "Validated": "TPM2_StartAuthSession",
-        "Label": "SECRET",
-        "EphemeralPrivate": "018c0807eb69e0372096202ad672424e9e35eeb0276042fcfa8ffb8218a7ec236bda2bf5947313009afa7dd3b0583e6e9b5132cfcc4a8e8e4e5063660f8b8f95d8b8",
-        "PublicKey": "0023000d0002046000000010001d000d0005001000420182bec885069e7174647402ee9f56965a8f4c77b8eada15fa22c879c9c4960680ccf8d420c7d50fa38b9e107447167cecfd89f95ed70030b6c2b4094fa5a3fa2fbd004200f4ef12e43fa67358c5874f82f5308af8c059ec34b8aeed13f67522a9337c9717881858a997d40441d706f877b69f022cd4604c280f67b3b1afadf1fd9e1fa08903",
-        "Secret": "d229395fd0255977d8b1b292686a79b3aeaa2282658e1eac6188c47fdf6ea465f16d2c1e1d5f74bf5f7fce64a1b30bdfcf0c645d8eb035bbb90cea355600ea5f",
-        "Ciphertext": "004201c4e874a7d5cd596428d05d63d3dc1c287f34aff87a05d9e1da83ad9cfb5116eac300e961f453adb198cc584f0404d157e55efe983dc267d0e54bc358718640fc7e004201dac4447e9bce68c8989ab3057cb0a5655ee7046f19ba41988e614a27994c6722e364c90dce861df978bc3f0600e5dc443eb1584b6be18076db1f1e3337c4e51211"
+        "Secret": "74bd7492e4c32fd6ac8a153e60e2dd354d296088f97c9f3e251df1c31faa1bf3838e677cfa9b74b0b826bc4feab0b65147e7d0a4cc13c828573e067400625c51",
+        "Ciphertext": "004200572acbe0650c94ce85399bf12e7f717c509347e3178e226aae2730cb512f2123974304a51c8e79b566e11066468a027080bd52860bd62a171efc2a916a68643aed0042016931f63b27a7270b840489608ebb33db4b3cd87b17d726f21996767f5ec74bea99168f653eafc706433cc1232ebd0b4a07f3a6eaad54a132488f04d3802991ddb1"
     }
 ]
