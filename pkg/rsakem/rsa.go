@@ -74,6 +74,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	scheme := tpm2.TPMTRSAScheme{
 		Scheme: tpm2.TPMAlgNull,
 	}
+	schemeAlg := tpm2.TPMAlgNull
 	if !restricted {
 		hashAlg = util.RandomHashAlg()
 		fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(hashAlg))
@@ -87,6 +88,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 				HashAlg: hashAlg,
 			}),
 		}
+		schemeAlg = hashAlg
 	} else {
 		fmt.Fprintf(&testName, "%d_", keyBits)
 	}
@@ -142,6 +144,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 
 	// Generate a random OAEP salt and secret value.
 	// The size of both values depends on the hash alg used for OAEP (which is always nameAlg in the case of Restricted keys).
+	// NOTE: This is different than ECC, in which the scheme hash algorithm is always ignored.
 	salt := util.RandomBytes(hashAlgHash.Size())
 	secret := util.RandomBytes(hashAlgHash.Size())
 	label := util.RandomEncapsulationLabel()
@@ -168,7 +171,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	result.Validated, err = util.ValidateLabeledKEMTestVector(tpm, tpm2.NamedHandle{
 		Handle: cp.ObjectHandle,
 		Name:   cp.Name,
-	}, pub.NameAlg, &symmetric, restricted, label, secret, ciphertext)
+	}, pub.NameAlg, schemeAlg, &symmetric, restricted, label, secret, ciphertext)
 	if err != nil {
 		return nil, err
 	}

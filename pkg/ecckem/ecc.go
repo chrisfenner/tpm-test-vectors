@@ -62,6 +62,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	scheme := tpm2.TPMTECCScheme{
 		Scheme: tpm2.TPMAlgNull,
 	}
+	schemeAlg := tpm2.TPMAlgNull
 	if !restricted {
 		hashAlg = util.RandomHashAlg()
 		fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(hashAlg))
@@ -75,11 +76,12 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 				HashAlg: hashAlg,
 			}),
 		}
+		schemeAlg = hashAlg
 	} else {
 		fmt.Fprintf(&testName, "%d_", keyBits)
 	}
 
-	hashAlgHash, err := hashAlg.Hash()
+	nameAlgHash, err := nameAlg.Hash()
 	if err != nil {
 		return nil, err
 	}
@@ -150,8 +152,9 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		return nil, err
 	}
 
+	// NOTE: The nameAlg is always used in KDFe, even if the key has an ECDH scheme with a different hash algorithm!
 	label := util.RandomEncapsulationLabel()
-	secret := tpm2.KDFe(hashAlgHash, z, label, ephX, pubX, hashAlgHash.Size()*8)
+	secret := tpm2.KDFe(nameAlgHash, z, label, ephX, pubX, nameAlgHash.Size()*8)
 
 	if restricted {
 		testName.WriteString("restricted")
@@ -171,7 +174,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	result.Validated, err = util.ValidateLabeledKEMTestVector(tpm, tpm2.NamedHandle{
 		Handle: cp.ObjectHandle,
 		Name:   cp.Name,
-	}, pub.NameAlg, &symmetric, restricted, label, secret, ciphertext)
+	}, pub.NameAlg, schemeAlg, &symmetric, restricted, label, secret, ciphertext)
 	if err != nil {
 		return nil, err
 	}

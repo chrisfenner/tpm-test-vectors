@@ -8,26 +8,29 @@ import (
 	"github.com/google/go-tpm/tpm2/transport"
 )
 
-func ValidateLabeledKEMTestVector(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, restricted bool, label string, secret []byte, ciphertext []byte) (*string, error) {
+func ValidateLabeledKEMTestVector(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, schemeAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, restricted bool, label string, secret []byte, ciphertext []byte) (*string, error) {
 	switch label {
 	case "IDENTITY":
 		if !restricted {
 			// We can't test ActivateCredential on an unrestricted key.
 			return nil, nil
 		}
-		return validateTestVectorUsingActivateCredential(tpm, handle, nameAlg, sym, label, secret, ciphertext)
+		return validateTestVectorUsingActivateCredential(tpm, handle, nameAlg, sym, secret, ciphertext)
 	case "DUPLICATE":
 		if !restricted {
 			// We can't test Import on an unrestricted key.
 			return nil, nil
 		}
-		return validateTestVectorUsingImport(tpm, handle, nameAlg, sym, label, secret, ciphertext)
+		return validateTestVectorUsingImport(tpm, handle, nameAlg, sym, secret, ciphertext)
+	case "SECRET":
+		// We can test StartAuthSession on restricted or unrestricted keys.
+		return validateTestVectorUsingStartAuthSession(tpm, handle, nameAlg, schemeAlg, secret, ciphertext)
 	}
 
 	return nil, nil
 }
 
-func validateTestVectorUsingActivateCredential(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, label string, secret []byte, ciphertext []byte) (*string, error) {
+func validateTestVectorUsingActivateCredential(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, secret []byte, ciphertext []byte) (*string, error) {
 	credentialPlaintext := []byte("TEST123")
 
 	credential, err := CreateCredential(nameAlg, sym, handle.Name.Buffer, secret, credentialPlaintext)
@@ -52,7 +55,7 @@ func validateTestVectorUsingActivateCredential(tpm transport.TPM, handle tpm2.Na
 	return &validation, nil
 }
 
-func validateTestVectorUsingImport(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, label string, secret []byte, ciphertext []byte) (*string, error) {
+func validateTestVectorUsingImport(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, sym *tpm2.TPMTSymDefObject, secret []byte, ciphertext []byte) (*string, error) {
 	blobPlaintext := []byte("TEST123")
 	blobObfuscate := make([]byte, 32)
 
@@ -103,5 +106,53 @@ func validateTestVectorUsingImport(tpm transport.TPM, handle tpm2.NamedHandle, n
 		return nil, fmt.Errorf("want %x got %x", blobPlaintext, unseal.OutData.Buffer)
 	}
 	validation := "TPM2_Import"
+	return &validation, nil
+}
+
+func validateTestVectorUsingStartAuthSession(tpm transport.TPM, handle tpm2.NamedHandle, nameAlg tpm2.TPMIAlgHash, schemeAlg tpm2.TPMIAlgHash, secret []byte, ciphertext []byte) (*string, error) {
+	hashAlg := nameAlg
+	if schemeAlg == tpm2.TPMAlgNull {
+		hashAlg = nameAlg
+	}
+
+	nonceCaller := make([]byte, 16)
+	algHash, err := hashAlg.Hash()
+	if err != nil {
+		return nil, err
+	}
+
+	sas, err := tpm2.StartAuthSession{
+		TPMKey:        handle,
+		SessionType:   tpm2.TPMSEHMAC,
+		AuthHash:      hashAlg,
+		EncryptedSalt: tpm2.TPM2BEncryptedSecret{Buffer: ciphertext},
+		NonceCaller:   tpm2.TPM2BNonce{Buffer: nonceCaller},
+	}.Execute(tpm)
+	if err != nil {
+		return nil, fmt.Errorf("starting auth session: %w", err)
+	}
+	defer tpm2.FlushContext{
+		FlushHandle: sas.SessionHandle,
+	}.Execute(tpm)
+
+	// Use the salted session as an audit session to read the TPM manufacturer ID.
+	mockSession := MockAuditSession{
+		Hash:        hashAlg,
+		HandleValue: sas.SessionHandle,
+		SessionKey:  tpm2.KDFa(algHash, secret, "ATH", sas.NonceTPM.Buffer, nonceCaller, algHash.Size()*8),
+		CallerNonce: tpm2.TPM2BNonce{Buffer: nonceCaller},
+		TPMNonce:    sas.NonceTPM,
+	}
+
+	_, err = tpm2.GetCapability{
+		Capability:    tpm2.TPMCapTPMProperties,
+		Property:      uint32(tpm2.TPMPTManufacturer),
+		PropertyCount: 1,
+	}.Execute(tpm, &mockSession)
+	if err != nil {
+		return nil, fmt.Errorf("calling GetCapability using salted audit session: %w", err)
+	}
+
+	validation := "TPM2_StartAuthSession"
 	return &validation, nil
 }
