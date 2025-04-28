@@ -19,6 +19,7 @@ type TestVector struct {
 	Label            string
 	EphemeralPrivate util.HexBytes
 	PublicKey        util.HexBytes
+	PrivateKey       util.HexBytes
 	Secret           util.HexBytes
 	Ciphertext       util.HexBytes
 }
@@ -114,8 +115,9 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	cp, err := tpm2.CreatePrimary{
 		PrimaryHandle: tpm2.TPMRHOwner,
 		InPublic: tpm2.New2B(tpm2.TPMTPublic{
-			Type:    tpm2.TPMAlgECC,
-			NameAlg: nameAlg,
+			Type:       tpm2.TPMAlgECC,
+			NameAlg:    nameAlg,
+			AuthPolicy: util.DuplicatePolicy(nameAlg),
 			ObjectAttributes: tpm2.TPMAObject{
 				SensitiveDataOrigin: true,
 				UserWithAuth:        true,
@@ -135,6 +137,15 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		return nil, err
 	}
 	defer tpm2.FlushContext{FlushHandle: cp.ObjectHandle}.Execute(tpm)
+
+	// Export the private key created by the TPM simulator.
+	priv, err := util.Duplicate(tpm, nameAlg, tpm2.NamedHandle{
+		Handle: cp.ObjectHandle,
+		Name:   cp.Name,
+	})
+	if err != nil {
+		return nil, err
+	}
 
 	// Parse the key created by the TPM simulator.
 	pub, err := cp.OutPublic.Contents()
@@ -186,6 +197,7 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		Label:            label,
 		EphemeralPrivate: ephemeralPriv.Bytes(),
 		PublicKey:        cp.OutPublic.Bytes(),
+		PrivateKey:       priv,
 		Secret:           secret,
 		Ciphertext:       ciphertext,
 	}
