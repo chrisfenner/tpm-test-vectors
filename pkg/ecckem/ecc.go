@@ -65,18 +65,29 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 	schemeAlg := tpm2.TPMAlgNull
 	if !restricted {
 		hashAlg = util.RandomHashAlg()
-		fmt.Fprintf(&testName, "%s_", util.PrettyAlgName(hashAlg))
-
 		symmetric = tpm2.TPMTSymDefObject{
 			Algorithm: tpm2.TPMAlgNull,
 		}
-		scheme = tpm2.TPMTECCScheme{
-			Scheme: tpm2.TPMAlgECDH,
-			Details: tpm2.NewTPMUAsymScheme(tpm2.TPMAlgECDH, &tpm2.TPMSKeySchemeECDH{
-				HashAlg: hashAlg,
-			}),
+
+		// Randomly decide whether to make an unrestricted key say that it uses MQV instead of ECDH.
+		// This has no effect on the Labeled KEM: it always uses ECDH.
+		if util.RandomBool() {
+			scheme = tpm2.TPMTECCScheme{
+				Scheme: tpm2.TPMAlgECDH,
+				Details: tpm2.NewTPMUAsymScheme(tpm2.TPMAlgECDH, &tpm2.TPMSKeySchemeECDH{
+					HashAlg: hashAlg,
+				}),
+			}
+		} else {
+			scheme = tpm2.TPMTECCScheme{
+				Scheme: tpm2.TPMAlgECMQV,
+				Details: tpm2.NewTPMUAsymScheme(tpm2.TPMAlgECMQV, &tpm2.TPMSKeySchemeECMQV{
+					HashAlg: hashAlg,
+				}),
+			}
 		}
 		schemeAlg = hashAlg
+		fmt.Fprintf(&testName, "%s_%s_", util.PrettyAlgName(scheme.Scheme), util.PrettyAlgName(schemeAlg))
 	} else {
 		fmt.Fprintf(&testName, "%d_", keyBits)
 	}
