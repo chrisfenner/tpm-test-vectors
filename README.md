@@ -21,7 +21,7 @@ The test vector generation tool uses a running TPM simulator to help validate
 its outputs in some cases.
 
 ```sh
-go run cmd/generate.go --count ${COUNT} --kind ${KIND} --tpm_cmd_port ${PORT} --tpm_plat_port ${PORT}
+go run cmd/generate.test.go --count ${COUNT} --kind ${KIND} --tpm_cmd_port ${PORT} --tpm_plat_port ${PORT}
 ```
 
 * `$COUNT` is a positive integer, the number of test vectors to generate

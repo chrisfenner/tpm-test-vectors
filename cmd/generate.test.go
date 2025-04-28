@@ -31,7 +31,7 @@ var (
 func printUsage() {
 	var usage strings.Builder
 	fmt.Fprintf(&usage, "Usage:\n")
-	fmt.Fprintf(&usage, "  go run cmd/generate.go --count <COUNT> --kind <KIND>\n")
+	fmt.Fprintf(&usage, "  go run cmd/generate.test.go --count <COUNT> --kind <KIND>\n")
 	fmt.Fprintf(&usage, "    [ --tpm_cmd_port <PORT> --tpm_plat_port <PORT> ]")
 	fmt.Fprintf(&usage, "  where <COUNT> is a positive integer\n")
 	fmt.Fprintf(&usage, "  and <KIND> is one of:\n")
