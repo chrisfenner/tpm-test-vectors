@@ -29,8 +29,8 @@ type TestVector struct {
 	Validated  *string `json:",omitempty"`
 	Label      string
 	OAEPSalt   util.HexBytes
-	Secret     util.HexBytes
 	PublicKey  util.HexBytes
+	Secret     util.HexBytes
 	Ciphertext util.HexBytes
 }
 
@@ -163,8 +163,8 @@ func GenerateTestVector(tpm transport.TPM) (*TestVector, error) {
 		Name:       testName.String(),
 		Label:      label,
 		OAEPSalt:   salt,
-		Secret:     secret,
 		PublicKey:  cp.OutPublic.Bytes(),
+		Secret:     secret,
 		Ciphertext: ciphertext,
 	}
 

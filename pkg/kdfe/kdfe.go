@@ -12,14 +12,14 @@ import (
 )
 
 type TestVector struct {
-	Name       string
-	HashAlg    uint16
-	Z          util.HexBytes
-	Use        string
-	PartyUInfo util.HexBytes
-	PartyVInfo util.HexBytes
-	Bits       int
-	Result     util.HexBytes
+	Name     string
+	HashAlg  uint16
+	Z        util.HexBytes
+	Label    string
+	ContextU util.HexBytes
+	ContextV util.HexBytes
+	Bits     int
+	Result   util.HexBytes
 }
 
 func (v *TestVector) VectorName() string {
@@ -53,13 +53,13 @@ func GenerateTestVector(_ transport.TPM) (*TestVector, error) {
 
 	result := tpm2.KDFe(hash, z, use, partyUInfo, partyVInfo, bits)
 	return &TestVector{
-		Name:       testName.String(),
-		HashAlg:    uint16(algID),
-		Z:          z,
-		Use:        use,
-		PartyUInfo: partyUInfo,
-		PartyVInfo: partyVInfo,
-		Bits:       bits,
-		Result:     result,
+		Name:     testName.String(),
+		HashAlg:  uint16(algID),
+		Z:        z,
+		Label:    use,
+		ContextU: partyUInfo,
+		ContextV: partyVInfo,
+		Bits:     bits,
+		Result:   result,
 	}, nil
 }
