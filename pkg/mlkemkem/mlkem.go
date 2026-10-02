@@ -124,14 +124,24 @@ func tpmifyPublicKey(pub kem.PublicKey, nameAlg tpm2.TPMIAlgHash, parms tpmiMLKE
 }
 
 // Marshal a fake ML-KEM private seed to a TPMT_SENSITIVE by hand
-func tpmifyPrivateKey(seed []byte) []byte {
+func tpmifyPrivateKey(seed []byte, nameAlg tpm2.TPMIAlgHash) []byte {
+	nameAlgHash, err := nameAlg.Hash()
+	if err != nil {
+		panic(fmt.Sprintf("nameAlg.Hash() = %v", err))
+	}
 	var tpmtsensitive bytes.Buffer
 	// TPM_ALG_MLKEM
 	binary.Write(&tpmtsensitive, binary.BigEndian, tpm2.TPMAlgID(0x00A0))
 	// Empty auth value
-	tpmtsensitive.Write(tpm2.Marshal(tpm2.TPM2BAuth{}))
-	// Seed value
+	tpmtsensitive.Write(tpm2.Marshal(tpm2.TPM2BAuth{
+		Buffer: make([]byte, nameAlgHash.Size()),
+	}))
+	// Empty protection seed value
 	tpmtsensitive.Write(tpm2.Marshal(tpm2.TPM2BDigest{
+		Buffer: make([]byte, nameAlgHash.Size()),
+	}))
+	// ML-KEM private seed value
+	tpmtsensitive.Write(tpm2.Marshal(tpm2.TPM2BData{
 		Buffer: seed,
 	}))
 	return tpmtsensitive.Bytes()
@@ -171,7 +181,7 @@ func GenerateTestVector(_ transport.TPM) (*TestVector, error) {
 		Label:       label,
 		Randomness:  randomness[:],
 		PublicKey:   tpmifyPublicKey(pub, nameAlg, parmName),
-		PrivateKey:  tpmifyPrivateKey(seed[:]),
+		PrivateKey:  tpmifyPrivateKey(seed[:], nameAlg),
 		Secret:      sharedSecret,
 		Ciphertext:  ct,
 	}, nil
