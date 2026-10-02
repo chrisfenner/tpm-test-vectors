@@ -14,6 +14,7 @@ import (
 	"github.com/chrisfenner/tpm-test-vectors/pkg/ecckem"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/kdfa"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/kdfe"
+	"github.com/chrisfenner/tpm-test-vectors/pkg/mlkemkem"
 	"github.com/chrisfenner/tpm-test-vectors/pkg/rsakem"
 	"github.com/google/go-tpm/tpm2"
 	"github.com/google/go-tpm/tpm2/transport"
@@ -39,6 +40,7 @@ func printUsage() {
 	fmt.Fprintf(&usage, "    * kdfe\n")
 	fmt.Fprintf(&usage, "    * rsa_labeled_encaps\n")
 	fmt.Fprintf(&usage, "    * ecc_labeled_encaps\n")
+	fmt.Fprintf(&usage, "    * mlkem_labeled_encaps\n")
 	fmt.Fprintf(&usage, "  and <PORT> the cmd/plat port for a running TPM simulator\n")
 
 	fmt.Printf("%v\n", usage.String())
@@ -131,8 +133,13 @@ func generateTestVectors(tpm transport.TPM, kind string, count int) ([]testVecto
 			if err != nil {
 				return nil, err
 			}
+		case "mlkem_labeled_encaps":
+			testVector, err = mlkemkem.GenerateTestVector(tpm)
+			if err != nil {
+				return nil, err
+			}
 		default:
-			return nil, fmt.Errorf("unrecognized --kind value, expected one of {kdfa, kdfe, labeled_encaps}, was %q", kind)
+			return nil, fmt.Errorf("unrecognized --kind value, expected one of {kdfa, kdfe, rsa_labeled_encaps, ecc_labeled_encaps, mlkem_labeled_encaps}, was %q", kind)
 		}
 		result[i] = testVector
 	}
